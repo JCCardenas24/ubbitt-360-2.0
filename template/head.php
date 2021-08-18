@@ -27,3 +27,4 @@
 <link rel="stylesheet" href="./assets/css/crm-styles.css">
 <link rel="stylesheet" type="text/css" href="./assets/libs/datatables/datatables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="./assets/css/main.min.css">

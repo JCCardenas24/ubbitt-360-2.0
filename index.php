@@ -45,7 +45,8 @@
 											</div>
 										</div>
 										<div class="col-12 text-center p-20 pb-0">
-											<a href="clientes.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a>
+											<!-- <a href="clientes.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a> -->
+											<a href="freemium.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a>
 										</div>
 									</div>
 								</form>

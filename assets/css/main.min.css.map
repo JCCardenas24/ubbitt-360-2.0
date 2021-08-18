@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,aAAa,CAAA;EACT,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "sass/main.scss",
+        "sass/layout/_side-bar.scss",
+        "sass/views/_fremium.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
