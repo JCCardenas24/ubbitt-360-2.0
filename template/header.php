@@ -4,23 +4,7 @@
 			<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
 		</a>
 		<a class="logo">
-			<svg id="Grupo_1714" data-name="Grupo 1714" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.057" height="20.672" viewBox="0 0 68.057 20.672">
-			<defs>
-				<clipPath id="clip-path">
-				<rect id="Rectángulo_4" data-name="Rectángulo 4" width="68.057" height="20.672" fill="#fff"/>
-				</clipPath>
-			</defs>
-			<g id="Grupo_1" data-name="Grupo 1" clip-path="url(#clip-path)">
-				<path id="Trazado_1" data-name="Trazado 1" d="M0,57.917V48.833H4.172v9.008a2.21,2.21,0,0,0,2.3,2.384,2.21,2.21,0,0,0,2.3-2.384V48.833h4.171v9.084c0,3.645-2.691,6.106-6.468,6.106S0,61.562,0,57.917" transform="translate(0 -43.351)" fill="#fff"/>
-				<path id="Trazado_2" data-name="Trazado 2" d="M143.113,46a5.806,5.806,0,0,1,6.005,6.08,5.806,5.806,0,0,1-6.005,6.08,5.306,5.306,0,0,1-3.448-1.223l-.371.848h-2.913V42.234h3.892v4.558a5.359,5.359,0,0,1,2.84-.788Zm2.032,6.08a2.559,2.559,0,1,0-2.559,2.594,2.513,2.513,0,0,0,2.559-2.594" transform="translate(-121.072 -37.493)" fill="#fff"/>
-				<path id="Trazado_3" data-name="Trazado 3" d="M272.654,46a5.806,5.806,0,0,1,6.005,6.08,5.806,5.806,0,0,1-6.005,6.08,5.306,5.306,0,0,1-3.448-1.223l-.371.848h-2.913V42.234h3.892v4.558a5.358,5.358,0,0,1,2.84-.788Zm2.032,6.08a2.559,2.559,0,1,0-2.559,2.594,2.513,2.513,0,0,0,2.559-2.594" transform="translate(-236.072 -37.493)" fill="#fff"/>
-				<rect id="Rectángulo_3" data-name="Rectángulo 3" width="3.937" height="11.429" transform="translate(44.391 8.868)" fill="#fff"/>
-				<path id="Trazado_4" data-name="Trazado 4" d="M451.159,60.555V64h-2.708a3.76,3.76,0,0,1-4.064-4.085V55.605H442.3v-.92l5.121-5.453h.809v3.342H451.1v3.032h-2.772v3.637a1.212,1.212,0,0,0,1.325,1.312Z" transform="translate(-392.647 -43.706)" fill="#fff"/>
-				<path id="Trazado_5" data-name="Trazado 5" d="M536.2,60.555V64h-2.708a3.76,3.76,0,0,1-4.064-4.085V55.605h-2.092v-.92l5.121-5.453h.809v3.342h2.871v3.032h-2.772v3.637a1.212,1.212,0,0,0,1.325,1.312Z" transform="translate(-468.14 -43.706)" fill="#fff"/>
-				<path id="Trazado_6" data-name="Trazado 6" d="M4.112,2.057A2.056,2.056,0,1,0,2.056,4.113,2.056,2.056,0,0,0,4.112,2.057" transform="translate(0 -0.001)" fill="#fff"/>
-				<path id="Trazado_7" data-name="Trazado 7" d="M82.717,2.057a2.056,2.056,0,1,0-2.056,2.056,2.056,2.056,0,0,0,2.056-2.056" transform="translate(-69.782 -0.001)" fill="#fff"/>
-			</g>
-			</svg>
+			<img src="./assets/images/ubbitt_blanco.png" alt="">
 		</a>
 	</div>
     <nav class="navbar navbar-static-top">
@@ -33,7 +17,7 @@
 						</a>
 					</li>
 					<li>
-						<span id="encabezado" class="font-size-18 font-weight-800 c-header">Inicio</span>
+						<span id="encabezado" class="font-size-18 font-weight-800 c-header"><b>Mapfre</b> | Área</span>
 					</li>
 				</ul>
 		  	</div>
@@ -41,7 +25,8 @@
 				<ul class="nav navbar-nav">
 					<li class="dropdown user user-menu">
 						<a href="#" class="waves-effect waves-light dropdown-toggle d-flex justify-content-center align-items-center" data-toggle="dropdown" title="User">
-							<i class="icon-User"><span class="path1"></span><span class="path2"></span></i>
+							<!-- <i class="icon-User"><span class="path1"></span><span class="path2"></span></i> -->
+							<i class="ri-user-3-fill c-black"><span class="path1"></span><span class="path2"></span></i>
 						</a>
 						<ul class="dropdown-menu animated fadeIn">
 							<li class="user-body">

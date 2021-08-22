@@ -2,30 +2,30 @@ $(document).ready(function() {
     $('#tableBandeja').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 2,
         },
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -33,9 +33,9 @@ $(document).ready(function() {
     $('#tableLeads').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 3,
@@ -44,22 +44,22 @@ $(document).ready(function() {
             { "width": "25%", "targets": 14 }
         ],
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -67,57 +67,58 @@ $(document).ready(function() {
     $('#tableClients').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
     });
+    $('#test_table').DataTable();
     $('#tableUser').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 1,
         },
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -125,26 +126,26 @@ $(document).ready(function() {
     $('#tableMetrica').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -152,29 +153,29 @@ $(document).ready(function() {
     $('#tableProfile').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         columnDefs: [
             { "width": "25%", "targets": 4 }
         ],
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -182,9 +183,9 @@ $(document).ready(function() {
     $('#tableDetalleLead').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 1,
@@ -195,22 +196,22 @@ $(document).ready(function() {
             { "width": "25%", "targets": 2 }
         ],
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -218,9 +219,9 @@ $(document).ready(function() {
     $('#polizasCliente').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 1,
@@ -229,22 +230,22 @@ $(document).ready(function() {
             { "width": "15%", "targets": 4 }
         ],
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -252,9 +253,9 @@ $(document).ready(function() {
     $('#actividadProfile').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         columnDefs: [
             { "width": "2%", "targets": 0 },
             { "width": "2%", "targets": 1 },
@@ -263,22 +264,22 @@ $(document).ready(function() {
             { "width": "2%", "targets": 4 }
         ],
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -286,30 +287,30 @@ $(document).ready(function() {
     $('#tableVentas').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 1,
         },
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -317,30 +318,30 @@ $(document).ready(function() {
     $('#tableInter').DataTable({
         pageLength: 10,
         searching: false,
-        scrollX:        true,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         true,
+        paging: true,
         fixedColumns: {
             leftColumns: 0,
             rightColumns: 1,
         },
         language: {
-            "sProcessing":     "",
-            "sLengthMenu":     "",
-            "sZeroRecords":    "",
-            "sEmptyTable":     "",
-            "sInfo":           "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
-            "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-            "sInfoFiltered":   "",
-            "sInfoPostFix":    "",
-            "sSearch":         "Búsqueda",
-            "sUrl":            "",
-            "sInfoThousands":  ",",
+            "sProcessing": "",
+            "sLengthMenu": "",
+            "sZeroRecords": "",
+            "sEmptyTable": "",
+            "sInfo": "Mostrando  _START_ al _END_ de  _TOTAL_ registros",
+            "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+            "sInfoFiltered": "",
+            "sInfoPostFix": "",
+            "sSearch": "Búsqueda",
+            "sUrl": "",
+            "sInfoThousands": ",",
             "sLoadingRecords": "",
             "oPaginate": {
-                "sFirst":    "Primero",
-                "sLast":     "Último",
-                "sNext":     "Siguiente",
+                "sFirst": "Primero",
+                "sLast": "Último",
+                "sNext": "Siguiente",
                 "sPrevious": "Anterior"
             }
         },
@@ -383,6 +384,7 @@ $(document).ready(function() {
     $(function() {
         var start = moment().subtract(29, 'days');
         var end = moment();
+
         function cb(start, end) {
             $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
         }
@@ -390,7 +392,7 @@ $(document).ready(function() {
             startDate: start,
             endDate: end,
             ranges: {
-               'Hoy': [moment(), moment()]
+                'Hoy': [moment(), moment()]
             },
         }, cb);
         cb(start, end);
@@ -398,9 +400,9 @@ $(document).ready(function() {
 });
 
 window.onload = function() {
-  element = document.getElementsByClassName('ranges');
-  if(typeof(element) != 'undefined' && element != null){
-    document.querySelector('.ranges').children[0].children[0].classList.add('active');
-    document.querySelector('.ranges').children[0].children[1].setAttribute('hidden', true);
-  }
+    element = document.getElementsByClassName('ranges');
+    if (typeof(element) != 'undefined' && element != null) {
+        document.querySelector('.ranges').children[0].children[0].classList.add('active');
+        document.querySelector('.ranges').children[0].children[1].setAttribute('hidden', true);
+    }
 }

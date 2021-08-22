@@ -12,7 +12,7 @@
 					<div class="col-lg-5 col-md-5 col-12">
 						<div class="bg-white rounded10 shadow-lg container-login">
 							<div class="content-top-agile p-20 pb-0">
-								<img class="logo_ubbitt" src="./assets/images/syn/logo/LOGO_UBBITT.svg" alt="logo" width="200">
+								<img class="logo_ubbitt" src="./assets/images/ubbitt_color.png" alt="logo" width="200">
 								<p class="mb-0 c-header">Ingresa tus datos para continuar.</p>
 							</div>
 							<div class="p-40 pt-10">
@@ -46,7 +46,7 @@
 										</div>
 										<div class="col-12 text-center p-20 pb-0">
 											<!-- <a href="clientes.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a> -->
-											<a href="freemium.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a>
+											<a href="dashboard-freemium.php" class="btn btn-first mt-10 c-white font-weight-800 col-md-7 text-uppercase">iniciar sesión</a>
 										</div>
 									</div>
 								</form>

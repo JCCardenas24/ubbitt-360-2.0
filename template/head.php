@@ -22,9 +22,10 @@
 <link rel="manifest" href="./assets/images/syn/favicon/manifest.json">
 <link rel="stylesheet" href="./assets/css/vendors_css.css">
 <link rel="stylesheet" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/css/skin_color.css">
+<!-- <link rel="stylesheet" href="./assets/css/skin_color.css"> -->
 <link rel="stylesheet" href="./assets/icons/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="./assets/css/crm-styles.css">
 <link rel="stylesheet" type="text/css" href="./assets/libs/datatables/datatables.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/main.min.css">
