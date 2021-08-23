@@ -1,21 +1,20 @@
 <div class="wid-100 freemium-inbound-resumen mt-40">
     <div class="d-flex justify-content-between">
         <h1>Dashboard de producción</h1>
-        <div class="d-flex justify-content-between">
-            <div class="form-group col-md-5 d-flex m-0">
-                <div class="form-group">
-                    <select class="form-control" id="exampleFormControlSelect2">
-                        <option>
-                            &#xf073; agosto 15, 2021 - agosto 19, 2021
-                        </option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+        <div class="">
+            <div class="d-flex mb-20">
+                <div class="d-flex wid-100 justify-content-end">
+                    <div class=" d-flex justify-content-between mr-5">
+                        <div class="form-group wid-100 d-flex m-0">
+                            <div id="reportrange_clientes" class="range-pick">
+                                <i class="fa fa-calendar"></i>&nbsp;
+                                <span></span>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="pdf_button mr-5"><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <a href="#" class="pdf_button"><i class="ri-file-list-2-line"></i></a>
         </div>
     </div>
     <div class="container_chart-1">
@@ -25,7 +24,7 @@
         </div>
     </div>
     <div class="container_chart-2">
-    <ct-visualization id="tree-container"></ct-visualization>
+        <ct-visualization id="tree-container"></ct-visualization>
     </div>
     <div class="container_cards_resumen_info">
         <div class="row ml-0 mr-0">
@@ -119,10 +118,10 @@
             <div class="col-6 wid-100 pl-0">
                 <div class="card fst_card">
                     <div class="col-12 p-0">
-                        
+
                         <div id="basic-doughnut" style="height:350px;"></div>
-                       
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -142,9 +141,9 @@
         <div class="row m-0">
             <div class="col-6 pl-0">
                 <div class="card fst_card mb-0">
-                   <div class="col-12 p-0">
-                   <div id="basic-doughnut2" style="height:350px;"></div>
-                   </div>
+                    <div class="col-12 p-0">
+                        <div id="basic-doughnut2" style="height:350px;"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-6 pr-0">
@@ -184,6 +183,7 @@
             </div>
         </div>
     </div>
+    <!-- <button id="btn_prueba" class="d-none">test</button> -->
     <div class="container_graficas_llamadas">
         <h1 class="ttl_llamadas">Llamadas ATC</h1>
         <div class="row m-0">
@@ -194,7 +194,7 @@
                     <p>22 / <span>25%</span></p>
                     <h4>Dudas de producto</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar aqua" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -202,7 +202,7 @@
                     </div>
                     <h4>Asesorías de producto</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar aqua" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -210,7 +210,7 @@
                     </div>
                     <h4>Enlace de producto</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar aqua" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -218,7 +218,7 @@
                     </div>
                     <h4>Enlace de coberturas</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar aqua" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -232,7 +232,7 @@
                     <p>12 / <span>10%</span></p>
                     <h4>Gastos médicos</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar navy" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -240,7 +240,7 @@
                     </div>
                     <h4>Vida</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar navy" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -248,7 +248,7 @@
                     </div>
                     <h4>Legalizados</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar navy" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -256,7 +256,7 @@
                     </div>
                     <h4>Plataformas</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar navy" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -264,7 +264,7 @@
                     </div>
                     <h4>Residénciales</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar navy" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -278,7 +278,7 @@
                     <p>16 / <span>12%</span></p>
                     <h4>Reportar atención de asesor</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar orange" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -286,7 +286,7 @@
                     </div>
                     <h4>Revisión renovación póliza</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar orange" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -294,7 +294,7 @@
                     </div>
                     <h4>Cancelación de producto</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar orange" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -302,7 +302,7 @@
                     </div>
                     <h4>Checar fechas de vigencia</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar orange" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -316,7 +316,7 @@
                     <p>22 / <span>25%</span></p>
                     <h4>Seguimiento pago</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar yellow" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -324,7 +324,7 @@
                     </div>
                     <h4>Reembolsos</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar yellow" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -332,7 +332,7 @@
                     </div>
                     <h4>Aclaración pagos</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar yellow" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -340,7 +340,7 @@
                     </div>
                     <h4>Realizar pago</h4>
                     <div class="d-flex">
-                        <span class="ttl_detalle">Ver detalle</span><span class="ttl_number">10</span>
+                        <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
                         <div class="progress-bar yellow" role="progressbar" style="width: 25%" aria-valuenow="25"

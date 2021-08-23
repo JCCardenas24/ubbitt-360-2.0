@@ -74,7 +74,7 @@
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <li class="sub_ttl">Inbound</li>
+                        <li class="sub_ttl"><a href="dashboard-freemium.php">Inbound</a></li>
                         <ul>
                             <li><span>Resumen</span></li>
                             <li><span>Call Center</span></li>
@@ -117,14 +117,14 @@
                         </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <li class="sub_ttl">Cobranza</li>
+                        <li class="sub_ttl"><a href="dashboard-beyond-cobranza.php">Cobranza</a></li>
                         <ul>
                             <li><span>Resumen</span></li>
                             <li><span>Call Center</span></li>
                             <li><span>Reportes</span></li>
                             <li><span>Carga de base de datos</span></li>
                         </ul>
-                        <li class="sub_ttl">Renovación</li>
+                        <li class="sub_ttl"><a href="dashboard-beyond-renovacion.php">Renovación</a></li>
                         <ul>
                             <li><span>Resumen</span></li>
                             <li><span>Call Center</span></li>
@@ -147,10 +147,9 @@
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-
                         <ul class="mt-3">
-                            <li><span>Mis datos</span></li>
-                            <li><span>Cerrar sesión</span></li>
+                            <li class="cuenta"><span><a href="perfil.php">Mis datos</a></span></li>
+                            <li class="cuenta"><span><a href="index.php?close_session">Cerrar sesión</a></span></li>
                         </ul>
                     </div>
                 </div>

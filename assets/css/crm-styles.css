@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?p9tjk1');
+    src: url('fonts/icomoon.eot?p9tjk1#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?p9tjk1') format('truetype'), url('fonts/icomoon.woff?p9tjk1') format('woff'), url('fonts/icomoon.svg?p9tjk1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-agegarnuevo:before {
+    content: "\e900";
+}
+
+.icon-download_pdf:before {
+    content: "\e901";
+}
+
+.icon-download_xls:before {
+    content: "\e902";
+}
+
 .icons_collapsed {
     display: none;
 }
@@ -1493,7 +1529,7 @@ select#exampleFormControlSelect2 {
 
 .pdf_button i {
     font-size: 1.5em;
-    color: gray;
+    color: #d2d2d2;
 }
 
 .mt-40 {
@@ -1656,4 +1692,65 @@ a.exchangeName {
     color: white;
     font-weight: bold;
     padding-left: 7px;
+}
+
+.theme-primary .daterangepicker td.active {
+    background-color: #fd8377 !important;
+}
+
+.daterangepicker .drp-buttons .btn-primary {
+    background-color: #fd8377 !important;
+    border: transparent;
+}
+
+
+/* .daterangepicker .ranges li.active {
+    background-color: #fd8377 !important;
+} */
+
+table.table thead,
+table.table tbody {
+    text-align: center;
+}
+
+.pagination li a {
+    min-width: 1px;
+    padding: 9px;
+}
+
+.pagination .page-link {
+    background-color: black;
+    color: white;
+}
+
+.pagination .page-link:hover {
+    background-color: black;
+}
+
+.navbar-custom-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-custom-menu span {
+    font-size: 12px;
+    text-align: left;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-body a {
+    font-size: 12px;
+    text-align: left;
+    color: #4d4d4d;
+    /* margin-bottom: 10px; */
+}
+
+.dropdown-divider {
+    display: none;
+}
+
+.collapsing a {
+    color: white;
 }

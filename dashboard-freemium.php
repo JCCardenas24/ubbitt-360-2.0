@@ -4,7 +4,7 @@
 <head>
     <?php include_once('./template/head.php') ?>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <title>Clientes</title>
+    <title>Ubbitt 360</title>
 </head>
 
 <body class="hold-transition light-skin sidebar-mini theme-primary">

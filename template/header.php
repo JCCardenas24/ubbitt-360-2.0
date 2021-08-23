@@ -17,11 +17,12 @@
 						</a>
 					</li>
 					<li>
-						<span id="encabezado" class="font-size-18 font-weight-800 c-header"><b>Mapfre</b> | Área</span>
+						<span id="encabezado" class="encabezado_ttl"><b>Mapfre</b> | Área</span>
 					</li>
 				</ul>
 		  	</div>
 		  	<div class="navbar-custom-menu r-side p-0">
+				  <span>Hola, Oscar Fady</span>
 				<ul class="nav navbar-nav">
 					<li class="dropdown user user-menu">
 						<a href="#" class="waves-effect waves-light dropdown-toggle d-flex justify-content-center align-items-center" data-toggle="dropdown" title="User">
@@ -32,7 +33,9 @@
 							<li class="user-body">
 								<!-- <a class="dropdown-item c-header" href="perfil.php"><i class="icon-User mr-2"><span class="path1"></span><span class="path2"></span></i> Perfil</a> -->
 								<div class="dropdown-divider"></div>
+								<a class="dropdown-item c-header" href="perfil.php"> Mi perfil</a>
 								<a class="dropdown-item c-header" href="index.php?close_session"><i class="fa fa-sign-out mr-2"></i> Cerrar sesión</a>
+								
 							</li>
 						</ul>
 					</li>

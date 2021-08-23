@@ -93,7 +93,7 @@
             }
         }
         .card.bg-c-orange {
-            background: #fd8377;
+            background-color: #ff6f61;
         }
     }
     .container_cards_ventas_info {
@@ -175,7 +175,7 @@
         }
         .card.fst_card {
             margin-bottom: 0 !important;
-            padding: 30px 40px 0;
+            padding: 30px 20px 0;
             p {
                 font-weight: normal;
                 font-size: 18px;
@@ -280,6 +280,10 @@
                 font-size: 8px;
                 text-align: left;
                 color: #fd8377;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
     }

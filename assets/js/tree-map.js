@@ -47,7 +47,7 @@ function treeBoxes(urlService, jsonData) {
         },
         // Height and width are redefined later in function of the size of the tree
         // (after that the data are loaded)
-        width = 1200 - margin.right - margin.left,
+        width = '1000' - margin.right - margin.left,
         height = 710 - margin.top - margin.bottom;
 
     var rectNode = {
