@@ -44,9 +44,10 @@
     </div>
     <?php include_once('./template/scripts.php') ?>
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
-    <script src="./assets/js/header.js"></script>
+   
     <script src="./assets/js/clientes.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+    <script src="./assets/js/pages/d3.min.js"></script>
+   
     <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
     <script>
         $('.href_bd_renova').click(function (e) {

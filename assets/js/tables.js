@@ -399,10 +399,10 @@ $(document).ready(function() {
     });
 });
 
-window.onload = function() {
-    element = document.getElementsByClassName('ranges');
-    if (typeof(element) != 'undefined' && element != null) {
-        document.querySelector('.ranges').children[0].children[0].classList.add('active');
-        document.querySelector('.ranges').children[0].children[1].setAttribute('hidden', true);
-    }
-}
+// window.onload = function() {
+//     element = document.getElementsByClassName('ranges');
+//     if (typeof(element) != 'undefined' && element != null) {
+//         document.querySelector('.ranges').children[0].children[0].classList.add('active');
+//         document.querySelector('.ranges').children[0].children[1].setAttribute('hidden', true);
+//     }
+// }

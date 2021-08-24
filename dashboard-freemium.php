@@ -41,10 +41,9 @@
     </div>
     <?php include_once('./template/scripts.php') ?>
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
-    <script src="./assets/js/header.js"></script>
     <script src="./assets/js/clientes.js"></script>
     <script src="./assets/js/pages/d3.min.js"></script>
-    <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
+    <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js" ></script>
     <!-- scripts to load dashboard charts -->
     <script src="./assets/js/new-charts.js"></script>
     <script src="./assets/js/tree-map.js"></script>
