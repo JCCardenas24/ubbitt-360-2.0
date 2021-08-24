@@ -27,9 +27,9 @@
 
 
 function treeBoxes(urlService, jsonData) {
-    var urlService_ = '';
+    let urlService_ = '';
 
-    var navy = '#2c72f0',
+    let navy = '#2c72f0',
         aqua = '#4bb6cc',
         yellow = '#f5a841',
         salmon = '#fd8377',
@@ -39,7 +39,7 @@ function treeBoxes(urlService, jsonData) {
         gray = '#4d4d4d',
         orange = '#f06c39';
 
-    var margin = {
+    let margin = {
             top: 0,
             right: 0,
             bottom: 100,
@@ -50,7 +50,7 @@ function treeBoxes(urlService, jsonData) {
         width = '1000' - margin.right - margin.left,
         height = 710 - margin.top - margin.bottom;
 
-    var rectNode = {
+    let rectNode = {
             width: 170,
             height: 40,
             textMargin: 5
@@ -60,17 +60,17 @@ function treeBoxes(urlService, jsonData) {
             height: 0,
             textMargin: 5
         };
-    var i = 0,
+    let i = 0,
         duration = 750,
         root;
 
-    var mousedown; // Use to save temporarily 'mousedown.zoom' value
-    var mouseWheel,
+    let mousedown; // Use to save temporarily 'mousedown.zoom' value
+    let mouseWheel,
         mouseWheelName,
         isKeydownZoom = false;
 
-    var tree;
-    var baseSvg,
+    let tree;
+    let baseSvg,
         svgGroup,
         nodeGroup, // If nodes are not grouped together, after a click the svg node will be set after his corresponding tooltip and will hide it
         nodeGroupTooltip,
@@ -105,8 +105,8 @@ function treeBoxes(urlService, jsonData) {
         // Dynamically set the height of the main svg container
         // breadthFirstTraversal returns the max number of node on a same level
         // and colors the nodes
-        var maxDepth = 0;
-        var maxTreeWidth = breadthFirstTraversal(tree.nodes(root), function(currentLevel) {
+        let maxDepth = 0;
+        let maxTreeWidth = breadthFirstTraversal(tree.nodes(root), function(currentLevel) {
             maxDepth++;
             currentLevel.forEach(function(node) {
                 if (node.type == 'type1')
@@ -174,7 +174,7 @@ function treeBoxes(urlService, jsonData) {
 
     function update(source) {
         // Compute the new tree layout
-        var nodes = tree.nodes(root).reverse(),
+        let nodes = tree.nodes(root).reverse(),
             links = tree.links(nodes);
 
         // Check if two nodes are in collision on the ordinates axe and move them
@@ -185,10 +185,10 @@ function treeBoxes(urlService, jsonData) {
         });
 
         // 1) ******************* Update the nodes *******************
-        var node = nodeGroup.selectAll('g.node').data(nodes, function(d) {
+        let node = nodeGroup.selectAll('g.node').data(nodes, function(d) {
             return d.id || (d.id = ++i);
         });
-        var nodesTooltip = nodeGroupTooltip.selectAll('g').data(nodes, function(d) {
+        let nodesTooltip = nodeGroupTooltip.selectAll('g').data(nodes, function(d) {
             return d.id || (d.id = ++i);
         });
 
@@ -197,7 +197,7 @@ function treeBoxes(urlService, jsonData) {
         // it is added at the top of the group, so it is drawed first
         // else the nodes tooltips are drawed before their children nodes and they
         // hide them
-        var nodeEnter = node.enter().insert('g', 'g.node')
+        let nodeEnter = node.enter().insert('g', 'g.node')
             .attr('class', 'node')
             .attr('transform', function(d) {
                 return 'translate(' + source.y0 + ',' + source.x0 + ')';
@@ -205,7 +205,7 @@ function treeBoxes(urlService, jsonData) {
             .on('click', function(d) {
                 click(d);
             });
-        var nodeEnterTooltip = nodesTooltip.enter().append('g')
+        let nodeEnterTooltip = nodesTooltip.enter().append('g')
             .attr('transform', function(d) {
                 return 'translate(' + source.y0 + ',' + source.x0 + ')';
             });
@@ -287,7 +287,7 @@ function treeBoxes(urlService, jsonData) {
             .attr('dy', '1.5em')
 
         // Transition nodes to their new position.
-        var nodeUpdate = node.transition().duration(duration)
+        let nodeUpdate = node.transition().duration(duration)
             .attr('transform', function(d) {
                 return 'translate(' + d.y + ',' + d.x + ')';
             });
@@ -304,7 +304,7 @@ function treeBoxes(urlService, jsonData) {
         nodeUpdate.select('text').style('fill-opacity', 1);
 
         // Transition exiting nodes to the parent's new position
-        var nodeExit = node.exit().transition().duration(duration)
+        let nodeExit = node.exit().transition().duration(duration)
             .attr('transform', function(d) {
                 return 'translate(' + source.y + ',' + source.x + ')';
             })
@@ -319,10 +319,10 @@ function treeBoxes(urlService, jsonData) {
 
 
         // 2) ******************* Update the links *******************
-        var link = linkGroup.selectAll('path').data(links, function(d) {
+        let link = linkGroup.selectAll('path').data(links, function(d) {
             return d.target.id;
         });
-        var linkTooltip = linkGroupToolTip.selectAll('g').data(links, function(d) {
+        let linkTooltip = linkGroupToolTip.selectAll('g').data(links, function(d) {
             return d.target.id;
         });
 
@@ -351,7 +351,7 @@ function treeBoxes(urlService, jsonData) {
 
         // Enter any new links at the parent's previous position.
         // Enter any new links at the parent's previous position.
-        var linkenter = link.enter().insert('path', 'g')
+        let linkenter = link.enter().insert('path', 'g')
             .attr('class', 'link')
             .attr('id', function(d) {
                 return 'linkID' + d.target.id;
@@ -445,7 +445,7 @@ function treeBoxes(urlService, jsonData) {
             });
 
         // Transition links to their new position.
-        var linkUpdate = link.transition().duration(duration)
+        let linkUpdate = link.transition().duration(duration)
             .attr('d', function(d) {
                 return diagonal(d);
             });
@@ -470,8 +470,8 @@ function treeBoxes(urlService, jsonData) {
 
     // Zoom functionnality is desactivated (user can use browser Ctrl + mouse wheel shortcut)
     function zoomAndDrag() {
-        //var scale = d3.event.scale,
-        var scale = 1,
+        //let scale = d3.event.scale,
+        let scale = 1,
             translation = d3.event.translate,
             tbound = -height * scale,
             bbound = height * scale,
@@ -503,15 +503,15 @@ function treeBoxes(urlService, jsonData) {
     // func function is processed on every node of a same level
     // return the max level
     function breadthFirstTraversal(tree, func) {
-        var max = 0;
+        let max = 0;
         if (tree && tree.length > 0) {
-            var currentDepth = tree[0].depth;
-            var fifo = [];
-            var currentLevel = [];
+            let currentDepth = tree[0].depth;
+            let fifo = [];
+            let currentLevel = [];
 
             fifo.push(tree[0]);
             while (fifo.length > 0) {
-                var node = fifo.shift();
+                let node = fifo.shift();
                 if (node.depth > currentDepth) {
                     func(currentLevel);
                     currentDepth++;
@@ -520,7 +520,7 @@ function treeBoxes(urlService, jsonData) {
                 }
                 currentLevel.push(node);
                 if (node.children) {
-                    for (var j = 0; j < node.children.length; j++) {
+                    for (let j = 0; j < node.children.length; j++) {
                         fifo.push(node.children[j]);
                     }
                 }
@@ -533,9 +533,9 @@ function treeBoxes(urlService, jsonData) {
 
     // x = ordoninates and y = abscissas
     function collision(siblings) {
-        var minPadding = 5;
+        let minPadding = 5;
         if (siblings) {
-            for (var i = 0; i < siblings.length - 1; i++) {
+            for (let i = 0; i < siblings.length - 1; i++) {
                 if (siblings[i + 1].x - (siblings[i].x + rectNode.height) < minPadding)
                     siblings[i + 1].x = siblings[i].x + rectNode.height + minPadding;
             }
@@ -570,7 +570,7 @@ function treeBoxes(urlService, jsonData) {
     }
 
     function diagonal(d) {
-        var p0 = {
+        let p0 = {
                 x: d.source.x + rectNode.height / 2,
                 y: (d.source.y + rectNode.width)
             },
@@ -593,7 +593,7 @@ function treeBoxes(urlService, jsonData) {
     }
 
     function initDropShadow() {
-        var filter = defs.append("filter")
+        let filter = defs.append("filter")
             .attr("id", "drop-shadow")
             .attr("color-interpolation-filters", "sRGB");
 
