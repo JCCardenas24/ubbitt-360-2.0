@@ -17,7 +17,7 @@
                         <div class="col-md-6 mx-auto text-center div-white pt-15 pb-15 rounded mt-30">
                             <img src="./assets/images/syn/file.png" alt="file">
                             <div class="mt-4">
-                                <p class="c-header h3 font-weight-bold">Importar</p>
+                                <p class="c-header h3 font-weight-bold d-block">Importar</p>
                                 <p class="c-header">Importa información de contactos, negocios, tickets y productos a Ubbitt.</p>
                                 <form>
                                     <div class="custom-file col-10">

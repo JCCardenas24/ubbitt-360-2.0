@@ -209,7 +209,7 @@ let option2 = {
     },
 
     // Add custom colors
-    color: ['#2c72f0', '#4bb6cc', '#ec4497', '#f06c39', '#f5a841'],
+    color: ['#ec4497', '#4bb6cc', '#2c72f0', '#f06c39', '#FF5757'],
 
     // Display toolbox
     toolbox: {

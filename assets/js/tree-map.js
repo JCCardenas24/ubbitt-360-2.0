@@ -31,7 +31,7 @@ function treeBoxes(urlService, jsonData) {
 
     let navy = '#2c72f0',
         aqua = '#4bb6cc',
-        yellow = '#f5a841',
+        yellow = '#FF5757',
         salmon = '#fd8377',
         blueText = '#4ab1eb',
         red = '#FA4938',
