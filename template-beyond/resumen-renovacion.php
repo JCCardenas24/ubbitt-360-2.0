@@ -322,12 +322,12 @@
                 </div>
             </div>
             <div class="col-6 pr-0">
-                <div class="card wid-100 "><small>Prima pendiente total</small>
+                <div class="card wid-100 "><small>Venta pendiente total</small>
                     <p>$3,
                         821,
                         133.25</p>
                 </div>
-                <div class="card wid-100"><small>Prima renovada cobrada total</small>
+                <div class="card wid-100"><small>Venta renovada cobrada total</small>
                     <p>$3,
                         821,
                         133.25</p>
