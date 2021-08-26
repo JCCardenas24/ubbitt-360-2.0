@@ -96,12 +96,14 @@ File: scss
 
 .light-skin.sidebar-collapse .sidebar-menu > li > .treeview-menu {
   background-color: #2a385d;
-  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span {
   background-color: #2a385d !important;
-  box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .light-skin.sidebar-mini.sidebar-collapse .sidebar-menu > li.active > a > span {
@@ -123,7 +125,8 @@ File: scss
 }
 
 .light-skin .sidebar-form input[type="text"] {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(0, 0, 0, 0.59);
   border: 1px solid rgba(0, 0, 0, 0.59);
   height: 35px;
@@ -143,7 +146,8 @@ File: scss
 }
 
 .light-skin .sidebar-form .btn {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(0, 0, 0, 0.59);
   border: 1px solid rgba(0, 0, 0, 0.59);
   height: 35px;
@@ -160,6 +164,7 @@ File: scss
 }
 
 .light-skin .control-sidebar + .control-sidebar-bg {
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(77, 77, 77, 0.2);
   box-shadow: 0px 5px 10px 1px rgba(77, 77, 77, 0.2);
 }
 
@@ -421,7 +426,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 
 .dark-skin .box .box-transparent {
   background-color: transparent !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .dark-skin .box[class*=bg-pale] > .box-header {
@@ -452,7 +458,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 
 .dark-skin .box.box-solid.box-default > .box-header > .box-tools .btn {
   border: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .dark-skin .box .border-right {
@@ -864,10 +871,12 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 
 .dark-skin .form-element .form-control {
   color: #c5cede;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9c20f), to(#f9c20f)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0.12)));
   background-image: linear-gradient(#f9c20f, #f9c20f), linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
 }
 
 .dark-skin .form-element .form-control:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9c20f), to(#f9c20f)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0.12)));
   background-image: linear-gradient(#f9c20f, #f9c20f), linear-gradient(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
 }
 
@@ -1029,6 +1038,7 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 
 .dark-skin .slider-track {
   background-color: #32436f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#32436f), to(#32436f));
   background-image: linear-gradient(to bottom, #32436f, #32436f);
 }
 
@@ -1273,6 +1283,18 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
   color: #c5cede;
 }
 
+.dark-skin .main-header .app-menu .search-bx ::-webkit-input-placeholder {
+  color: #c5cede;
+}
+
+.dark-skin .main-header .app-menu .search-bx :-ms-input-placeholder {
+  color: #c5cede;
+}
+
+.dark-skin .main-header .app-menu .search-bx ::-ms-input-placeholder {
+  color: #c5cede;
+}
+
 .dark-skin .main-header .app-menu .search-bx ::placeholder {
   color: #c5cede;
 }
@@ -1327,7 +1349,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 }
 
 .dark-skin .left-side {
-  box-shadow: 0 10px 15px -5px rgba(103, 133, 167, 0.07);
+  -webkit-box-shadow: 0 10px 15px -5px rgba(103, 133, 167, 0.07);
+          box-shadow: 0 10px 15px -5px rgba(103, 133, 167, 0.07);
   background-color: rgba(73, 99, 164, 0.75);
 }
 
@@ -1446,7 +1469,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 }
 
 .dark-skin .sidebar-form input[type="text"] {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(26, 35, 58, 0.59);
   border: 1px solid rgba(26, 35, 58, 0.59);
   color: #ffffff;
@@ -1461,7 +1485,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 }
 
 .dark-skin .sidebar-form .btn {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background-color: rgba(26, 35, 58, 0.59);
   border: 1px solid rgba(26, 35, 58, 0.59);
   color: #d5dfea;
@@ -1482,7 +1507,8 @@ body.dark-skin .navbar-nav > .dropdown > .dropdown-menu > li.header {
 
 .dark-skin .box {
   background-color: #272e48;
-  box-shadow: -7.829px 11.607px 21px 0px rgba(25, 42, 70, 0.13);
+  -webkit-box-shadow: -7.829px 11.607px 21px 0px rgba(25, 42, 70, 0.13);
+          box-shadow: -7.829px 11.607px 21px 0px rgba(25, 42, 70, 0.13);
 }
 
 .dark-skin .box.box-solid .box-title {
