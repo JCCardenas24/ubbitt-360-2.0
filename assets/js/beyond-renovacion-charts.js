@@ -63,12 +63,12 @@ let option = {
 };
 stackedChart.setOption(option);
 
-let basicdoughnutChart = echarts.init(document.getElementById('basic-doughnut'));
+let basicdoughnutChartBeyondRenovacion = echarts.init(document.getElementById('basic-doughnut-beyond-renovacion'));
 let options = {
     // Add title
     title: {
-        text: 'Concentrado de pólizas',
-        subtext: 'Emisiones / Cobro',
+        text: 'Concentrado de registros renovados',
+        subtext: '',
         x: ''
     },
 
@@ -77,7 +77,7 @@ let options = {
         orient: 'vertical',
         x: 'right',
         top: '40%',
-        data: ['Emitidas', 'Cobradas'],
+        data: ['Registros en seguimiento', 'Renovados'],
         right: 0
     },
 
@@ -173,17 +173,22 @@ let options = {
 
         data: [{
                 value: 435,
-                name: 'Emitidas'
+                name: 'Registros en seguimiento'
             },
             {
                 value: 310,
-                name: 'Cobradas'
+                name: 'Renovados'
             }
         ]
     }]
 };
 
-basicdoughnutChart.setOption(options);
+basicdoughnutChartBeyondRenovacion.setOption(options);
+
+window.addEventListener('resize', function() {
+    basicdoughnutChartBeyondRenovacion.resize();
+    stackedChart.resize();
+})
 
 $('.href_bd_renova').click(function(e) {
     e.preventDefault();

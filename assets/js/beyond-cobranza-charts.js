@@ -63,12 +63,13 @@ let option = {
 };
 stackedChart.setOption(option);
 
-let basicdoughnutChart = echarts.init(document.getElementById('basic-doughnut'));
-let options = {
+// Gráfica para Beyond Conbranza
+let basicdoughnutChartBeyondCobranza = echarts.init(document.getElementById('basic-doughnut-beyond-cobranza'));
+let options3 = {
     // Add title
     title: {
-        text: 'Concentrado de pólizas',
-        subtext: 'Emisiones / Cobro',
+        text: 'Concentrado de registros en seguimiento',
+        subtext: '',
         x: ''
     },
 
@@ -77,7 +78,7 @@ let options = {
         orient: 'vertical',
         x: 'right',
         top: '40%',
-        data: ['Emitidas', 'Cobradas'],
+        data: ['Registros en seguimiento', 'Cobrados'],
         right: 0
     },
 
@@ -173,17 +174,22 @@ let options = {
 
         data: [{
                 value: 435,
-                name: 'Emitidas'
+                name: 'Registros en seguimiento'
             },
             {
                 value: 310,
-                name: 'Cobradas'
+                name: 'Cobrados'
             }
         ]
     }]
 };
 
-basicdoughnutChart.setOption(options);
+basicdoughnutChartBeyondCobranza.setOption(options3);
+
+window.addEventListener('resize', function() {
+    basicdoughnutChartBeyondCobranza.resize();
+    stackedChart.resize();
+})
 
 $('.href_bd_cobra').click(function(e) {
     e.preventDefault();

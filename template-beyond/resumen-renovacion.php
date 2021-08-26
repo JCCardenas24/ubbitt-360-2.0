@@ -104,29 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="container_concentrado_polizas">
-        <div class="row m-0">
-            <div class="col-6 wid-100 pl-0">
-                <div class="card fst_card">
-                    <div class="col-12 p-0">
-                        <div id="basic-doughnut" style="height:350px;"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 pr-0">
-                <div class="card wid-100 "><small>Prima pagada total</small>
-                    <p>$3,
-                        821,
-                        133.25</p>
-                </div>
-                <div class="card wid-100"><small>Prima pagada total</small>
-                    <p>$3,
-                        821,
-                        133.25</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container_cards_ventas_info">
         <div class="d-flex justify-content-between align-items-center mb-30">
             <h4 class="mb-0">Por gestión</h4>
@@ -330,6 +308,29 @@
                         <div class="progress-bar magenta" role="progressbar" style="width: 25%" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_concentrado_polizas">
+        <div class="row m-0">
+            <div class="col-6 wid-100 pl-0">
+                <div class="card fst_card">
+                    <div class="col-12 p-0">
+                        <div id="basic-doughnut-beyond-renovacion" style="height:350px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 pr-0">
+                <div class="card wid-100 "><small>Prima pendiente total</small>
+                    <p>$3,
+                        821,
+                        133.25</p>
+                </div>
+                <div class="card wid-100"><small>Prima renovada cobrada total</small>
+                    <p>$3,
+                        821,
+                        133.25</p>
                 </div>
             </div>
         </div>

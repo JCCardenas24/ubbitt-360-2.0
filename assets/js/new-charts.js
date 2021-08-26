@@ -73,7 +73,7 @@ let basicdoughnutChart = echarts.init(document.getElementById('basic-doughnut'))
 let options = {
     // Add title
     title: {
-        text: 'Concentrado de pólizas',
+        text: 'Concentrado de ventas',
         subtext: 'Emisiones / Cobro',
         x: ''
     },
@@ -190,6 +190,8 @@ let options = {
 };
 
 basicdoughnutChart.setOption(options);
+
+
 
 let basicdoughnut2Chart = echarts.init(document.getElementById('basic-doughnut2'));
 let option2 = {

@@ -127,11 +127,11 @@
             </div>
             <div class="col-6">
                 <div class="card wid-100 pr-0">
-                    <small>Prima pagada total</small>
+                    <small>Venta emitida total</small>
                     <p>$3,821,133.25</p>
                 </div>
                 <div class="card wid-100">
-                    <small>Prima pagada total</small>
+                    <small>Venta pagada total</small>
                     <p>$3,821,133.25</p>
                 </div>
             </div>
