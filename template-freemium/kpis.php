@@ -69,7 +69,7 @@
         <div class="col ">
             <div class="card info_t2">
                 <p class="m-0 big_ttl"></p>
-                <p class="m-0 sub_ttl">Atendidos antes de 25 segundos</p>
+                <p class="m-0 sub_ttl">Atendidos antes de 25 <br> segundos</p>
                 <span>208</span>
             </div>
         </div>
@@ -103,37 +103,19 @@
         </div>
     </div>
     <div class="thrt_row row m-0">
-        <div class="col-6">
-            <div class="card">
-                <div class="row m-0 he-100 info_t3">
-                    <div class="col-6 p-0">
-                        <div>
-                            <p class="ttl_llamada">Tiempo promedio
-                            en contestar la
-                            llamada</p>
-                        </div>
-                    </div>
-                    <div class="col-6 p-0">
-                        <div>
-                            <p class="ttl_time">12.32 seg</p>
-                        </div>
-                    </div>
+        <div class="d-flex wid-100">
+            <div class="col-6 mb-0">
+                <div class="card">
+                    <p>Tiempo promedio <br>
+                        en contestar la <br>
+                        llamada</p>
+                    <h5>12.32 seg</h5>
                 </div>
             </div>
-        </div>
-        <div class="col-6">
-            <div class="card">
-               <div class="row m-0 he-100 info_t3">
-                    <div class="col-6 p-0">
-                        <div>
-                            <p class="ttl_llamada">Speaking time</p>
-                        </div>
-                    </div>
-                    <div class="col-6 p-0">
-                        <div>
-                            <p class="ttl_time">11:42 hrs</p>
-                        </div>
-                    </div>
+            <div class="col-6 mb-0">
+                <div class="card">
+                    <p>Speaking time</p>
+                    <h5>11:42 hrs</h5>
                 </div>
             </div>
         </div>

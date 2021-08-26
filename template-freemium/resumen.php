@@ -154,26 +154,46 @@
                             <h1>24 / <span>18%</span></h1>
                         </div>
                         <p class="">Agenda llamada</p>
+                        <div class="d-flex href_detalle">
+                            <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span
+                                class="ttl_number">10</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar magenta" role="progressbar" style="width: 25%" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p>Acepta venta</p>
+                        <div class="d-flex href_detalle">
+                            <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span
+                                class="ttl_number">10</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar magenta" role="progressbar" style="width: 25%" aria-valuenow="25"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p>Agenda promesa de pago</p>
+                        <div class="d-flex href_detalle">
+                            <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span
+                                class="ttl_number">10</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar magenta" role="progressbar" style="width: 50%" aria-valuenow="50"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p>Agenda llamada</p>
+                        <div class="d-flex href_detalle">
+                            <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span
+                                class="ttl_number">10</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar magenta" role="progressbar" style="width: 75%" aria-valuenow="75"
                                 aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p>Envía ficha de pago</p>
+                        <div class="d-flex href_detalle">
+                            <span class="ttl_detalle href_bd_freemium">Ver detalle</span><span
+                                class="ttl_number">10</span>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar magenta" role="progressbar" style="width: 100%" aria-valuenow="100"
                                 aria-valuemin="0" aria-valuemax="100"></div>
