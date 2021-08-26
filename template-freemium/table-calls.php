@@ -1,3 +1,20 @@
+<div class="d-flex justify-content-end mb-20">
+  <select class="form-control form-control-sm col-3 mr-5">
+    <option selected="">Por tipificación</option>
+  </select>
+  <div class="d-flex justify-content-end ">
+    <div class=" d-flex justify-content-between">
+      <div class="form-group wid-100 d-flex m-0">
+        <div id="reportrange_clientes" class="range-pick mr-5">
+          <i class="fa fa-calendar"></i>&nbsp;
+          <span></span>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="pdf_button mr-5"><i class="icon-download_xls"></i></a>
+  </div>
+</div>
+
 <table class="table table-hover">
   <thead>
     <tr>

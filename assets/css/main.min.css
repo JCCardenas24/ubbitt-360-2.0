@@ -206,10 +206,10 @@ a.logo img {
 }
 
 .level_two li.nav-item a.nav-link.active {
-  background-color: #e3e3e3 !important;
+  background-color: #FF6F61 !important;
   font-weight: 600;
   font-size: 15px;
-  color: #4d4d4d;
+  color: white;
 }
 
 .level-three {
@@ -722,13 +722,30 @@ a.logo img {
   background: #4d4d4d;
 }
 
+.container_kpis_cards .info_t2 {
+  padding: 15px 10px;
+  color: white;
+}
+
 .container_kpis_cards .info_t2 .text-right {
   font-weight: bold;
   font-size: 30px;
 }
 
-.container_kpis_cards .info_t1 .number_calls {
+.container_kpis_cards .info_t1 {
+  padding: 25px 20px;
+}
+
+.container_kpis_cards .info_t1 .col-6 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.container_kpis_cards .info_t1 .col-6.number_calls {
   font-weight: bold;
+  justify-content: flex-end;
   font-size: 30px;
 }
 
@@ -750,10 +767,11 @@ a.logo img {
 }
 
 .resumen-beyond-cobranza .container_chart-2 .card-gestion {
-  height: 273px;
+  height: 280px;
   border-radius: 15px;
   background: #f4f4f4;
   padding: 14px 7px 0;
+  margin-bottom: 0 !important;
 }
 
 .resumen-beyond-cobranza .container_chart-2 .card-gestion .header {
@@ -789,7 +807,7 @@ a.logo img {
   padding: 4px 13px;
   border-radius: 10px;
   background-color: white;
-  height: 50px;
+  height: 55px;
   margin-bottom: 10px;
 }
 
@@ -810,6 +828,10 @@ a.logo img {
 
 .resumen-beyond-cobranza .container_chart-2 .card-gestion .info_gestion h5 span {
   color: #ffbe2c;
+}
+
+.resumen-beyond-cobranza .container_chart-2 .card-gestion .info_gestion h5 span.mini_price {
+  color: #32D900;
 }
 
 .resumen-beyond-cobranza .container_graficas_llamadas .atc_cards p span {

@@ -4,7 +4,7 @@
 			<span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
 		</a>
 		<a class="logo">
-			<img src="./assets/images/ubbitt_blanco.png" alt="">
+			<img src="./assets/images/ubbitt_blanco.svg" alt="">
 		</a>
 	</div>
     <nav class="navbar navbar-static-top">
@@ -33,7 +33,7 @@
 							<li class="user-body">
 								<!-- <a class="dropdown-item c-header" href="perfil.php"><i class="icon-User mr-2"><span class="path1"></span><span class="path2"></span></i> Perfil</a> -->
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item c-header" href="perfil.php"> Mi perfil</a>
+								<a class="dropdown-item c-header" href="perfil.php"> Mi datos</a>
 								<a class="dropdown-item c-header" href="index.php?close_session"><i class="fa fa-sign-out mr-2"></i> Cerrar sesión</a>
 								
 							</li>

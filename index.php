@@ -11,12 +11,13 @@
 				<div class="row justify-content-center no-gutters">
 					<div class="col-lg-5 col-md-5 col-12">
 						<div class="bg-white rounded10 shadow-lg container-login">
-							<div class="content-top-agile p-20 pb-0">
-								<img class="logo_ubbitt d-block m-auto" src="./assets/images/ubbitt_color.png" alt="logo" width="200">
+							<div>
+							<div class="content-top-agile">
+								<img class="logo_ubbitt d-block m-auto" src="./assets/images/ubbitt_color.svg" alt="logo" width="200">
 								<p class="mb-0 c-header">Ingresa tus datos para continuar.</p>
 							</div>
-							<div class="p-40 pt-10">
-								<form>
+							
+								<form class="mt-10">
 									<div class="form-group">
 										<div class="input-group mb-3">
 											<div class="input-group-prepend">
@@ -50,6 +51,7 @@
 										</div>
 									</div>
 								</form>
+							
 							</div>
 						</div>
 					</div>

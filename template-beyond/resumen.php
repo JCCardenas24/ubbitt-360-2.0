@@ -45,11 +45,11 @@
                 <div class="card card-gestion">
                     <div class="header">
                         <p>Primera gestión</p>
-                        <h5>1000 / <span>33%</span></h5>
+                        <h5>1000 / <span>33%</span> </h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>1000 / <span>33%</span></h5>
+                        <h5>1000 / <span>33%</span> <span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>800 / <span>33%</span></h5>
+                        <h5>800 / <span>33%</span> <span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>700 / <span>33%</span></h5>
+                        <h5>700 / <span>33%</span> <span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
@@ -131,9 +131,9 @@
             <h4 class="mb-0">Por gestión</h4>
             <select class="form-control form-control-sm">
                 <option selected>Todas las gestiones</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Primera gestión</option>
+                <option value="2">Segunda gestión</option>
+                <option value="3">Tercera gestión</option>
             </select>
         </div>
         <div class="row ml-0 mr-0">

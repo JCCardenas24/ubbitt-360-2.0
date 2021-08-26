@@ -43,25 +43,11 @@
         <?php include_once('./template/footer.php') ?>
     </div>
     <?php include_once('./template/scripts.php') ?>
-    <script src="./assets/vendor_components/moment/locale/es.js"></script>
-   
+    <script src="./assets/vendor_components/moment/locale/es.js"></script>   
     <script src="./assets/js/clientes.js"></script>
-    <script src="./assets/js/pages/d3.min.js"></script>
-   
     <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
-    <script>
-        $('.href_bd_renova').click(function (e) {
-            e.preventDefault();
-            // a[href="#profile"]
-            $('a[href="#beyond_option"]').tab('show');
-            $('a[href="#renovacion-home"]').tab('show');
-            $('a[href="#beyond-renovacion-callcenter"]').tab('show');
-            $('a[href="#pills-home"]').tab('show');
-            console.log("clicky");
-        })
-    </script>
     <!-- scripts to load dashboard charts -->
-    <script src="./assets/js/new-charts.js"></script>
+    <script src="./assets/js/beyond-renovacion-charts.js"></script>
 </body>
 
 </html>

@@ -235,6 +235,10 @@ table.dataTable thead .sorting_desc:before {
     height: 390px;
     width: 455px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .modal-content {
@@ -1495,28 +1499,6 @@ form#add_new_lead .form-control {
 
 /* line */
 
-.info_t1 .col-6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-}
-
-.info_t2 {
-    display: flex;
-    justify-content: center;
-    padding: 16px;
-    color: white;
-}
-
-select#exampleFormControlSelect2 {
-    width: 362px;
-    font-family: FontAwesome, sans-serif;
-    border: 1px solid #ccc;
-}
-
 .pdf_button {
     width: 33px;
     height: 33px;
@@ -1688,10 +1670,22 @@ a.exchangeName {
 }
 
 .mini-tree_card {
-    font-size: 11px;
     color: white;
     font-weight: bold;
     padding-left: 7px;
+}
+
+.mini-tree_card span {
+    font-size: 12px;
+}
+
+.mini-tree_card small {
+    font-size: 13px;
+}
+
+.mini-tree_card small span.efectivos {
+    font-weight: bold;
+    color: #FFBE2C;
 }
 
 .theme-primary .daterangepicker td.active {
