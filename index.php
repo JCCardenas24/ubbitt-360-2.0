@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<?php include_once('./template/head.php') ?>
-	<title>SYN - Inicio</title>
+	<title>Ubbitt 360</title>
 </head>
 <body class="hold-transition theme-primary bg-login">
 	<div class="container h-p100">
