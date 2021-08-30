@@ -24,7 +24,8 @@
                         <a class="nav-link" id="premium-tab">Ubbitt Premium</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="beyond_option-tab" href="dashboard-beyond-cobranza.php" >Ubbitt Beyond</a>
+                        <a class="nav-link" id="beyond_option-tab" href="dashboard-beyond-cobranza.php">Ubbitt
+                            Beyond</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="main_tabs_panelsContent">
@@ -32,7 +33,7 @@
                         aria-labelledby="freemium_option-tab">
                         <?php include_once('./template-freemium/inbound.php') ?>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -43,14 +44,34 @@
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
     <script src="./assets/js/clientes.js"></script>
     <script src="./assets/js/pages/d3.min.js"></script>
-    <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js" ></script>
+    <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
     <!-- scripts to load dashboard charts -->
     <script src="./assets/js/new-charts.js"></script>
     <script src="./assets/js/tree-map.js"></script>
     <script>
-            d3.json("jsonData.json", function(error, json) {
-                treeBoxes('', json.tree);
-            });
+        d3.json("jsonData.json", function (error, json) {
+            treeBoxes('', json.tree);
+        });
+    </script>
+    <script>
+        $('#freemium-inbound-resumen-tab').on('shown.bs.tab', function (event) {
+            event.target // newly activated tab
+            event.relatedTarget // previous active tab
+            $(".options_inbound_freemium").removeClass("font-weight-bold");
+            $("#li_resumen_inbound_freemium").addClass("font-weight-bold");
+        })
+        $('#freemium-inbound-call-center-tab').on('shown.bs.tab', function (event) {
+            event.target // newly activated tab
+            event.relatedTarget // previous active tab
+            $(".options_inbound_freemium").removeClass("font-weight-bold");
+            $("#li_call_center_inbound_freemium").addClass("font-weight-bold");
+        })
+        $('#freemium-inbound-reportes-tab').on('shown.bs.tab', function (event) {
+            event.target // newly activated tab
+            event.relatedTarget // previous active tab
+            $(".options_inbound_freemium").removeClass("font-weight-bold");
+            $("#li_reportes_inbound_freemium").addClass("font-weight-bold");
+        })
     </script>
 </body>
 
