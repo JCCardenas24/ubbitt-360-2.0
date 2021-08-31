@@ -337,21 +337,8 @@ window.addEventListener('resize', function() {
 
 $('.href_bd_freemium').click(function(e) {
     e.preventDefault();
-    // a[href="#profile"]
     $('a[href="#freemium_option"]').tab('show');
     $('a[href="#freemium-inbound"]').tab('show');
     $('a[href="#freemium-inbound-call-center"]').tab('show');
     $('a[href="#freemium-call-center-bd"]').tab('show');
-    console.log("clicky");
 })
-
-
-// $('.href_bd_freemium').click(function(e) {
-//     e.preventDefault();
-//     // a[href="#profile"]
-//     $('a[href="#freemium_option"]').tab('show');
-//     $('a[href="#freemium-inbound"]').tab('show');
-//     $('a[href="#freemium-inbound-call-center"]').tab('show');
-//     $('a[href="#freemium-call-center-bd"]').tab('show');
-//     console.log("clicky");
-// })

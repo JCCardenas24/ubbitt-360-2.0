@@ -34,7 +34,8 @@
                                 <input type="password" class="form-control" id="exampleFormControlInput1"
                                     placeholder="*******" readonly>
                             </div>
-                            <small>Cambiar contraseña</small>
+                            <a type="button" class="" data-toggle="modal"
+                                data-target="#modal_cambiar_contrasena"><small>Cambiar contraseña</small></a>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Teléfono contacto</label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1"
@@ -88,18 +89,62 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal modal_cambiar_contrasena fade" id="modal_cambiar_contrasena" tabindex="-1"
+                aria-labelledby="modal_cambiar_contrasenaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img class="alert_svg" src="./assets/images/alert_icon.svg" alt="">
+                            <h5>Cambiar contraseña</h5>
+                            <p>Para continuar con tu solicitud, por favor ingresa los siguientes datos.</p>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contraseña actual</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Nueva contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Confirmar nueva contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="d-flex btns_wrappers">
+                                <a class="cancel_btn" data-dismiss="modal">Cancelar</a>
+                                <a class="btn_continuar" data-dismiss="modal">Continuar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Toast -->
+            <div class="toast_wrapper" style="z-index: 5;">
+                <div id="sucess" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-delay="5000">
+                    <div class="toast-body">
+                        <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                           X
+                        </button>
+                       <p class="m-0">¡Tu contraseña se ha cambiado con éxito!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-    </div>
-    <?php include_once('./template/footer.php') ?>
+        <?php include_once('./template/footer.php') ?>
     </div>
     <?php include_once('./template/scripts.php') ?>
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/clientes.js"></script>
-
-
+    <script>
+        // $('#modal_cambiar_contrasena').on('hidden.bs.modal', function (event) {
+        //     $('#sucess').toast('show')
+        // })
+        $(".btn_continuar").click(function () {
+            $('#sucess').toast('show')
+        });
+    </script>
 </body>
 
 </html>
