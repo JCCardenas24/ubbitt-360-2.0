@@ -841,6 +841,69 @@ a.logo img {
   font-size: 30px;
 }
 
+.modal-delete-report .modal-content {
+  width: 534.83px;
+  height: 322.11px;
+  background: linear-gradient(#fff 0%, #f5f5f5 100%);
+}
+
+.modal-delete-report .modal-body {
+  padding: 57px 40px 0;
+}
+
+.modal-delete-report .alert_icon {
+  width: 91px;
+  height: 91px;
+  display: block;
+  margin: 0px auto 24px;
+}
+
+.modal-delete-report p {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  color: #4d4d4d;
+  margin-bottom: 53px;
+  display: block;
+}
+
+.modal-delete-report a.btn_continue_delete_report {
+  width: 130px;
+  height: 36px;
+  border-radius: 10px;
+  background: #ff6f61;
+  box-shadow: 0px 3px 6px rgba(255, 111, 97, 0.6);
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 23px;
+  cursor: pointer;
+}
+
+.modal-delete-report a.btn_cancel {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #4d4d4d;
+  cursor: pointer;
+}
+
+.cancel_upload_report {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: left;
+  color: #fd8377 !important;
+}
+
+.cancel_upload_report:hover {
+  text-decoration: underline !important;
+}
+
 .container-beyond .level-one-beyond {
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -1238,5 +1301,17 @@ a.logo img {
 .theme-primary [type=checkbox]:checked + label:before {
   border-right: 2px solid #FF6F61 !important;
   border-bottom: 2px solid #FF6F61 !important;
+}
+
+.balance_campaign_data {
+  width: 453px;
+  height: 100%;
+  background: #e6e4e4;
+  position: absolute;
+  right: 0;
+}
+
+.campaigns-1-options-tab {
+  position: relative;
 }
 /*# sourceMappingURL=main.min.css.map */

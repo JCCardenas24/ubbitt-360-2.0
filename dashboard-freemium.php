@@ -21,7 +21,7 @@
                     <li class="nav-item" role="presentation">
                         <!-- <a class="nav-link" id="premium-tab" data-toggle="pill" href="#premium" role="tab"
                             aria-controls="premium" aria-selected="false">Ubbitt Premium</a> -->
-                        <a class="nav-link" id="premium-tab">Ubbitt Premium</a>
+                        <a class="nav-link" id="premium-tab" href="dashboard-premium-campaigns.php">Ubbitt Premium</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="beyond_option-tab" href="dashboard-beyond-cobranza.php">Ubbitt
@@ -37,8 +37,13 @@
                 </div>
 
             </div>
+            <!-- Toast report deleted -->
+            <?php include_once('toast-report-deleted.php') ?>
+            <!-- Toast report uploaded -->
+            <?php include_once('toast-report-uploaded-successfully.php') ?>
         </div>
         <?php include_once('./template/footer.php') ?>
+
     </div>
     <?php include_once('./template/scripts.php') ?>
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
@@ -53,26 +58,7 @@
             treeBoxes('', json.tree);
         });
     </script>
-    <script>
-        $('#freemium-inbound-resumen-tab').on('shown.bs.tab', function (event) {
-            event.target // newly activated tab
-            event.relatedTarget // previous active tab
-            $(".options_inbound_freemium").removeClass("font-weight-bold");
-            $("#li_resumen_inbound_freemium").addClass("font-weight-bold");
-        })
-        $('#freemium-inbound-call-center-tab').on('shown.bs.tab', function (event) {
-            event.target // newly activated tab
-            event.relatedTarget // previous active tab
-            $(".options_inbound_freemium").removeClass("font-weight-bold");
-            $("#li_call_center_inbound_freemium").addClass("font-weight-bold");
-        })
-        $('#freemium-inbound-reportes-tab').on('shown.bs.tab', function (event) {
-            event.target // newly activated tab
-            event.relatedTarget // previous active tab
-            $(".options_inbound_freemium").removeClass("font-weight-bold");
-            $("#li_reportes_inbound_freemium").addClass("font-weight-bold");
-        })
-    </script>
+    <script src="./assets/js/micro-interactions.js"></script>
 </body>
 
 </html>

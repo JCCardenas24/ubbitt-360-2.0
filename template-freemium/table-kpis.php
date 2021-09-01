@@ -16,6 +16,18 @@
       <td>18:35px</td>
       <td>
         <i class="fa fa-download" aria-hidden="true"></i>
+        <a type="button" class="" data-toggle="modal" data-target="#modal-delete-report">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">121212</th>
+      <td>documento.xml</td>
+      <td>02/06/2021</td>
+      <td>18:35px</td>
+      <td>
+        <i class="fa fa-download" aria-hidden="true"></i>
         <i class="fa fa-trash-o" aria-hidden="true"></i>
       </td>
     </tr>
@@ -25,17 +37,7 @@
       <td>02/06/2021</td>
       <td>18:35px</td>
       <td>
-      <i class="fa fa-download" aria-hidden="true"></i>
-        <i class="fa fa-trash-o" aria-hidden="true"></i>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">121212</th>
-      <td>documento.xml</td>
-      <td>02/06/2021</td>
-      <td>18:35px</td>
-      <td>
-      <i class="fa fa-download" aria-hidden="true"></i>
+        <i class="fa fa-download" aria-hidden="true"></i>
         <i class="fa fa-trash-o" aria-hidden="true"></i>
       </td>
     </tr>
@@ -53,3 +55,7 @@
     </li>
   </ul>
 </nav>
+
+<!-- Modal delete report -->
+<?php include_once('modal-delete-report.php') ?>
+

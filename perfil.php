@@ -121,11 +121,8 @@
             <!-- Toast -->
             <div class="toast_wrapper" style="z-index: 5;">
                 <div id="sucess" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
-                    data-delay="5000">
+                    data-delay="3000">
                     <div class="toast-body">
-                        <button type="button" class="close" data-dismiss="toast" aria-label="Close">
-                           X
-                        </button>
                        <p class="m-0">¡Tu contraseña se ha cambiado con éxito!</p>
                     </div>
                 </div>
@@ -137,14 +134,7 @@
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/clientes.js"></script>
-    <script>
-        // $('#modal_cambiar_contrasena').on('hidden.bs.modal', function (event) {
-        //     $('#sucess').toast('show')
-        // })
-        $(".btn_continuar").click(function () {
-            $('#sucess').toast('show')
-        });
-    </script>
+    <script src="./assets/js/micro-interactions.js"></script>
 </body>
 
 </html>
