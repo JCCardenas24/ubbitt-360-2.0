@@ -20,11 +20,26 @@
 
     <li class="nav-item">
         <div class="d-flex balance_campaign_data">
+            <div class="d-flex">
+                <p>Inversión</p>
+                <span> | </span>
+                <small>$200,000.00</small>
+            </div>
+            <div class="d-flex">
+                <p>Gasto</p>
+                <span> | </span>
+                <small>$40,000.00</small>
+            </div>
+            <div class="d-flex">
+                <p>Ventas</p>
+                <span> | </span>
+                <small>$40,000.00</small>
+            </div>
         </div>
     </li>
 </ul>
 <div class="tab-content" id="campaigns-1-options-tabContent">
-    <div class="tab-pane fade show active mt-60" id="premium-brief-campaign-1" role="tabpanel"
+    <div class="tab-pane fade show active " id="premium-brief-campaign-1" role="tabpanel"
         aria-labelledby="premium-brief-campaign-1-tab">
         <?php include_once('./template-premium/premium-campaign-1-brief-content.php') ?>
     </div>
