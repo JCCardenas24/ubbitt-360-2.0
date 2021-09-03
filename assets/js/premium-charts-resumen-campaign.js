@@ -338,7 +338,7 @@ let options_region = {
     //     data: ['Hombres', 'Mujeres']
     // },
     // Add custom colors
-    color: ['#FD8377'],
+    color: ['#FFBE2C'],
 
     grid: {
         left: '3%',
@@ -380,7 +380,7 @@ let options_top_7_leads = {
     //     data: ['Hombres', 'Mujeres']
     // },
     // Add custom colors
-    color: ['#FD8377'],
+    color: ['#FF6F61'],
 
     grid: {
         left: '3%',
@@ -421,7 +421,7 @@ let options_top_5_leads = {
     //     data: ['Hombres', 'Mujeres']
     // },
     // Add custom colors
-    color: ['#FD8377'],
+    color: ['#4D4D4D'],
 
     grid: {
         left: '3%',
@@ -592,31 +592,26 @@ $('#premium-marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
 // funnel chart
 let funnel_ventas_inversiones_chart = echarts.init(document.getElementById('funel_inversiones_ventas_chart'));
 let options_funnel_data = {
-    title: {
-        text: '漏斗图',
-        subtext: '纯属虚构'
-    },
+
     tooltip: {
         trigger: 'item',
-        formatter: "{a} <br/>{b} : {c}%"
+        formatter: "{b} : {c}"
     },
     toolbox: {
-        feature: {
-            dataView: { readOnly: false },
-            restore: {},
-            saveAsImage: {}
-        }
+
     },
     legend: {
-        data: ['展现', '点击', '访问', '咨询', '订单']
+        data: ['Inversión total', 'Total de ventas', 'Total de cobros']
     },
+    // Add custom colors
+    color: ['#FF6F61', '#F68A52', '#FFBE2C'],
     series: [{
-            name: '预期',
+            name: 'data',
             type: 'funnel',
-            left: '10%',
-            width: '80%',
+            left: '5%',
+            width: '70%',
             label: {
-                formatter: '{b}预期'
+                formatter: "{b}:{c}"
             },
             labelLine: {
                 show: false
@@ -627,27 +622,25 @@ let options_funnel_data = {
             emphasis: {
                 label: {
                     position: 'inside',
-                    formatter: '{b}预期: {c}%'
+                    formatter: '{b}:{c}'
                 }
             },
             data: [
-                { value: 60, name: '访问' },
-                { value: 40, name: '咨询' },
-                { value: 20, name: '订单' },
-                { value: 80, name: '点击' },
-                { value: 100, name: '展现' }
+                { value: 56701, name: 'Total de cobros' },
+                { value: 70633, name: 'Total de ventas' },
+                { value: 350000, name: 'Inversión total' }
             ]
         },
         {
-            name: '实际',
+            name: 'data2',
             type: 'funnel',
-            left: '10%',
+            left: '0%',
             width: '80%',
             maxSize: '80%',
             label: {
                 position: 'inside',
-                formatter: '{c}%',
-                color: '#fff'
+                formatter: '{c}',
+                color: '#000'
             },
             itemStyle: {
                 opacity: 0.5,
@@ -657,15 +650,13 @@ let options_funnel_data = {
             emphasis: {
                 label: {
                     position: 'inside',
-                    formatter: '{b}实际: {c}%'
+                    formatter: '{b}: {c}'
                 }
             },
             data: [
-                { value: 30, name: '访问' },
-                { value: 10, name: '咨询' },
-                { value: 5, name: '订单' },
-                { value: 50, name: '点击' },
-                { value: 80, name: '展现' }
+                { value: 56501, name: 'Total de cobros' },
+                { value: 70500, name: 'Total de ventas' },
+                { value: 340000, name: 'Inversión total' }
             ],
             // Ensure outer shape will not be over inner shape when hover.
             z: 100

@@ -1,3 +1,15 @@
+<div class="d-flex wid-100 justify-content-end">
+    <div class="col-4 d-flex justify-content-between">
+        <div class="form-group wid-100 d-flex m-0">
+            <div id="reportrange_clientes" class="range-pick">
+                <i class="fa fa-calendar"></i>&nbsp;
+                <span>agosto 30, 2021 - septiembre 3, 2021</span>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+    <a class="pdf_button"><i class="icon-download_pdf c-gray"></i></a>
+</div>
+<br>
 <div class="container_kpis_cards">
     <div class="fst_row row m-0">
         <div class="col-3">
