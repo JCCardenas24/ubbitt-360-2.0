@@ -8,6 +8,13 @@ $(".btn_continue_delete_report").click(function() {
     $('#toast_report_deleted').toast('show')
 });
 
+// Upload file report
+$(".upload_file_report").click(function() {
+    $(".view_upload_report_form").toggle();
+    $(".reports_info_contents").toggle();
+    $("#toast_report_uploaded_successfully").toast('show')
+});
+
 // Show upload report form
 $(".upload_report_btn").click(function() {
     $(".reports_info_contents").toggle();
@@ -20,12 +27,7 @@ $(".cancel_upload_report").click(function() {
     $(".reports_info_contents").toggle();
 });
 
-// Upload file report
-$(".upload_file_report").click(function() {
-    $(".view_upload_report_form").toggle();
-    $(".reports_info_contents").toggle();
-    $("#toast_report_uploaded_successfully").toast('show')
-});
+
 
 
 // Activate bold class <li> side-menu
