@@ -180,7 +180,9 @@
 
 <div class="row ml-0 mr-0 row_behavior_campaigns">
     <div class="col-6">
-        <div class="card"></div>
+        <div class="card">
+            <div id="funel_inversiones_ventas_chart" style="height:360px;"></div>
+        </div>
     </div>
     <div class="col-6">
         <div class="card">

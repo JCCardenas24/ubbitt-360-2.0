@@ -581,6 +581,16 @@ let options_redimiento_data = {
 
 rendimiento_mixed_chart.setOption(options_redimiento_data);
 
+$('#premium-marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
+    event.target // newly activated tab
+    event.relatedTarget // previous active tab
+    rendimiento_mixed_chart.resize();
+
+})
+
+// funnel chart
+let funnel_ventas_inversiones_chart = echarts.init(document.getElementById('funel_inversiones_ventas_chart'));
+
 // ****Resize fuction***
 window.addEventListener('resize', function() {
     stackedChart.resize();
@@ -592,11 +602,4 @@ window.addEventListener('resize', function() {
     horizontal_top_5_leads.resize();
     horarios_double_bar.resize();
     rendimiento_mixed_chart.resize();
-})
-
-$('#premium-marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
-    event.target // newly activated tab
-    event.relatedTarget // previous active tab
-    rendimiento_mixed_chart.resize();
-
 })
