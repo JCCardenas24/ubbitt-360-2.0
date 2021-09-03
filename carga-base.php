@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/file.css">
     <script src="https://unpkg.com/read-excel-file@4.1.0/bundle/read-excel-file.min.js"></script>
 </head>
-<body class="hold-transition light-skin sidebar-mini theme-primary">
+<body class=" light-skin sidebar-mini theme-primary">
 	<div class="wrapper">
 		<?php include_once('./template/header.php') ?>
 		<?php include_once('./template/side-menu.php') ?>

@@ -104,9 +104,8 @@
         </div>
     </div>
     <div class="col-8">
-        <div class="radio_button_forecast_actual">
-
-        </div>
+        <div class="radio_button_forecast_actual"></div>
+        <div id="stacked-line" style="height:400px;"></div>
     </div>
 </div>
 
@@ -184,13 +183,17 @@
         <div class="card"></div>
     </div>
     <div class="col-6">
-        <div class="card"></div>
+        <div class="card">
+            <div id="behavior-campaign-stacked-line" style="height:360px;"></div>
+        </div>
     </div>
 </div>
 
 <div class="row ml-0 mr-0 row_ventas_campaigns">
     <div class="col-6">
-        <div class="card card_1"></div>
+        <div class="card card_1">
+            <div id="premium_resumen_concentrado_ventas_chart" style="height: 300px;"></div>
+        </div>
     </div>
     <div class="col-6">
         <div class="card card_2">

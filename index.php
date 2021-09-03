@@ -6,7 +6,7 @@
 	<title>Ubbitt 360</title>
 </head>
 
-<body class="hold-transition theme-primary bg-login">
+<body class="theme-primary bg-login">
 	<div class="container h-p100">
 		<div class="row align-items-center justify-content-md-center h-p100">
 			<div class="col-12">

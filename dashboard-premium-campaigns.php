@@ -7,7 +7,7 @@
     <title>Ubbitt 360</title>
 </head>
 
-<body class="hold-transition light-skin sidebar-mini theme-primary">
+<body class=" light-skin sidebar-mini theme-primary">
     <div class="wrapper">
         <?php include_once('./template/header.php') ?>
         <?php include_once('./template/side-menu.php') ?>
@@ -42,8 +42,9 @@
     <script src="./assets/vendor_components/moment/locale/es.js"></script>
     <script src="./assets/js/clientes.js"></script>
     <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
-    <!-- scripts to load dashboard charts -->
-    <script src="./assets/js/beyond-cobranza-charts.js"></script>
+    <!-- scripts to load resumen charts -->
+    <script src="./assets/js/premium-charts-resumen-campaign.js"></script>
+
 </body>
 
 </html>

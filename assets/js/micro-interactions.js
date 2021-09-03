@@ -1,6 +1,6 @@
 // Toast update password account
 $(".btn_continuar").click(function() {
-    $('#sucess').toast('show')
+    $('#new_password_saved').toast('show')
 });
 
 // Toast delete report
@@ -24,7 +24,7 @@ $(".cancel_upload_report").click(function() {
 $(".upload_file_report").click(function() {
     $(".view_upload_report_form").toggle();
     $(".reports_info_contents").toggle();
-    $("#toast_report_deleted").toast('show')
+    $("#toast_report_uploaded_successfully").toast('show')
 });
 
 

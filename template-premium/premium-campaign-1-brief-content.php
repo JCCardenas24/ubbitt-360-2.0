@@ -1,5 +1,5 @@
 <div class="premium-brief-campaign">
-    <h1>Detalles generales de la campaña</h1>
+    <h1><span><img src="./assets/images/campana.svg" alt=""></span> Detalles generales de la campaña</h1>
     <hr>
     <h5>Tipo de Industria</h5>
     <div class="form-check form-check-inline">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <h1>Descripción de venta del producto o servicio</h1>
+    <h1><span><img src="./assets/images/producto.svg" alt=""></span> Descripción de venta del producto o servicio</h1>
     <hr>
     <div class="row details_campaigns">
         <div class="col-6">
@@ -140,7 +140,7 @@
         <div class="col"></div>      
     </div>
     <br>
-    <h1>Inversión y periodicidad de campaña Ubbitt</h1>
+    <h1><span><img src="./assets/images/inversion.svg" alt=""></span> Inversión y periodicidad de campaña Ubbitt</h1>
     <hr>
     <div class="row details_campaigns">
         <div class="col-6">

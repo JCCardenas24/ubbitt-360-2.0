@@ -7,7 +7,7 @@
     <title>Ubbitt 360 </title>
 </head>
 
-<body class="hold-transition light-skin sidebar-mini theme-primary">
+<body class=" light-skin sidebar-mini theme-primary">
     <div class="wrapper">
         <?php include_once('./template/header.php') ?>
         <?php include_once('./template/side-menu.php') ?>

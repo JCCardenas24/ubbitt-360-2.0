@@ -38,6 +38,14 @@
           <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
         </audio>
+        <audio controls>
+          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
       </td>
     </tr>
     <tr>

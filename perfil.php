@@ -7,7 +7,7 @@
     <title>Ubbitt 360</title>
 </head>
 
-<body class="hold-transition light-skin sidebar-mini theme-primary">
+<body class="light-skin sidebar-mini theme-primary">
     <div class="wrapper">
         <?php include_once('./template/header.php') ?>
         <?php include_once('./template/side-menu.php') ?>
@@ -119,14 +119,7 @@
                 </div>
             </div>
             <!-- Toast -->
-            <div class="toast_wrapper" style="z-index: 5;">
-                <div id="sucess" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"
-                    data-delay="3000">
-                    <div class="toast-body">
-                       <p class="m-0">¡Tu contraseña se ha cambiado con éxito!</p>
-                    </div>
-                </div>
-            </div>
+            <?php include_once('toast_new_password_saved.php') ?>
         </div>
         <?php include_once('./template/footer.php') ?>
     </div>
