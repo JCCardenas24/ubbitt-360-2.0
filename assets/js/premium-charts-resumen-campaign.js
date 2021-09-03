@@ -269,6 +269,7 @@ $('#premium-resumen-campaign-1-tab').on('shown.bs.tab', function(event) {
     stackedChart.resize();
     stackedChart2.resize();
     basicdoughnut_concentrado_ventas.resize();
+    funnel_ventas_inversiones_chart.resize();
 })
 
 
@@ -590,6 +591,89 @@ $('#premium-marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
 
 // funnel chart
 let funnel_ventas_inversiones_chart = echarts.init(document.getElementById('funel_inversiones_ventas_chart'));
+let options_funnel_data = {
+    title: {
+        text: '漏斗图',
+        subtext: '纯属虚构'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c}%"
+    },
+    toolbox: {
+        feature: {
+            dataView: { readOnly: false },
+            restore: {},
+            saveAsImage: {}
+        }
+    },
+    legend: {
+        data: ['展现', '点击', '访问', '咨询', '订单']
+    },
+    series: [{
+            name: '预期',
+            type: 'funnel',
+            left: '10%',
+            width: '80%',
+            label: {
+                formatter: '{b}预期'
+            },
+            labelLine: {
+                show: false
+            },
+            itemStyle: {
+                opacity: 0.7
+            },
+            emphasis: {
+                label: {
+                    position: 'inside',
+                    formatter: '{b}预期: {c}%'
+                }
+            },
+            data: [
+                { value: 60, name: '访问' },
+                { value: 40, name: '咨询' },
+                { value: 20, name: '订单' },
+                { value: 80, name: '点击' },
+                { value: 100, name: '展现' }
+            ]
+        },
+        {
+            name: '实际',
+            type: 'funnel',
+            left: '10%',
+            width: '80%',
+            maxSize: '80%',
+            label: {
+                position: 'inside',
+                formatter: '{c}%',
+                color: '#fff'
+            },
+            itemStyle: {
+                opacity: 0.5,
+                borderColor: '#fff',
+                borderWidth: 2
+            },
+            emphasis: {
+                label: {
+                    position: 'inside',
+                    formatter: '{b}实际: {c}%'
+                }
+            },
+            data: [
+                { value: 30, name: '访问' },
+                { value: 10, name: '咨询' },
+                { value: 5, name: '订单' },
+                { value: 50, name: '点击' },
+                { value: 80, name: '展现' }
+            ],
+            // Ensure outer shape will not be over inner shape when hover.
+            z: 100
+        }
+    ]
+};
+
+funnel_ventas_inversiones_chart.setOption(options_funnel_data);
 
 // ****Resize fuction***
 window.addEventListener('resize', function() {
@@ -602,4 +686,5 @@ window.addEventListener('resize', function() {
     horizontal_top_5_leads.resize();
     horarios_double_bar.resize();
     rendimiento_mixed_chart.resize();
+    funnel_ventas_inversiones_chart.resize();
 })
