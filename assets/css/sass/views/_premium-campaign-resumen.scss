@@ -49,6 +49,7 @@
     .card_ttls {
         height: 94px;
         background: #f4f4f4;
+        border-radius: 15px 15px 0 0;
         h3 {
             font-weight: bold;
             font-size: 20px;
@@ -118,6 +119,9 @@
             }
         }
     }
+    .border_radius_bottom {
+        border-radius: 0 0 15px 15px;
+    }
 }
 
 .radio_button_forecast_actual {
@@ -126,6 +130,17 @@
     border-radius: 15px;
     background: #f8f8f8;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+    label {
+        font-size: 14px;
+        text-align: left;
+        color: #4d4d4d;
+        margin-bottom: 0;
+        margin-left: 60px
+    }
 }
 
 .gray_gradient_card {
@@ -156,15 +171,71 @@
 }
 
 .row_behavior_campaigns {
+    .funnel_chart {
+        z-index: 2;
+    }
     .card {
         padding: 26px 25px 0;
         height: 414px;
         border-radius: 20px;
         background: #fff;
+        border: none;
+        .col-6 {
+            // border-top: 1px solid #e6e4e4;
+            margin-top: 20px;
+            .height_info_chart {
+                height: 295px;
+                .level_chart {
+                    height: 33.33%;
+                    position: relative;
+                    hr {
+                        margin: 0;
+                        position: absolute;
+                        border-top-color: 1px solid #e6e4e4;
+                        bottom: 0;
+                        width: 380px;
+                        right: 0;
+                        z-index: 1;
+                    }
+                    hr.top {
+                        bottom: unset;
+                        top: 0;
+                        width: 554px;
+                    }
+                    p {
+                        font-weight: normal;
+                        font-size: 14px;
+                        text-align: right;
+                        color: #4d4d4d;
+                        margin-bottom: 0;
+                        display: block;
+                    }
+                    h1 {
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-align: right;
+                        color: #4d4d4d;
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                    }
+                    small {
+                        font-weight: bold;
+                        font-size: 12px;
+                        text-align: right;
+                        color: #fd8377;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 
 .row_ventas_campaigns {
+    .card {
+        border: none;
+    }
     .card_1 {
         height: 381px;
         border-radius: 20px;

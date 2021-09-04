@@ -65,6 +65,73 @@ let option = {
 
 stackedChart.setOption(option);
 
+// Stacked line Forecast chart (cobrado / inversión /ventas)
+let stackedChartForecast = echarts.init(document.getElementById('stacked-line-forecast'));
+let option_stacked_forecast = {
+
+    grid: {
+        left: '1%',
+        right: '2%',
+        bottom: '3%',
+        containLabel: true
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    // Add legend
+    legend: {
+        data: ['Cobrado', 'Inversión', 'Ventas']
+    },
+
+    // Add custom colors
+    color: ['#49e83c', '#ffd800', '#4d4d4d'],
+
+    // Enable drag recalculate
+    calculable: true,
+
+    // Hirozontal axis
+    xAxis: [{
+        type: 'category',
+        boundaryGap: false,
+        data: [
+            'Día 1', 'Día 2', 'Día 3', 'Día 4'
+        ]
+    }],
+
+    // Vertical axis
+    yAxis: [{
+        type: 'value'
+    }],
+
+    // Add series
+    series: [{
+            name: 'Cobrado',
+            type: 'line',
+            stack: 'Total',
+            data: [100, 254, 125, 105, 90, 235, 215]
+        },
+        {
+            name: 'Inversión',
+            type: 'line',
+            stack: 'Total',
+            data: [255, 465, 190, 245, 215, 345, 350]
+        },
+        {
+            name: 'Ventas',
+            type: 'line',
+            stack: 'Total',
+            data: [100, 545, 300, 358, 199, 325, 400]
+        }
+    ],
+    lineStyle: {
+        width: 10
+    }
+    // Add series
+
+};
+
+stackedChartForecast.setOption(option_stacked_forecast);
+
 //Stacked line chart (Venta emitida)
 let stackedChart2 = echarts.init(document.getElementById('behavior-campaign-stacked-line'));
 let option2 = {
@@ -595,68 +662,44 @@ let options_funnel_data = {
 
     tooltip: {
         trigger: 'item',
-        formatter: "{b} : {c}"
+        formatter: "{a} <br/> {b} : {c}%"
     },
     toolbox: {
 
     },
-    legend: {
-        data: ['Inversión total', 'Total de ventas', 'Total de cobros']
-    },
+
     // Add custom colors
-    color: ['#FF6F61', '#F68A52', '#FFBE2C'],
-    series: [{
-            name: 'data',
-            type: 'funnel',
-            left: '5%',
-            width: '70%',
-            label: {
-                formatter: "{b}:{c}"
-            },
-            labelLine: {
-                show: false
-            },
-            itemStyle: {
-                opacity: 0.7
-            },
-            emphasis: {
-                label: {
-                    position: 'inside',
-                    formatter: '{b}:{c}'
-                }
-            },
-            data: [
-                { value: 56701, name: 'Total de cobros' },
-                { value: 70633, name: 'Total de ventas' },
-                { value: 350000, name: 'Inversión total' }
-            ]
-        },
+    color: ['#FFBE2C', '#F68A52', '#FF6F61'],
+    series: [
+
         {
-            name: 'data2',
+            name: '$340,000',
             type: 'funnel',
+            top: '0',
             left: '0%',
-            width: '80%',
-            maxSize: '80%',
+            width: '100%',
+            maxSize: '100%',
             label: {
                 position: 'inside',
-                formatter: '{c}',
-                color: '#000'
+                formatter: '{c}%',
+                color: '#000',
+                labelFontWeight: "bold",
+                fontWeight: "bold",
             },
             itemStyle: {
-                opacity: 0.5,
-                borderColor: '#fff',
+                opacity: 1,
                 borderWidth: 2
             },
             emphasis: {
                 label: {
                     position: 'inside',
-                    formatter: '{b}: {c}'
+                    formatter: '{b}: {c}%'
                 }
             },
             data: [
-                { value: 56501, name: 'Total de cobros' },
-                { value: 70500, name: 'Total de ventas' },
-                { value: 340000, name: 'Inversión total' }
+                { value: 100, name: 'Inversion total' },
+                { value: 20.73, name: 'Total ventas' },
+                { value: 16.66, name: 'Total cobros' }
             ],
             // Ensure outer shape will not be over inner shape when hover.
             z: 100
@@ -678,4 +721,5 @@ window.addEventListener('resize', function() {
     horarios_double_bar.resize();
     rendimiento_mixed_chart.resize();
     funnel_ventas_inversiones_chart.resize();
+    stackedChartForecast.resize();
 })

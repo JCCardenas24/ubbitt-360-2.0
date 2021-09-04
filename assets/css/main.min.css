@@ -305,6 +305,29 @@ a.logo img {
   text-decoration: underline;
 }
 
+.preloader-capa {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-capa img {
+  width: 120px;
+  height: auto;
+}
+
+.wrapper_container_preload {
+  position: relative;
+}
+
 audio {
   display: block;
   margin: auto;
@@ -1471,6 +1494,7 @@ audio {
 .balance_inversion_ventas_cobrado .card_ttls {
   height: 94px;
   background: #f4f4f4;
+  border-radius: 15px 15px 0 0;
 }
 
 .balance_inversion_ventas_cobrado .card_ttls h3 {
@@ -1551,12 +1575,28 @@ audio {
   margin: 0;
 }
 
+.balance_inversion_ventas_cobrado .border_radius_bottom {
+  border-radius: 0 0 15px 15px;
+}
+
 .radio_button_forecast_actual {
   width: 100%;
   height: 67px;
   border-radius: 15px;
   background: #f8f8f8;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.radio_button_forecast_actual label {
+  font-size: 14px;
+  text-align: left;
+  color: #4d4d4d;
+  margin-bottom: 0;
+  margin-left: 60px;
 }
 
 .gray_gradient_card {
@@ -1589,11 +1629,76 @@ audio {
   color: #fff;
 }
 
+.row_behavior_campaigns .funnel_chart {
+  z-index: 2;
+}
+
 .row_behavior_campaigns .card {
   padding: 26px 25px 0;
   height: 414px;
   border-radius: 20px;
   background: #fff;
+  border: none;
+}
+
+.row_behavior_campaigns .card .col-6 {
+  margin-top: 20px;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart {
+  height: 295px;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart {
+  height: 33.33%;
+  position: relative;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart hr {
+  margin: 0;
+  position: absolute;
+  border-top-color: 1px solid #e6e4e4;
+  bottom: 0;
+  width: 380px;
+  right: 0;
+  z-index: 1;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart hr.top {
+  bottom: unset;
+  top: 0;
+  width: 554px;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart p {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: right;
+  color: #4d4d4d;
+  margin-bottom: 0;
+  display: block;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart h1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+  color: #4d4d4d;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.row_behavior_campaigns .card .col-6 .height_info_chart .level_chart small {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: right;
+  color: #fd8377;
+  display: block;
+}
+
+.row_ventas_campaigns .card {
+  border: none;
 }
 
 .row_ventas_campaigns .card_1 {

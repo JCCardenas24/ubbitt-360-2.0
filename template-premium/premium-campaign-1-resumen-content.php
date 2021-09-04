@@ -90,7 +90,7 @@
                     <p>Ventas</p>
                 </div>
             </div>
-            <div class="row balance_info_forecast_actual ml-0 mr-0">
+            <div class="row balance_info_forecast_actual ml-0 mr-0 border_radius_bottom">
                 <div class="col-6 lr">
                     <h2>$20,000</h2>
                 </div>
@@ -104,8 +104,19 @@
         </div>
     </div>
     <div class="col-8">
-        <div class="radio_button_forecast_actual"></div>
-        <div id="stacked-line" style="height:400px;"></div>
+        <div class="radio_button_forecast_actual">
+            <input type="radio" value="false" name="selected_chart" id="pemp_yes" checked>
+            <label for="pemp_yes">Actual</label>
+            <input type="radio" value="true" name="selected_chart" id="pemp_no">
+            <label for="pemp_no">Forecast</label>
+        </div>
+        <div class="chart_actual">
+            <div id="stacked-line" style="height:400px;"></div>
+        </div>
+        <div class="chart_forecast" style="display: none;">
+            <!-- <p>otra gráfica</p> -->
+            <div id="stacked-line-forecast" style="height:400px;"></div>
+        </div>
     </div>
 </div>
 
@@ -180,8 +191,31 @@
 
 <div class="row ml-0 mr-0 row_behavior_campaigns">
     <div class="col-6">
-        <div class="card">
-            <div id="funel_inversiones_ventas_chart" style="height:360px;"></div>
+        <div class="row ml-0 mr-0 card">
+            <div class="col-6">
+                <div class="funnel_chart" id="funel_inversiones_ventas_chart" style="height:360px;"></div>
+            </div>
+            <div class="col-6">
+                <div class="height_info_chart">
+                    <div class="level_chart">
+                        <p>Inversión total</p>
+                        <h1>$350,000</h1>
+                        <hr class="top">
+                        <hr>
+                    </div>
+                    <div class="level_chart">
+                        <p>Total de ventas</p>
+                        <h1>$70,633</h1>
+                        <small>300</small>
+                        <hr>
+                    </div>
+                    <div class="level_chart">
+                        <p>Total de cobros</p>
+                        <h1>$56, 701</h1>
+                        <small>200</small>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-6">
