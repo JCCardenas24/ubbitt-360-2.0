@@ -36,7 +36,7 @@
                 </ul>
             </li>
             <!-- Ubiitt Premium -->
-            <li class="treeview menu-open">
+            <li class="treeview">
                 <a href="#" class="wrapper_main_ttl_view">
                     <i class="ri-pie-chart-2-fill"><span class="path1"></span><span class="path2"></span></i>
                     <!-- <i class="icon-Write"></i> -->
@@ -45,16 +45,16 @@
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
-                <ul class="treeview-menu" style="display: block;">
-                <li><a href="#" class="li_first_level current"><i class="icon-Commit c-transparent"><span
+                <ul class="treeview-menu" >
+                <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Campaña 1</a></li>
-                    <li><a id="brief-campaign-1_side_menu" href="#brief-campaign-1" class="li_second_level side-menu-link-redirect font-weight-bold"><i class="icon-Commit c-transparent"><span
+                    <li><a id="brief-campaign-1_side_menu" href="dashboard-premium-campaign-1.php#brief-campaign-1" class="li_second_level side-menu-link-redirect "><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Brief</a></li>
-                    <li><a id="resumen-campaign-1_side_menu" href="#resumen-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="resumen-campaign-1_side_menu" href="dashboard-premium-campaign-1.php#resumen-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a id="marketing-campaign-1_side_menu" href="#marketing-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="marketing-campaign-1_side_menu" href="dashboard-premium-campaign-1.php#marketing-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Marketing</a></li>
-                                    <li><a id="call-center-campaign-1_side_menu" href="#call-center-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    <li><a id="call-center-campaign-1_side_menu" href="dashboard-premium-campaign-1.php#call-center-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
                     <br>
                     <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
@@ -82,7 +82,7 @@
 
             </li>
             <!-- Ubbitt Beyond -->
-            <li class="treeview">
+            <li class="treeview  menu-open">
                 <a href="#" class="wrapper_main_ttl_view">
                     <i class="ri-pie-chart-2-fill"><span class="path1"></span><span class="path2"></span></i>
                     <!-- <i class="icon-Write"></i> -->
@@ -91,16 +91,16 @@
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
-                <ul class="treeview-menu">
-                    <li><a href="" class="li_first_level"><i class="icon-Commit c-transparent"><span
+                <ul class="treeview-menu" style="display: block;">
+                    <li><a href="" class="li_first_level current"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Cobranza</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-resumen" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="cobranza-resumen_side_menu" href="#cobranza-resumen" class="li_second_level side-menu-link-redirect font-weight-bold"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-callcenter" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="cobranza-callcenter_side_menu" href="#cobranza-callcenter" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="cobranza-reportes_side_menu" href="#cobranza-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Reportes</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-carga-base-datos" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="cobranza-carga-base-datos_side_menu" href="#cobranza-carga-base-datos" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Carga de base de datos</a></li>
                     <br>
                     <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
