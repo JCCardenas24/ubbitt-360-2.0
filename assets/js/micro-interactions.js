@@ -36,25 +36,31 @@ $("input[name='selected_chart']").on("click", function() {
     console.log("cambios");
 });
 
+// from tab menu to side menu
+$('.level-three .nav-link').on('shown.bs.tab', function(event) {
+    let current_href = ($(this).attr('href'));
+    let create_id = current_href.substring(1) + "_side_menu";
+    console.log("ID: " + create_id);
+    $(".side-menu-link-redirect").removeClass("font-weight-bold");
+    $("#" + create_id).addClass("font-weight-bold");
+
+})
+
+//href nav tabs
+// Javascript to enable link to tab
+
+let hash = location.hash.replace(/^#/, ''); // ^ means starting, meaning only match the first hash
+
+if (hash) {
+    console.log(hash);
+    $('a[href="#' + hash + '"]').tab('show');
+}
 
 
 
-// Activate bold class <li> side-menu
-$('#freemium-inbound-resumen-tab').on('shown.bs.tab', function(event) {
-    event.target // newly activated tab
-    event.relatedTarget // previous active tab
-    $(".options_inbound_freemium").removeClass("font-weight-bold");
-    $("#li_resumen_inbound_freemium").addClass("font-weight-bold");
-})
-$('#freemium-inbound-call-center-tab').on('shown.bs.tab', function(event) {
-    event.target // newly activated tab
-    event.relatedTarget // previous active tab
-    $(".options_inbound_freemium").removeClass("font-weight-bold");
-    $("#li_call_center_inbound_freemium").addClass("font-weight-bold");
-})
-$('#freemium-inbound-reportes-tab').on('shown.bs.tab', function(event) {
-    event.target // newly activated tab
-    event.relatedTarget // previous active tab
-    $(".options_inbound_freemium").removeClass("font-weight-bold");
-    $("#li_reportes_inbound_freemium").addClass("font-weight-bold");
-})
+$(".side-menu-link-redirect").click(function() {
+    let current_href = ($(this).attr('href'));
+    // console.log(current_href);
+    $('a[href="' + current_href + '"]').tab('show');
+
+});

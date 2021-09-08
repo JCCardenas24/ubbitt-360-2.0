@@ -10,7 +10,7 @@
 <body class=" light-skin sidebar-mini theme-primary">
     <div class="wrapper">
         <?php include_once('./template/header.php') ?>
-        <?php include_once('./template/side-menu.php') ?>
+        <?php include_once('./template/side-menu-premium.php') ?>
         <div class="content-wrapper">
             <div class="container container-premium" id="dynamic-tabs">
                 <ul class="nav nav-pills level_one level-one-premium" id="main_tabs_panels" role="tablist">

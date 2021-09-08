@@ -22,7 +22,7 @@
                     <li class="nav-item" role="presentation">
                         <!-- <a class="nav-link" id="premium-tab" data-toggle="pill" href="#premium" role="tab"
                             aria-controls="premium" aria-selected="false">Ubbitt Premium</a> -->
-                        <a class="nav-link" id="premium-tab" href="dashboard-premium-campaigns.php">Ubbitt Premium</a>
+                        <a class="nav-link" id="premium-tab" href="dashboard-premium-campaign-1.php">Ubbitt Premium</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link " id="freemium_option-tab" href="dashboard-freemium.php">Ubbitt Freemium</a>
@@ -32,7 +32,7 @@
                 <div class="tab-content" id="main_tabs_panelsContent">
                     <div class="tab-pane fade show active" id="beyond_option" role="tabpanel"
                         aria-labelledby="beyond_option-tab">
-                        <?php include_once('./template-beyond/home-beyond.php') ?>
+                        <?php include_once('./template-beyond/home-beyond-cobranza.php') ?>
                     </div>
                    
 

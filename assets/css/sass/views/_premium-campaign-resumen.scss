@@ -196,11 +196,15 @@
                         width: 380px;
                         right: 0;
                         z-index: 1;
+                        @media only screen and (max-width: 1366px) {
+                            width: 340px;
+                            bottom: -2px;
+                        }
                     }
                     hr.top {
                         bottom: unset;
                         top: 0;
-                        width: 554px;
+                        width: 450px;
                     }
                     p {
                         font-weight: normal;

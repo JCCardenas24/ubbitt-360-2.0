@@ -21,10 +21,11 @@
                     <li class="nav-item" role="presentation">
                         <!-- <a class="nav-link" id="premium-tab" data-toggle="pill" href="#premium" role="tab"
                             aria-controls="premium" aria-selected="false">Ubbitt Premium</a> -->
-                        <a class="nav-link" id="premium-tab" href="dashboard-premium-campaigns.php">Ubbitt Premium</a>
+
+                        <a class="nav-link" id="premium-tab" href="dashboard-premium-campaign-1.php">Ubbitt Premium</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="beyond_option-tab" href="dashboard-beyond-cobranza.php">Ubbitt
+                        <a class="nav-link" id="beyond_option-tab" href="dashboard-beyond-cobranza.php">  Ubbitt
                             Beyond</a>
                     </li>
                 </ul>
