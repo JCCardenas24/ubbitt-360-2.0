@@ -330,7 +330,7 @@ basicdoughnut_concentrado_ventas.setOption(options);
 
 
 
-$('#premium-resumen-campaign-1-tab').on('shown.bs.tab', function(event) {
+$('#resumen-campaign-1-tab').on('shown.bs.tab', function(event) {
     event.target // newly activated tab
     event.relatedTarget // previous active tab
     stackedChart.resize();
@@ -649,7 +649,7 @@ let options_redimiento_data = {
 
 rendimiento_mixed_chart.setOption(options_redimiento_data);
 
-$('#premium-marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
+$('#marketing-campaign-1-tab').on('shown.bs.tab', function(event) {
     event.target // newly activated tab
     event.relatedTarget // previous active tab
     rendimiento_mixed_chart.resize();
