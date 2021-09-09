@@ -1482,10 +1482,6 @@ form#add_new_lead .form-control {
     color: #151515;
 }
 
-.theme-primary.light-skin .sidebar-menu>li.active a {
-    color: #151515 !important;
-}
-
 .ref-menu:hover {
     color: #151515 !important;
 }

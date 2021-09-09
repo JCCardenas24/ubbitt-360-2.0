@@ -10,7 +10,7 @@
 <body class="light-skin sidebar-mini theme-primary">
     <div class="wrapper">
         <?php include_once('./template/header.php') ?>
-        <?php include_once('./template/side-menu.php') ?>
+        <?php include_once('./template/side-menu-perfil.php') ?>
         <div class="content-wrapper">
             <div class="container perfil_cards">
                 <h1>Mis datos</h1>
