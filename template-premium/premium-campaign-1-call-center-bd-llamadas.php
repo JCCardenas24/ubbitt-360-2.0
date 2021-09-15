@@ -82,6 +82,6 @@
     </ul>
   </nav>
 
-  <!-- preloader -->
-  <?php include_once('./preloader.php') ?>
+  <!--modal preloader -->
+  <?php include_once('./modal-preload.php') ?>
 </div>
