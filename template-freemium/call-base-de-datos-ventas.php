@@ -39,6 +39,42 @@
       <td>$0.00</td>
       <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
     </tr>
+    <tr>
+      <th scope="row">340</th>
+      <td>Juan Pérez</td>
+      <td>5545698976</td>
+      <td>correo@mail.com</td>
+      <td>Autos</td>
+      <td>CT</td>
+      <td>00000000</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">340</th>
+      <td>Juan Pérez</td>
+      <td>5545698976</td>
+      <td>correo@mail.com</td>
+      <td>Autos</td>
+      <td>CT</td>
+      <td>00000000</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <th scope="row">340</th>
+      <td>Juan Pérez</td>
+      <td>5545698976</td>
+      <td>correo@mail.com</td>
+      <td>Autos</td>
+      <td>CT</td>
+      <td>00000000</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+    </tr>
     
   </tbody>
 </table>
