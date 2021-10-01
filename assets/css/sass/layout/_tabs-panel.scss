@@ -132,3 +132,22 @@
     color: #959595;
     font-weight: normal;
 }
+
+.pagination .page-link:hover {
+    background-color: black !important;
+    opacity: 0.8;
+}
+
+.footer_table {
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    small {
+        color: #151515;
+        font-weight: 600;
+    }
+}
+
+.pagination.justify-content-end {
+    margin: 0;
+}

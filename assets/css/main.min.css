@@ -267,6 +267,26 @@ a.logo img {
   font-weight: normal;
 }
 
+.pagination .page-link:hover {
+  background-color: black !important;
+  opacity: 0.8;
+}
+
+.footer_table {
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.footer_table small {
+  color: #151515;
+  font-weight: 600;
+}
+
+.pagination.justify-content-end {
+  margin: 0;
+}
+
 .main-footer {
   padding: 0 0 10px 0;
   text-align: center;

@@ -1711,13 +1711,19 @@ table.table tbody {
     padding: 9px;
 }
 
-.pagination .page-link {
+
+/* .pagination .page-link {
     background-color: black;
     color: white;
-}
+} */
 
-.pagination .page-link:hover {
+.page-item.active .page-link {
     background-color: black;
+    border-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-custom-menu {

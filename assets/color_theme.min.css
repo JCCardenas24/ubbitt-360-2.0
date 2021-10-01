@@ -827,12 +827,16 @@ Theme Primary Color
 }
 
 /*---Main Nav---*/
-.theme-primary .sm-blue li.current > a, .theme-primary .sm-blue li.highlighted > a {
+.theme-primary .sm-blue li.current > a,
+.theme-primary .sm-blue li.highlighted > a {
   background: #6384ea;
   color: #ffffff !important;
 }
 
-.theme-primary .sm-blue li.current > a:hover, .theme-primary .sm-blue li.current > a:active, .theme-primary .sm-blue li.current > a:focus, .theme-primary .sm-blue li.highlighted > a:hover, .theme-primary .sm-blue li.highlighted > a:active, .theme-primary .sm-blue li.highlighted > a:focus {
+.theme-primary .sm-blue li.current > a:hover, .theme-primary .sm-blue li.current > a:active, .theme-primary .sm-blue li.current > a:focus,
+.theme-primary .sm-blue li.highlighted > a:hover,
+.theme-primary .sm-blue li.highlighted > a:active,
+.theme-primary .sm-blue li.highlighted > a:focus {
   background: #6384ea;
   color: #ffffff !important;
 }
@@ -3112,18 +3116,6 @@ Theme Primary Color
 }
 
 /*---control---*/
-.theme-primary .control input:checked:focus ~ .control_indicator {
-  background-color: #6384ea;
-}
-
-.theme-primary .control input:checked ~ .control_indicator {
-  background-color: #6384ea;
-}
-
-.theme-primary .control:hover input:not([disabled]):checked ~ .control_indicator {
-  background-color: #6384ea;
-}
-
 /*---flex---*/
 .theme-primary .flex-column > li > a.nav-link.active {
   border-left-color: #6384ea;
@@ -3139,31 +3131,12 @@ Theme Primary Color
   background-color: #6384ea;
 }
 
-.theme-primary .pagination li a.current:hover {
-  border: 1px solid #6384ea;
-  background-color: #6384ea;
-}
-
-.theme-primary .pagination li a:hover {
-  border: 1px solid #3661e4;
-  background-color: #3661e4 !important;
-}
-
 .theme-primary .dataTables_wrapper .dataTables_paginate .paginate_button.current {
   border: 1px solid #6384ea;
   background-color: #6384ea;
 }
 
-.theme-primary .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  border: 1px solid #6384ea;
-  background-color: #6384ea;
-}
-
 .theme-primary .paging_simple_numbers .pagination .paginate_button.active a {
-  background-color: #6384ea;
-}
-
-.theme-primary .paging_simple_numbers .pagination .paginate_button:hover a {
   background-color: #6384ea;
 }
 

@@ -1,94 +1,102 @@
 /**************************************
 Theme Primary Color
 **************************************/
-.bg-gradient-primary  
-{
-	background: $theme-primary-grd;
+
+.bg-gradient-primary {
+    background: $theme-primary-grd;
 }
-.bg-light-body  {
+
+.bg-light-body {
     background: #f8f8f8;
 }
-.theme-primary{ 
-    .bg-gradient-primary{@extend .bg-gradient-primary}
-    .art-bg{@extend .bg-gradient-primary}
-    &.fixed {        
+
+.theme-primary {
+    .bg-gradient-primary {
+        @extend .bg-gradient-primary
+    }
+    .art-bg {
+        @extend .bg-gradient-primary
+    }
+    &.fixed {
         .main-header {
             @extend .bg-light-body
         }
     }
-    .main-header{
+    .main-header {
         @extend .bg-light-body
     }
 }
 
-.theme-primary.onlyheader .art-bg{
-	background-image: none;
+.theme-primary.onlyheader .art-bg {
+    background-image: none;
 }
 
-.bg-gradient-primary-dark
-{
-	background-image: $theme-primary-grd-dark;
+.bg-gradient-primary-dark {
+    background-image: $theme-primary-grd-dark;
 }
-.bg-dark-body  {
+
+.bg-dark-body {
     background: $body-dark;
 }
-.dark-skin{
-&.theme-primary{ 
-    .bg-gradient-primary{@extend .bg-gradient-primary-dark}
-    .art-bg{@extend .bg-gradient-primary-dark}
-    &.fixed {        
+
+.dark-skin {
+    &.theme-primary {
+        .bg-gradient-primary {
+            @extend .bg-gradient-primary-dark
+        }
+        .art-bg {
+            @extend .bg-gradient-primary-dark
+        }
+        &.fixed {
+            .main-header {
+                @extend .bg-dark-body
+            }
+        }
         .main-header {
             @extend .bg-dark-body
         }
     }
-    .main-header{
-        @extend .bg-dark-body
-    }
-}
 }
 
 // Small devices
 @include screen-sm-max {
-    .theme-primary{ 
-        &.fixed {        
+    .theme-primary {
+        &.fixed {
             .main-header {
                 background-image: $light3;
-                &.navbar{
+                &.navbar {
                     background: none;
                 }
             }
-        }        
-    }
-        
-    .dark-skin{
-    &.theme-primary{ 
-        &.fixed {        
-            .main-header {
-                background-image: $body-dark;
-            }
         }
     }
+    .dark-skin {
+        &.theme-primary {
+            &.fixed {
+                .main-header {
+                    background-image: $body-dark;
+                }
+            }
+        }
     }
 }
 
-
-.theme-primary{
-    a{          
-        @include hover-state{
+.theme-primary {
+    a {
+        @include hover-state {
             color: $theme-primary-primary;
-        }         
+        }
     }
-    
-    .main-sidebar{        
+    .main-sidebar {
         .svg-icon {
             filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
-            @include hover-state{
+            @include hover-state {
                 filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
             }
         }
-        a  {
-            @include hover-state{
-                .svg-icon{
+        a {
+            @include hover-state {
+                .svg-icon {
                     filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
                 }
             }
@@ -96,55 +104,56 @@ Theme Primary Color
     }
     .svg-icon {
         filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
-        @include hover-state{
+        @include hover-state {
             filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
         }
     }
-    a  {
-        @include hover-state{
-            .svg-icon{
+    a {
+        @include hover-state {
+            .svg-icon {
                 filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
             }
         }
     }
 }
-.theme-primary{
+
+.theme-primary {
     &.light-skin {
-        .sidebar-menu{
-            >li{
+        .sidebar-menu {
+            >li {
                 &.active.treeview {
-                    >a{
+                    >a {
                         background: transparent;
                         color: $dark-text !important;
-                        > i{
-                           color: $theme-primary-primary; 
+                        >i {
+                            color: $theme-primary-primary;
                         }
-                        > svg{
-                           color: $theme-primary-primary; 
+                        >svg {
+                            color: $theme-primary-primary;
                             fill: rgba(1, 104, 250, 0.2);
                         }
-                        &:after{
+                        &:after {
                             border-color: transparent #fafafa transparent transparent !important;
                         }
                     }
                 }
-                &.treeview{
-                    .treeview-menu{
-                        li{
-                            a{
+                &.treeview {
+                    .treeview-menu {
+                        li {
+                            a {
                                 color: $dark-text;
                             }
                         }
                     }
                 }
-            } 
+            }
         }
-         &.sidebar-mini{
-            &.sidebar-collapse{
-                .sidebar-menu{
-                    >li.active{
-                        >a{
-                            >span{
+        &.sidebar-mini {
+            &.sidebar-collapse {
+                .sidebar-menu {
+                    >li.active {
+                        >a {
+                            >span {
                                 background: $theme-primary-primary !important;
                             }
                         }
@@ -153,171 +162,168 @@ Theme Primary Color
             }
         }
     }
-    
     &.dark-skin {
-        .sidebar-menu{
-            >li{
-                &.active{
-                    >a{
-                        &:after{
+        .sidebar-menu {
+            >li {
+                &.active {
+                    >a {
+                        &:after {
                             border-color: transparent lighten($black, 20%) transparent transparent !important;
                         }
                     }
                     &.treeview {
-                        >a{
+                        >a {
                             background: transparent;
                             color: $dark-text !important;
-                            > i{
-                               color: $theme-primary-primary; 
+                            >i {
+                                color: $theme-primary-primary;
                             }
-                            &:after{
+                            &:after {
                                 border-color: transparent #fafafa transparent transparent !important;
                             }
                         }
-                        .treeview-menu{
-                            li{
-                                a{
+                        .treeview-menu {
+                            li {
+                                a {
                                     color: $dark-text;
                                 }
                             }
                         }
                     }
                 }
-            } 
+            }
         }
-    }    
+    }
     &.light-skin {
-        .sidebar-menu{
-            >li{
-                @include hover-active-state{                    
+        .sidebar-menu {
+            >li {
+                @include hover-active-state {
                     background-color: rgba($theme-primary-primary, 0.0);
                     color: rgba($theme-primary-primary, 1);
                     border-left: 0px solid rgba($theme-primary-primary, 0);
-                    a{
+                    a {
                         color: rgba($theme-primary-primary, 1);
                     }
                 }
-                &.active{
+                &.active {
                     background-color: rgba($theme-primary-primary, 0.0);
                     color: rgba($theme-primary-primary, 1);
                     border-left: 0px solid rgba($theme-primary-primary, 0);
-                    a{
+                    a {
                         color: rgba($theme-primary-primary, 1);
                         background-color: transparent;
-                        > i{
-                           color: $theme-primary-primary ;
-                           background-color: rgba($theme-primary-primary, 0) ;
-                        }                        
-                        > svg{
-                           color: $theme-primary-primary; 
+                        >i {
+                            color: $theme-primary-primary;
+                            background-color: rgba($theme-primary-primary, 0);
+                        }
+                        >svg {
+                            color: $theme-primary-primary;
                             fill: rgba(1, 104, 250, 0.2);
                         }
-                        img.svg-icon
-                        {                            
+                        img.svg-icon {
                             filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
                         }
                     }
-                    .treeview-menu{
-                        li.active{
+                    .treeview-menu {
+                        li.active {
                             background-color: rgba($theme-primary-primary, 0.0);
                             color: rgba($theme-primary-primary, 1);
-                            a{
-                                color: rgba($theme-primary-primary, 1);                                
-                                > i{
-                                   color: rgba($theme-primary-primary, 1) ;
-                                   background-color: rgba($theme-primary-primary, 0) ;
-                                } 
-                            }
-                        }
-                        li{
-                            a{                                
-                                > i{
-                                   color: $dark-text;
-                                   background-color: rgba($theme-primary-primary, 0) ;
-                                } 
-                            }
-                        }
-                        li.treeview{
-                            &.active{
-                                background-color: rgba($theme-primary-primary, 0.0);
+                            a {
                                 color: rgba($theme-primary-primary, 1);
-                                a{
-                                    color: rgba($theme-primary-primary, 1);                                
-                                    > i{
-                                       color: rgba($theme-primary-primary, 1) ;
-                                       background-color: rgba($theme-primary-primary, 0) ;
-                                    } 
+                                >i {
+                                    color: rgba($theme-primary-primary, 1);
+                                    background-color: rgba($theme-primary-primary, 0);
                                 }
                             }
-                            .treeview-menu{
-                                li{                                    
-                                    &.active{
+                        }
+                        li {
+                            a {
+                                >i {
+                                    color: $dark-text;
+                                    background-color: rgba($theme-primary-primary, 0);
+                                }
+                            }
+                        }
+                        li.treeview {
+                            &.active {
+                                background-color: rgba($theme-primary-primary, 0.0);
+                                color: rgba($theme-primary-primary, 1);
+                                a {
+                                    color: rgba($theme-primary-primary, 1);
+                                    >i {
+                                        color: rgba($theme-primary-primary, 1);
+                                        background-color: rgba($theme-primary-primary, 0);
+                                    }
+                                }
+                            }
+                            .treeview-menu {
+                                li {
+                                    &.active {
                                         background-color: rgba($theme-primary-primary, 0.0);
                                         color: rgba($theme-primary-primary, 1);
-                                        a{
-                                            color: rgba($theme-primary-primary, 1);                                
-                                            > i{
-                                               color: rgba($theme-primary-primary, 1) ;
-                                               background-color: rgba($theme-primary-primary, 0) ;
-                                            } 
+                                        a {
+                                            color: rgba($theme-primary-primary, 1);
+                                            >i {
+                                                color: rgba($theme-primary-primary, 1);
+                                                background-color: rgba($theme-primary-primary, 0);
+                                            }
                                         }
                                     }
-                                    a{    
-                                        color: $dark ;
-                                        > i{
-                                           color: $dark ;
-                                           background-color: rgba($theme-primary-primary, 0) ;
-                                        } 
+                                    a {
+                                        color: $dark;
+                                        >i {
+                                            color: $dark;
+                                            background-color: rgba($theme-primary-primary, 0);
+                                        }
                                     }
                                 }
                             }
                         }
                     }
                 }
-            } 
+            }
         }
     }
     &.dark-skin {
-        .sidebar-menu{
-            >li{
-                &.active{
+        .sidebar-menu {
+            >li {
+                &.active {
                     background-color: rgba($theme-primary-primary, 0.0);
                     color: rgba($theme-primary-primary, 1);
-                    a{
+                    a {
                         color: rgba($theme-primary-primary, 1);
                         background-color: transparent;
-                        > i{
-                           color: rgba($theme-primary-primary, 1) ;
+                        >i {
+                            color: rgba($theme-primary-primary, 1);
                         }
-                        > svg{
-                           color: $theme-primary-primary; 
+                        >svg {
+                            color: $theme-primary-primary;
                             fill: rgba(1, 104, 250, 0.2);
-                        }                        
-                        img.svg-icon
-                        {                            
+                        }
+                        img.svg-icon {
                             filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
                         }
                     }
-                    .treeview-menu{
-                        li.active{
+                    .treeview-menu {
+                        li.active {
                             background-color: rgba($theme-primary-primary, 0.0);
                             color: rgba($theme-primary-primary, 1);
-                            a{
+                            a {
                                 color: rgba($theme-primary-primary, 1) !important;
                             }
                         }
                     }
                 }
-            } 
+            }
         }
     }
 }
 
-@include screen-md { 
-    .sidebar-mini{
-        &.sidebar-collapse{
-            .sidebar-menu{
-                >li.active.menu-open{
+@include screen-md {
+    .sidebar-mini {
+        &.sidebar-collapse {
+            .sidebar-menu {
+                >li.active.menu-open {
                     background-color: rgba($theme-primary-primary, 0.2);
                     color: rgba($theme-primary-primary, 1);
                 }
@@ -325,36 +331,41 @@ Theme Primary Color
         }
     }
 }
+
+
 /*---Main Nav---*/
-.theme-primary{
-    .sm-blue{        
-        li.current, li.highlighted{
-            > a{
+
+.theme-primary {
+    .sm-blue {
+        li.current,
+        li.highlighted {
+            >a {
                 background: $theme-primary-primary;
                 color: $white !important;
-                @include hover-state{
+                @include hover-state {
                     background: $theme-primary-primary;
                     color: $white !important;
                 }
             }
         }
-        a{
-            &.current, &.highlighted{
+        a {
+            &.current,
+            &.highlighted {
                 background: $theme-primary-primary;
                 color: $white !important;
             }
-            @include hover-state{
+            @include hover-state {
                 background: $theme-primary-primary;
                 color: $white !important;
             }
         }
-        ul{
-            a{
-                @include hover-state{
+        ul {
+            a {
+                @include hover-state {
                     background: $light2;
                     color: $theme-primary-primary !important;
                 }
-                &.highlighted{
+                &.highlighted {
                     background: $light2;
                     color: $theme-primary-primary !important;
                 }
@@ -362,27 +373,29 @@ Theme Primary Color
         }
     }
 }
-.dark-skin{
-    &.theme-primary{
-        .sm-blue{
-            a{
-                &.current, &.highlighted{
+
+.dark-skin {
+    &.theme-primary {
+        .sm-blue {
+            a {
+                &.current,
+                &.highlighted {
                     background: $theme-primary-primary;
                     color: $white !important;
                 }
-                @include hover-state{
+                @include hover-state {
                     background: $theme-primary-primary;
                     color: $white !important;
                 }
             }
-            ul{
-                a{
-                    @include hover-state{
-                        background: darken($dark2,25%);
+            ul {
+                a {
+                    @include hover-state {
+                        background: darken($dark2, 25%);
                         color: $theme-primary-primary !important;
                     }
-                    &.highlighted{ 
-                        background: darken($dark2,25%);
+                    &.highlighted {
+                        background: darken($dark2, 25%);
                         color: $theme-primary-primary !important;
                     }
                 }
@@ -390,7 +403,10 @@ Theme Primary Color
         }
     }
 }
-    /*---Primary Button---*/
+
+
+/*---Primary Button---*/
+
 .theme-primary {
     .btn-link {
         color: $theme-primary-primary;
@@ -399,11 +415,11 @@ Theme Primary Color
         background-color: $theme-primary-primary;
         border-color: $theme-primary-primary;
         color: $white;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: darken($theme-primary-primary, 10%) !important;
             border-color: darken($theme-primary-primary, 10%) !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-primary, 20%);
             border-color: $theme-primary-primary;
@@ -415,64 +431,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-primary{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-primary, 10%) !important;
-            border-color: darken($theme-primary-primary, 10%) !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-primary{
-        color: $theme-primary-primary;
-        background-color: transparent;
-        border-color: $theme-primary-primary !important;        
-        @include hover-active-state{
-            background-color: darken($theme-primary-primary, 10%) !important;
-            border-color: darken($theme-primary-primary, 10%) !important;
-            color: $white !important;
+    .show> {
+        .btn-primary {
+            &.dropdown-toggle {
+                background-color: darken($theme-primary-primary, 10%) !important;
+                border-color: darken($theme-primary-primary, 10%) !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-primary{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-primary, 10%) !important;
-            border-color: darken($theme-primary-primary, 10%) !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-primary{
-        color: $theme-primary-primary !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: darken($theme-primary-primary, 10%) !important;
-            border-color: darken($theme-primary-primary, 10%) !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-primary {
+            color: $theme-primary-primary;
+            background-color: transparent;
+            border-color: $theme-primary-primary !important;
+            @include hover-active-state {
+                background-color: darken($theme-primary-primary, 10%) !important;
+                border-color: darken($theme-primary-primary, 10%) !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-primary {
+                &.dropdown-toggle {
+                    background-color: darken($theme-primary-primary, 10%) !important;
+                    border-color: darken($theme-primary-primary, 10%) !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-primary {
+            color: $theme-primary-primary !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: darken($theme-primary-primary, 10%) !important;
+                border-color: darken($theme-primary-primary, 10%) !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---info Button---*/
+
 .theme-primary {
     .btn-info {
         background-color: $theme-primary-info;
         border-color: $theme-primary-info;
         color: $white;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: darken($theme-primary-info, 10%) !important;
             border-color: darken($theme-primary-info, 10%) !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-info, 20%);
             border-color: $theme-primary-info;
@@ -484,64 +501,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-info{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-info, 10%) !important;
-            border-color: darken($theme-primary-info, 10%) !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-info{
-        color: $theme-primary-info;
-        background-color: transparent;
-        border-color: $theme-primary-info !important;        
-        @include hover-active-state{
-            background-color: darken($theme-primary-info, 10%) !important;
-            border-color: darken($theme-primary-info, 10%) !important;
-            color: $white !important;
+    .show> {
+        .btn-info {
+            &.dropdown-toggle {
+                background-color: darken($theme-primary-info, 10%) !important;
+                border-color: darken($theme-primary-info, 10%) !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-info{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-info, 10%) !important;
-            border-color: darken($theme-primary-info, 10%) !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-info{
-        color: $theme-primary-info !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: darken($theme-primary-info, 10%) !important;
-            border-color: darken($theme-primary-info, 10%) !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-info {
+            color: $theme-primary-info;
+            background-color: transparent;
+            border-color: $theme-primary-info !important;
+            @include hover-active-state {
+                background-color: darken($theme-primary-info, 10%) !important;
+                border-color: darken($theme-primary-info, 10%) !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-info {
+                &.dropdown-toggle {
+                    background-color: darken($theme-primary-info, 10%) !important;
+                    border-color: darken($theme-primary-info, 10%) !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-info {
+            color: $theme-primary-info !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: darken($theme-primary-info, 10%) !important;
+                border-color: darken($theme-primary-info, 10%) !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---Success Button---*/
+
 .theme-primary {
     .btn-success {
         background-color: $theme-primary-success;
         border-color: $theme-primary-success;
         color: $white;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: darken($theme-primary-success, 10%) !important;
             border-color: darken($theme-primary-success, 10%) !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-success, 20%);
             border-color: $theme-primary-success;
@@ -553,65 +571,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-success{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-success, 10%) !important;
-            border-color: darken($theme-primary-success, 10%) !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-success{
-        color: $theme-primary-success;
-        background-color: transparent;
-        border-color: $theme-primary-success !important;        
-        @include hover-active-state{
-            background-color: darken($theme-primary-success, 10%) !important;
-            border-color: darken($theme-primary-success, 10%) !important;
-            color: $white !important;
+    .show> {
+        .btn-success {
+            &.dropdown-toggle {
+                background-color: darken($theme-primary-success, 10%) !important;
+                border-color: darken($theme-primary-success, 10%) !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-success{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-success, 10%) !important;
-            border-color: darken($theme-primary-success, 10%) !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-success{
-        color: $theme-primary-success !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: darken($theme-primary-success, 10%) !important;
-            border-color: darken($theme-primary-success, 10%) !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-success {
+            color: $theme-primary-success;
+            background-color: transparent;
+            border-color: $theme-primary-success !important;
+            @include hover-active-state {
+                background-color: darken($theme-primary-success, 10%) !important;
+                border-color: darken($theme-primary-success, 10%) !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-success {
+                &.dropdown-toggle {
+                    background-color: darken($theme-primary-success, 10%) !important;
+                    border-color: darken($theme-primary-success, 10%) !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-success {
+            color: $theme-primary-success !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: darken($theme-primary-success, 10%) !important;
+                border-color: darken($theme-primary-success, 10%) !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
 
 /*---Danger Button---*/
+
 .theme-primary {
     .btn-danger {
         background-color: $theme-primary-danger;
         border-color: $theme-primary-danger;
         color: $white;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: darken($theme-primary-danger, 10%) !important;
             border-color: darken($theme-primary-danger, 10%) !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-danger, 20%);
             border-color: $theme-primary-danger;
@@ -623,64 +641,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-danger{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-danger, 10%) !important;
-            border-color: darken($theme-primary-danger, 10%) !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-danger{
-        color: $theme-primary-danger;
-        background-color: transparent;
-        border-color: $theme-primary-danger !important;        
-        @include hover-active-state{
-            background-color: darken($theme-primary-danger, 10%) !important;
-            border-color: darken($theme-primary-danger, 10%) !important;
-            color: $white !important;
+    .show> {
+        .btn-danger {
+            &.dropdown-toggle {
+                background-color: darken($theme-primary-danger, 10%) !important;
+                border-color: darken($theme-primary-danger, 10%) !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-danger{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-danger, 10%) !important;
-            border-color: darken($theme-primary-danger, 10%) !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-danger{
-        color: $theme-primary-danger !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: darken($theme-primary-danger, 10%) !important;
-            border-color: darken($theme-primary-danger, 10%) !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-danger {
+            color: $theme-primary-danger;
+            background-color: transparent;
+            border-color: $theme-primary-danger !important;
+            @include hover-active-state {
+                background-color: darken($theme-primary-danger, 10%) !important;
+                border-color: darken($theme-primary-danger, 10%) !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-danger {
+                &.dropdown-toggle {
+                    background-color: darken($theme-primary-danger, 10%) !important;
+                    border-color: darken($theme-primary-danger, 10%) !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-danger {
+            color: $theme-primary-danger !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: darken($theme-primary-danger, 10%) !important;
+                border-color: darken($theme-primary-danger, 10%) !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---Warning Button---*/
+
 .theme-primary {
     .btn-warning {
         background-color: $theme-primary-warning;
         border-color: $theme-primary-warning;
         color: $white;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: darken($theme-primary-warning, 10%) !important;
             border-color: darken($theme-primary-warning, 10%) !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-warning, 20%);
             border-color: $theme-primary-warning;
@@ -692,64 +711,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-warning{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-warning, 10%) !important;
-            border-color: darken($theme-primary-warning, 10%) !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-warning{
-        color: $theme-primary-warning;
-        background-color: transparent;
-        border-color: $theme-primary-warning !important;        
-        @include hover-active-state{
-            background-color: darken($theme-primary-warning, 10%) !important;
-            border-color: darken($theme-primary-warning, 10%) !important;
-            color: $white !important;
+    .show> {
+        .btn-warning {
+            &.dropdown-toggle {
+                background-color: darken($theme-primary-warning, 10%) !important;
+                border-color: darken($theme-primary-warning, 10%) !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-warning{
-        &.dropdown-toggle{
-            background-color: darken($theme-primary-warning, 10%) !important;
-            border-color: darken($theme-primary-warning, 10%) !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-warning{
-        color: $theme-primary-warning !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: darken($theme-primary-warning, 10%) !important;
-            border-color: darken($theme-primary-warning, 10%) !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-warning {
+            color: $theme-primary-warning;
+            background-color: transparent;
+            border-color: $theme-primary-warning !important;
+            @include hover-active-state {
+                background-color: darken($theme-primary-warning, 10%) !important;
+                border-color: darken($theme-primary-warning, 10%) !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-warning {
+                &.dropdown-toggle {
+                    background-color: darken($theme-primary-warning, 10%) !important;
+                    border-color: darken($theme-primary-warning, 10%) !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-warning {
+            color: $theme-primary-warning !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: darken($theme-primary-warning, 10%) !important;
+                border-color: darken($theme-primary-warning, 10%) !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---Primary Button light---*/
+
 .theme-primary {
     .btn-primary-light {
         background-color: $theme-primary-primary-lite;
         border-color: $theme-primary-primary-lite;
         color: $theme-primary-primary;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: $theme-primary-primary !important;
             border-color: $theme-primary-primary !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-primary-lite, 20%);
             border-color: $theme-primary-primary-lite;
@@ -761,64 +781,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-primary-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-primary !important;
-            border-color: $theme-primary-primary !important;
-            color: $white ;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-primary-light{
-        color: $theme-primary-primary;
-        background-color: transparent;
-        border-color: $theme-primary-primary-lite !important;        
-        @include hover-active-state{
-            background-color: $theme-primary-primary !important;
-            border-color: $theme-primary-primary !important;
-            color: $white !important;
+    .show> {
+        .btn-primary-light {
+            &.dropdown-toggle {
+                background-color: $theme-primary-primary !important;
+                border-color: $theme-primary-primary !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-primary-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-primary !important;
-            border-color: $theme-primary-primary !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-primary-light{
-        color: $theme-primary-primary !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: $theme-primary-primary !important;
-            border-color: $theme-primary-primary !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-primary-light {
+            color: $theme-primary-primary;
+            background-color: transparent;
+            border-color: $theme-primary-primary-lite !important;
+            @include hover-active-state {
+                background-color: $theme-primary-primary !important;
+                border-color: $theme-primary-primary !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-primary-light {
+                &.dropdown-toggle {
+                    background-color: $theme-primary-primary !important;
+                    border-color: $theme-primary-primary !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-primary-light {
+            color: $theme-primary-primary !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: $theme-primary-primary !important;
+                border-color: $theme-primary-primary !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---info Button light---*/
+
 .theme-primary {
     .btn-info-light {
         background-color: $theme-primary-info-lite;
         border-color: $theme-primary-info-lite;
         color: $theme-primary-info;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: $theme-primary-info !important;
             border-color: $theme-primary-info !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-info-lite, 20%);
             border-color: $theme-primary-info-lite;
@@ -830,64 +851,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-info{
-        &.dropdown-toggle{
-            background-color: $theme-primary-info !important;
-            border-color: $theme-primary-info !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-info-light{
-        color: $theme-primary-info;
-        background-color: transparent;
-        border-color: $theme-primary-info-lite !important;        
-        @include hover-active-state{
-            background-color: $theme-primary-info !important;
-            border-color: $theme-primary-info !important;
-            color: $white !important;
+    .show> {
+        .btn-info {
+            &.dropdown-toggle {
+                background-color: $theme-primary-info !important;
+                border-color: $theme-primary-info !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-info-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-info !important;
-            border-color: $theme-primary-info !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-info-light{
-        color: $theme-primary-info !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: $theme-primary-info !important;
-            border-color: $theme-primary-info !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-info-light {
+            color: $theme-primary-info;
+            background-color: transparent;
+            border-color: $theme-primary-info-lite !important;
+            @include hover-active-state {
+                background-color: $theme-primary-info !important;
+                border-color: $theme-primary-info !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-info-light {
+                &.dropdown-toggle {
+                    background-color: $theme-primary-info !important;
+                    border-color: $theme-primary-info !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-info-light {
+            color: $theme-primary-info !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: $theme-primary-info !important;
+                border-color: $theme-primary-info !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---Success Button light---*/
+
 .theme-primary {
     .btn-success-light {
         background-color: $theme-primary-success-lite;
         border-color: $theme-primary-success-lite;
         color: $theme-primary-success;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: $theme-primary-success !important;
             border-color: $theme-primary-success !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-success-lite, 20%);
             border-color: $theme-primary-success-lite;
@@ -899,65 +921,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-success-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-success !important;
-            border-color: $theme-primary-success !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-success-light{
-        color: $theme-primary-success;
-        background-color: transparent;
-        border-color: $theme-primary-success-lite !important;        
-        @include hover-active-state{
-            background-color: $theme-primary-success !important;
-            border-color: $theme-primary-success !important;
-            color: $white !important;
+    .show> {
+        .btn-success-light {
+            &.dropdown-toggle {
+                background-color: $theme-primary-success !important;
+                border-color: $theme-primary-success !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-success-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-success !important;
-            border-color: $theme-primary-success !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-success-light{
-        color: $theme-primary-success !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: $theme-primary-success !important;
-            border-color: $theme-primary-success !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-success-light {
+            color: $theme-primary-success;
+            background-color: transparent;
+            border-color: $theme-primary-success-lite !important;
+            @include hover-active-state {
+                background-color: $theme-primary-success !important;
+                border-color: $theme-primary-success !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-success-light {
+                &.dropdown-toggle {
+                    background-color: $theme-primary-success !important;
+                    border-color: $theme-primary-success !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-success-light {
+            color: $theme-primary-success !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: $theme-primary-success !important;
+                border-color: $theme-primary-success !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
 
 /*---Danger Button light---*/
+
 .theme-primary {
     .btn-danger-light {
         background-color: $theme-primary-danger-lite;
         border-color: $theme-primary-danger-lite;
         color: $theme-primary-danger;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: $theme-primary-danger !important;
             border-color: $theme-primary-danger !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-danger-lite, 20%);
             border-color: $theme-primary-danger-lite;
@@ -969,64 +991,65 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-danger-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-danger !important;
-            border-color: $theme-primary-danger !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-danger-light{
-        color: $theme-primary-danger;
-        background-color: transparent;
-        border-color: $theme-primary-danger-lite !important;        
-        @include hover-active-state{
-            background-color: $theme-primary-danger !important;
-            border-color: $theme-primary-danger !important;
-            color: $white !important;
+    .show> {
+        .btn-danger-light {
+            &.dropdown-toggle {
+                background-color: $theme-primary-danger !important;
+                border-color: $theme-primary-danger !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-danger-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-danger !important;
-            border-color: $theme-primary-danger !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-danger-light{
-        color: $theme-primary-danger !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: $theme-primary-danger !important;
-            border-color: $theme-primary-danger !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-danger-light {
+            color: $theme-primary-danger;
+            background-color: transparent;
+            border-color: $theme-primary-danger-lite !important;
+            @include hover-active-state {
+                background-color: $theme-primary-danger !important;
+                border-color: $theme-primary-danger !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-danger-light {
+                &.dropdown-toggle {
+                    background-color: $theme-primary-danger !important;
+                    border-color: $theme-primary-danger !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-danger-light {
+            color: $theme-primary-danger !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: $theme-primary-danger !important;
+                border-color: $theme-primary-danger !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
+
 /*---Warning Button light---*/
+
 .theme-primary {
     .btn-warning-light {
         background-color: $theme-primary-warning-lite;
         border-color: $theme-primary-warning-lite;
         color: $theme-primary-warning;
-        @include hover-full-state{
+        @include hover-full-state {
             background-color: $theme-primary-warning !important;
             border-color: $theme-primary-warning !important;
             color: $white !important;
-        } 
+        }
         &:disabled {
             background-color: lighten($theme-primary-warning-lite, 20%);
             border-color: $theme-primary-warning-lite;
@@ -1038,185 +1061,186 @@ Theme Primary Color
             opacity: 0.5;
         }
     }
-    .show > {
-        .btn-warning-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-warning !important;
-            border-color: $theme-primary-warning !important;
-            color: $white;
-        }    
-        }
-        
-    }
-    .btn-outline{
-    &.btn-warning-light{
-        color: $theme-primary-warning;
-        background-color: transparent;
-        border-color: $theme-primary-warning-lite !important;        
-        @include hover-active-state{
-            background-color: $theme-primary-warning !important;
-            border-color: $theme-primary-warning !important;
-            color: $white !important;
+    .show> {
+        .btn-warning-light {
+            &.dropdown-toggle {
+                background-color: $theme-primary-warning !important;
+                border-color: $theme-primary-warning !important;
+                color: $white;
+            }
         }
     }
-    }
-    .show > {
-        .btn-outline{
-        &.btn-warning-light{
-        &.dropdown-toggle{
-            background-color: $theme-primary-warning !important;
-            border-color: $theme-primary-warning !important;
-            color: $white;
-        }    
-        }
-        }
-    }
-    .btn-flat{
-    &.btn-warning-light{
-        color: $theme-primary-warning !important;
-        background-color: $light3;
-        border-color: transparent;
-        @include hover-active-state{
-            background-color: $theme-primary-warning !important;
-            border-color: $theme-primary-warning !important;
-            color: $white !important;
+    .btn-outline {
+        &.btn-warning-light {
+            color: $theme-primary-warning;
+            background-color: transparent;
+            border-color: $theme-primary-warning-lite !important;
+            @include hover-active-state {
+                background-color: $theme-primary-warning !important;
+                border-color: $theme-primary-warning !important;
+                color: $white !important;
+            }
         }
     }
+    .show> {
+        .btn-outline {
+            &.btn-warning-light {
+                &.dropdown-toggle {
+                    background-color: $theme-primary-warning !important;
+                    border-color: $theme-primary-warning !important;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .btn-flat {
+        &.btn-warning-light {
+            color: $theme-primary-warning !important;
+            background-color: $light3;
+            border-color: transparent;
+            @include hover-active-state {
+                background-color: $theme-primary-warning !important;
+                border-color: $theme-primary-warning !important;
+                color: $white !important;
+            }
+        }
     }
 }
 
-    /*---callout---*/
-.theme-primary{
-    .callout{
-    &.callout-primary {
+
+/*---callout---*/
+
+.theme-primary {
+    .callout {
+        &.callout-primary {
+            border-color: $theme-primary-primary;
+            background-color: $theme-primary-primary !important;
+        }
+        &.callout-info {
+            border-color: $theme-primary-info;
+            background-color: $theme-primary-info !important;
+        }
+        &.callout-success {
+            border-color: $theme-primary-success;
+            background-color: $theme-primary-success !important;
+        }
+        &.callout-danger {
+            border-color: $theme-primary-danger;
+            background-color: $theme-primary-danger !important;
+        }
+        &.callout-warning {
+            border-color: $theme-primary-warning;
+            background-color: $theme-primary-warning !important;
+        }
+    }
+}
+
+
+/*---alert---*/
+
+.theme-primary {
+    .alert-primary {
         border-color: $theme-primary-primary;
         background-color: $theme-primary-primary !important;
-    }
-        
-    &.callout-info {
-        border-color: $theme-primary-info;
-        background-color: $theme-primary-info !important;
-    }
-        
-    &.callout-success {
-        border-color: $theme-primary-success;
-        background-color: $theme-primary-success !important;
-    }
-        
-    &.callout-danger {
-        border-color: $theme-primary-danger;
-        background-color: $theme-primary-danger !important;
-    }
-        
-    &.callout-warning {
-        border-color: $theme-primary-warning;
-        background-color: $theme-primary-warning !important;
-    }
-    }
-}
-
-    /*---alert---*/
-.theme-primary{
-    .alert-primary{
-        border-color: $theme-primary-primary;
-        background-color: $theme-primary-primary !important;
         color: $white;
     }
-    .alert-info{
+    .alert-info {
         border-color: $theme-primary-info;
         background-color: $theme-primary-info !important;
         color: $white;
     }
-    .alert-success{
+    .alert-success {
         border-color: $theme-primary-success;
         background-color: $theme-primary-success !important;
         color: $white;
     }
-    .alert-danger{
+    .alert-danger {
         border-color: $theme-primary-danger;
         background-color: $theme-primary-danger !important;
         color: $white;
     }
-    .alert-error{
+    .alert-error {
         border-color: $theme-primary-danger;
         background-color: $theme-primary-danger !important;
         color: $white;
     }
-    .alert-warning{
+    .alert-warning {
         border-color: $theme-primary-warning;
         background-color: $theme-primary-warning !important;
         color: $white;
     }
 }
 
-    /*---direct-chat---*/
+
+/*---direct-chat---*/
+
 .theme-primary {
     .direct-chat-primary {
-        .right > {
+        .right> {
             .direct-chat-text {
                 p {
                     background-color: $theme-primary-primary;
                     color: $white;
                 }
-                @include before-after-state{
+                @include before-after-state {
                     border-left-color: $theme-primary-primary;
                 }
             }
         }
     }
     .direct-chat-info {
-        .right > {
+        .right> {
             .direct-chat-text {
                 p {
                     background-color: $theme-primary-info;
                     color: $white;
                 }
-                @include before-after-state{
+                @include before-after-state {
                     border-left-color: $theme-primary-info;
                 }
             }
         }
     }
     .direct-chat-success {
-        .right > {
+        .right> {
             .direct-chat-text {
                 p {
                     background-color: $theme-primary-success;
                     color: $white;
                 }
-                @include before-after-state{
+                @include before-after-state {
                     border-left-color: $theme-primary-success;
                 }
             }
         }
     }
     .direct-chat-danger {
-        .right > {
+        .right> {
             .direct-chat-text {
                 p {
                     background-color: $theme-primary-danger;
                     color: $white;
                 }
-                @include before-after-state{
+                @include before-after-state {
                     border-left-color: $theme-primary-danger;
                 }
             }
         }
     }
     .direct-chat-warning {
-        .right > {
+        .right> {
             .direct-chat-text {
                 p {
                     background-color: $theme-primary-warning;
                     color: $white;
                 }
-                @include before-after-state{
+                @include before-after-state {
                     border-left-color: $theme-primary-warning;
                 }
             }
         }
     }
-    .right{
+    .right {
         .direct-chat-text {
             p {
                 background-color: $theme-primary-primary;
@@ -1225,66 +1249,70 @@ Theme Primary Color
     }
 }
 
-    /*---modal---*/
-.theme-primary{
+
+/*---modal---*/
+
+.theme-primary {
     .modal-primary {
-        .modal-footer{
+        .modal-footer {
             border-color: $theme-primary-primary;
         }
-        .modal-header{
-            @extend .modal-footer 
+        .modal-header {
+            @extend .modal-footer
         }
-        .modal-body{
+        .modal-body {
             background-color: $theme-primary-primary !important;
         }
     }
     .modal-info {
-        .modal-footer{
+        .modal-footer {
             border-color: $theme-primary-info;
         }
-        .modal-header{
-            @extend .modal-footer 
+        .modal-header {
+            @extend .modal-footer
         }
-        .modal-body{
+        .modal-body {
             background-color: $theme-primary-info !important;
         }
     }
     .modal-success {
-        .modal-footer{
+        .modal-footer {
             border-color: $theme-primary-success;
         }
-        .modal-header{
-            @extend .modal-footer 
+        .modal-header {
+            @extend .modal-footer
         }
-        .modal-body{
+        .modal-body {
             background-color: $theme-primary-success !important;
         }
     }
     .modal-danger {
-        .modal-footer{
+        .modal-footer {
             border-color: $theme-primary-danger;
         }
-        .modal-header{
-            @extend .modal-footer 
+        .modal-header {
+            @extend .modal-footer
         }
-        .modal-body{
+        .modal-body {
             background-color: $theme-primary-danger !important;
         }
     }
     .modal-warning {
-        .modal-footer{
+        .modal-footer {
             border-color: $theme-primary-warning;
         }
-        .modal-header{
-            @extend .modal-footer 
+        .modal-header {
+            @extend .modal-footer
         }
-        .modal-body{
+        .modal-body {
             background-color: $theme-primary-warning !important;
         }
     }
 }
 
-    /*---border---*/
+
+/*---border---*/
+
 .theme-primary {
     .border-primary {
         border-color: $theme-primary-primary !important;
@@ -1303,451 +1331,441 @@ Theme Primary Color
     }
 }
 
-    /*---Background---*/
+
+/*---Background---*/
+
 .theme-primary {
     .bg-primary {
-      background-color: $theme-primary-primary !important;
-      color: $white;
+        background-color: $theme-primary-primary !important;
+        color: $white;
     }
     .bg-primary-light {
-      background-color: $theme-primary-primary-lite !important;
-      color: $theme-primary-primary;
+        background-color: $theme-primary-primary-lite !important;
+        color: $theme-primary-primary;
     }
     .bg-info {
-      background-color: $theme-primary-info !important;
-      color: $white;
+        background-color: $theme-primary-info !important;
+        color: $white;
     }
     .bg-info-light {
-      background-color: $theme-primary-info-lite !important;
-      color: $theme-primary-info;
+        background-color: $theme-primary-info-lite !important;
+        color: $theme-primary-info;
     }
     .bg-success {
-      background-color: $theme-primary-success !important;
-      color: $white;
+        background-color: $theme-primary-success !important;
+        color: $white;
     }
     .bg-success-light {
-      background-color: $theme-primary-success-lite !important;
-      color: $theme-primary-success;
+        background-color: $theme-primary-success-lite !important;
+        color: $theme-primary-success;
     }
     .bg-danger {
-      background-color: $theme-primary-danger !important;
-      color: $white;
+        background-color: $theme-primary-danger !important;
+        color: $white;
     }
     .bg-danger-light {
-      background-color: $theme-primary-danger-lite !important;
-      color: $theme-primary-danger;
+        background-color: $theme-primary-danger-lite !important;
+        color: $theme-primary-danger;
     }
     .bg-warning {
-      background-color: $theme-primary-warning !important;
-      color: $white;
+        background-color: $theme-primary-warning !important;
+        color: $white;
     }
     .bg-warning-light {
-      background-color: $theme-primary-warning-lite !important;
-      color: $theme-primary-warning;
+        background-color: $theme-primary-warning-lite !important;
+        color: $theme-primary-warning;
     }
 }
 
-    /*---text---*/
+
+/*---text---*/
+
 .theme-primary {
     .text-primary {
-      color: $theme-primary-primary !important;
+        color: $theme-primary-primary !important;
     }
-    a{
-    &.text-primary{
-        @include hover-focus-state{
-            color: $theme-primary-primary !important;    
+    a {
+        &.text-primary {
+            @include hover-focus-state {
+                color: $theme-primary-primary !important;
+            }
         }
     }
-    }
-    .hover-primary{
-        @include hover-focus-state{
-            color: $theme-primary-primary !important;    
+    .hover-primary {
+        @include hover-focus-state {
+            color: $theme-primary-primary !important;
         }
     }
-    
     .text-info {
-      color: $theme-primary-info !important;
+        color: $theme-primary-info !important;
     }
-    a{
-    &.text-info{
-        @include hover-focus-state{
-            color: $theme-primary-info !important;    
+    a {
+        &.text-info {
+            @include hover-focus-state {
+                color: $theme-primary-info !important;
+            }
         }
     }
-    }
-    .hover-info{
-        @include hover-focus-state{
-            color: $theme-primary-info !important;    
+    .hover-info {
+        @include hover-focus-state {
+            color: $theme-primary-info !important;
         }
     }
-    
     .text-success {
-      color: $theme-primary-success !important;
+        color: $theme-primary-success !important;
     }
-    a{
-    &.text-success{
-        @include hover-focus-state{
-            color: $theme-primary-success !important;    
+    a {
+        &.text-success {
+            @include hover-focus-state {
+                color: $theme-primary-success !important;
+            }
         }
     }
-    }
-    .hover-success{
-        @include hover-focus-state{
-            color: $theme-primary-success !important;    
+    .hover-success {
+        @include hover-focus-state {
+            color: $theme-primary-success !important;
         }
     }
-    
     .text-danger {
-      color: $theme-primary-danger !important;
+        color: $theme-primary-danger !important;
     }
-    a{
-    &.text-danger{
-        @include hover-focus-state{
-            color: $theme-primary-danger !important;    
+    a {
+        &.text-danger {
+            @include hover-focus-state {
+                color: $theme-primary-danger !important;
+            }
         }
     }
-    }
-    .hover-danger{
-        @include hover-focus-state{
-            color: $theme-primary-danger !important;    
+    .hover-danger {
+        @include hover-focus-state {
+            color: $theme-primary-danger !important;
         }
     }
-    
     .text-warning {
-      color: $theme-primary-warning !important;
+        color: $theme-primary-warning !important;
     }
-    a{
-    &.text-warning{
-        @include hover-focus-state{
-            color: $theme-primary-warning !important;    
+    a {
+        &.text-warning {
+            @include hover-focus-state {
+                color: $theme-primary-warning !important;
+            }
         }
     }
-    }
-    .hover-warning{
-        @include hover-focus-state{
-            color: $theme-primary-warning !important;    
+    .hover-warning {
+        @include hover-focus-state {
+            color: $theme-primary-warning !important;
         }
     }
 }
 
-    /*---active background---*/
+
+/*---active background---*/
+
 .theme-primary {
-    .active{
-    &.active-primary {
-        background-color: darken($theme-primary-primary, 10%) !important;
-    }
-    &.active-info {
-        background-color: darken($theme-primary-info, 10%) !important;
-    }
-    &.active-success {
-        background-color: darken($theme-primary-success, 10%) !important;
-    }
-    &.active-danger {
-        background-color: darken($theme-primary-danger, 10%) !important;
-    }
-    &.active-warning {
-        background-color: darken($theme-primary-warning, 10%) !important;
-    }
+    .active {
+        &.active-primary {
+            background-color: darken($theme-primary-primary, 10%) !important;
+        }
+        &.active-info {
+            background-color: darken($theme-primary-info, 10%) !important;
+        }
+        &.active-success {
+            background-color: darken($theme-primary-success, 10%) !important;
+        }
+        &.active-danger {
+            background-color: darken($theme-primary-danger, 10%) !important;
+        }
+        &.active-warning {
+            background-color: darken($theme-primary-warning, 10%) !important;
+        }
     }
 }
 
-    /*---label background---*/
+
+/*---label background---*/
+
 .theme-primary {
-    .label-primary{
+    .label-primary {
         background-color: $theme-primary-primary !important;
     }
-    .label-info{
+    .label-info {
         background-color: $theme-primary-info !important;
     }
-    .label-success{
+    .label-success {
         background-color: $theme-primary-success !important;
     }
-    .label-danger{
+    .label-danger {
         background-color: $theme-primary-danger !important;
     }
-    .label-warning{
+    .label-warning {
         background-color: $theme-primary-warning !important;
     }
 }
 
-    /*---ribbon---*/
+
+/*---ribbon---*/
 
 $ribbon-bod-w: 3px;
 $ribbon-bod-s: solid;
-
 .theme-primary {
     .ribbon-box {
         .ribbon-primary {
             background-color: $theme-primary-primary;
-            
-            &:before  {
+            &:before {
                 border-color: $theme-primary-primary transparent transparent;
             }
         }
-        .ribbon-two-primary{
-            span{
-                background-color: $theme-primary-primary; 
-            &:before{
-                border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);    
-            }
-            &:after{
-                border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);    
-            }
+        .ribbon-two-primary {
+            span {
+                background-color: $theme-primary-primary;
+                &:before {
+                    border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);
+                }
+                &:after {
+                    border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-primary, 10%);
+                }
             }
         }
-        
         .ribbon-info {
             background-color: $theme-primary-info;
-            
-            &:before  {
+            &:before {
                 border-color: $theme-primary-info transparent transparent;
             }
         }
-        .ribbon-two-info{
-            span{
-                background-color: $theme-primary-info; 
-            &:before{
-                border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);    
-            }
-            &:after{
-                border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);    
-            }
+        .ribbon-two-info {
+            span {
+                background-color: $theme-primary-info;
+                &:before {
+                    border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);
+                }
+                &:after {
+                    border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-info, 10%);
+                }
             }
         }
-        
         .ribbon-success {
             background-color: $theme-primary-success;
-            
-            &:before  {
+            &:before {
                 border-color: $theme-primary-success transparent transparent;
             }
         }
-        .ribbon-two-success{
-            span{
-                background-color: $theme-primary-success; 
-            &:before{
-                border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);    
-            }
-            &:after{
-                border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);    
-            }
+        .ribbon-two-success {
+            span {
+                background-color: $theme-primary-success;
+                &:before {
+                    border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);
+                }
+                &:after {
+                    border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-success, 10%);
+                }
             }
         }
-        
         .ribbon-danger {
             background-color: $theme-primary-danger;
-            
-            &:before  {
+            &:before {
                 border-color: $theme-primary-danger transparent transparent;
             }
         }
-        .ribbon-two-danger{
-            span{
-                background-color: $theme-primary-danger; 
-            &:before{
-                border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);    
-            }
-            &:after{
-                border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);    
-            }
+        .ribbon-two-danger {
+            span {
+                background-color: $theme-primary-danger;
+                &:before {
+                    border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);
+                }
+                &:after {
+                    border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-danger, 10%);
+                }
             }
         }
-        
         .ribbon-warning {
             background-color: $theme-primary-warning;
-            
-            &:before  {
+            &:before {
                 border-color: $theme-primary-warning transparent transparent;
             }
         }
-        .ribbon-two-warning{
-            span{
-                background-color: $theme-primary-warning; 
-            &:before{
-                border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);    
-            }
-            &:after{
-                border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);  
-                border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);    
-            }
+        .ribbon-two-warning {
+            span {
+                background-color: $theme-primary-warning;
+                &:before {
+                    border-left: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);
+                }
+                &:after {
+                    border-right: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);
+                    border-top: $ribbon-bod-w $ribbon-bod-s darken($theme-primary-warning, 10%);
+                }
             }
         }
     }
 }
 
-    /*---Box---*/
+
+/*---Box---*/
+
 $box-bod-w: 1px;
 $box-bod-s: solid;
-
-.theme-primary{ 
+.theme-primary {
     .box-primary {
         background-color: $theme-primary-primary !important;
-    &.box-bordered{
-        border-color: $theme-primary-primary;
-    }
+        &.box-bordered {
+            border-color: $theme-primary-primary;
+        }
     }
     .box-outline-primary {
         background-color: $white;
         border: $box-bod-w $box-bod-s $theme-primary-primary;
     }
-    .box{
-    &.box-solid{
-    &.box-primary > {
-        .box-header {
-            color: $white;
-            background-color: $theme-primary-primary;
-            .btn{
-                color: $white;    
-            }
-            > a{
-                color: $white;                  
+    .box {
+        &.box-solid {
+            &.box-primary> {
+                .box-header {
+                    color: $white;
+                    background-color: $theme-primary-primary;
+                    .btn {
+                        color: $white;
+                    }
+                    >a {
+                        color: $white;
+                    }
+                }
             }
         }
     }
-    }
-    }
-     
     .box-info {
         background-color: $theme-primary-info !important;
-    &.box-bordered{
-        border-color: $theme-primary-info;
-    }
+        &.box-bordered {
+            border-color: $theme-primary-info;
+        }
     }
     .box-outline-info {
         background-color: $white;
         border: $box-bod-w $box-bod-s $theme-primary-info;
     }
-    .box{
-    &.box-solid{
-    &.box-info > {
-        .box-header {
-            color: $white;
-            background-color: $theme-primary-info;
-            .btn{
-                color: $white;    
-            }
-            > a{
-                color: $white;                  
+    .box {
+        &.box-solid {
+            &.box-info> {
+                .box-header {
+                    color: $white;
+                    background-color: $theme-primary-info;
+                    .btn {
+                        color: $white;
+                    }
+                    >a {
+                        color: $white;
+                    }
+                }
             }
         }
     }
-    }
-    }
-     
     .box-success {
         background-color: $theme-primary-success !important;
-    &.box-bordered{
-        border-color: $theme-primary-success;
-    }
+        &.box-bordered {
+            border-color: $theme-primary-success;
+        }
     }
     .box-outline-success {
         background-color: $white;
         border: $box-bod-w $box-bod-s $theme-primary-success;
     }
-    .box{
-    &.box-solid{
-    &.box-success > {
-        .box-header {
-            color: $white;
-            background-color: $theme-primary-success;
-            .btn{
-                color: $white;    
-            }
-            > a{
-                color: $white;                  
+    .box {
+        &.box-solid {
+            &.box-success> {
+                .box-header {
+                    color: $white;
+                    background-color: $theme-primary-success;
+                    .btn {
+                        color: $white;
+                    }
+                    >a {
+                        color: $white;
+                    }
+                }
             }
         }
     }
-    }
-    }
-     
     .box-danger {
         background-color: $theme-primary-danger !important;
-    &.box-bordered{
-        border-color: $theme-primary-danger;
-    }
+        &.box-bordered {
+            border-color: $theme-primary-danger;
+        }
     }
     .box-outline-danger {
         background-color: $white;
         border: $box-bod-w $box-bod-s $theme-primary-danger;
     }
-    .box{
-    &.box-solid{
-    &.box-danger > {
-        .box-header {
-            color: $white;
-            background-color: $theme-primary-danger;
-            .btn{
-                color: $white;    
-            }
-            > a{
-                color: $white;                  
+    .box {
+        &.box-solid {
+            &.box-danger> {
+                .box-header {
+                    color: $white;
+                    background-color: $theme-primary-danger;
+                    .btn {
+                        color: $white;
+                    }
+                    >a {
+                        color: $white;
+                    }
+                }
             }
         }
     }
-    }
-    }
-     
     .box-warning {
         background-color: $theme-primary-warning !important;
-    &.box-bordered{
-        border-color: $theme-primary-warning;
-    }
+        &.box-bordered {
+            border-color: $theme-primary-warning;
+        }
     }
     .box-outline-warning {
         background-color: $white;
         border: $box-bod-w $box-bod-s $theme-primary-warning;
     }
-    .box{
-    &.box-solid{
-    &.box-warning > {
-        .box-header {
-            color: $white;
-            background-color: $theme-primary-warning;
-            .btn{
-                color: $white;    
-            }
-            > a{
-                color: $white;                  
+    .box {
+        &.box-solid {
+            &.box-warning> {
+                .box-header {
+                    color: $white;
+                    background-color: $theme-primary-warning;
+                    .btn {
+                        color: $white;
+                    }
+                    >a {
+                        color: $white;
+                    }
+                }
             }
         }
     }
-    }
-    }
-    
-    
     .box-profile {
         .social-states {
-            a{
-            &:hover {
-                color: darken($theme-primary-primary, 10%);
-            }
+            a {
+                &:hover {
+                    color: darken($theme-primary-primary, 10%);
+                }
             }
         }
     }
     .box-controls {
-        li > {
-            a{
-            &:hover {
-                color: darken($theme-primary-primary, 10%);
-            }
+        li> {
+            a {
+                &:hover {
+                    color: darken($theme-primary-primary, 10%);
+                }
             }
         }
         .dropdown {
-        &.show > {
-            a {
-                color: darken($theme-primary-primary, 10%);
+            &.show> {
+                a {
+                    color: darken($theme-primary-primary, 10%);
+                }
             }
-        }
         }
     }
     .box-fullscreen {
@@ -1757,7 +1775,9 @@ $box-bod-s: solid;
     }
 }
 
-    /*---progress bar---*/
+
+/*---progress bar---*/
+
 .theme-primary {
     .progress-bar-primary {
         background-color: $theme-primary-primary;
@@ -1775,17 +1795,20 @@ $box-bod-s: solid;
         background-color: $theme-primary-warning;
     }
 }
-    /*---panel---*/
+
+
+/*---panel---*/
+
 .theme-primary {
     .panel-primary {
         border-color: $theme-primary-primary;
-        > .panel-heading {
+        >.panel-heading {
             color: $white;
             background-color: $theme-primary-primary;
             border-color: $theme-primary-primary;
-            + .panel-collapse {
-                > .panel-body {
-                  border-top-color: $theme-primary-primary;
+            +.panel-collapse {
+                >.panel-body {
+                    border-top-color: $theme-primary-primary;
                 }
             }
             .badge-pill {
@@ -1800,35 +1823,34 @@ $box-bod-s: solid;
             @extend .panel-title
         }
         .panel-footer {
-            + .panel-collapse {
-                > .panel-body {
-                  border-bottom-color: $theme-primary-primary;
+            +.panel-collapse {
+                >.panel-body {
+                    border-bottom-color: $theme-primary-primary;
                 }
             }
         }
     }
-    .panel-line{
-    &.panel-primary {
-        .panel-heading {
-          color: $theme-primary-primary;
-          border-top-color: $theme-primary-primary;
-          background: transparent;
-        }
-        .panel-title {
-            color: $theme-primary-primary;            
+    .panel-line {
+        &.panel-primary {
+            .panel-heading {
+                color: $theme-primary-primary;
+                border-top-color: $theme-primary-primary;
+                background: transparent;
+            }
+            .panel-title {
+                color: $theme-primary-primary;
+            }
         }
     }
-    }    
-    
     .panel-info {
         border-color: $theme-primary-info;
-        > .panel-heading {
+        >.panel-heading {
             color: $white;
             background-color: $theme-primary-info;
             border-color: $theme-primary-info;
-            + .panel-collapse {
-                > .panel-body {
-                  border-top-color: $theme-primary-info;
+            +.panel-collapse {
+                >.panel-body {
+                    border-top-color: $theme-primary-info;
                 }
             }
             .badge-pill {
@@ -1843,35 +1865,34 @@ $box-bod-s: solid;
             @extend .panel-title
         }
         .panel-footer {
-            + .panel-collapse {
-                > .panel-body {
-                  border-bottom-color: $theme-primary-info;
+            +.panel-collapse {
+                >.panel-body {
+                    border-bottom-color: $theme-primary-info;
                 }
             }
         }
     }
-    .panel-line{
-    &.panel-info {
-        .panel-heading {
-          color: $theme-primary-info;
-          border-top-color: $theme-primary-info;
-          background: transparent;
-        }
-        .panel-title {
-            color: $theme-primary-info;            
+    .panel-line {
+        &.panel-info {
+            .panel-heading {
+                color: $theme-primary-info;
+                border-top-color: $theme-primary-info;
+                background: transparent;
+            }
+            .panel-title {
+                color: $theme-primary-info;
+            }
         }
     }
-    }    
-    
     .panel-success {
         border-color: $theme-primary-success;
-        > .panel-heading {
+        >.panel-heading {
             color: $white;
             background-color: $theme-primary-success;
             border-color: $theme-primary-success;
-            + .panel-collapse {
-                > .panel-body {
-                  border-top-color: $theme-primary-success;
+            +.panel-collapse {
+                >.panel-body {
+                    border-top-color: $theme-primary-success;
                 }
             }
             .badge-pill {
@@ -1886,35 +1907,34 @@ $box-bod-s: solid;
             @extend .panel-title
         }
         .panel-footer {
-            + .panel-collapse {
-                > .panel-body {
-                  border-bottom-color: $theme-primary-success;
+            +.panel-collapse {
+                >.panel-body {
+                    border-bottom-color: $theme-primary-success;
                 }
             }
         }
     }
-    .panel-line{
-    &.panel-success {
-        .panel-heading {
-          color: $theme-primary-success;
-          border-top-color: $theme-primary-success;
-          background: transparent;
-        }
-        .panel-title {
-            color: $theme-primary-success;            
+    .panel-line {
+        &.panel-success {
+            .panel-heading {
+                color: $theme-primary-success;
+                border-top-color: $theme-primary-success;
+                background: transparent;
+            }
+            .panel-title {
+                color: $theme-primary-success;
+            }
         }
     }
-    }    
-    
     .panel-danger {
         border-color: $theme-primary-danger;
-        > .panel-heading {
+        >.panel-heading {
             color: $white;
             background-color: $theme-primary-danger;
             border-color: $theme-primary-danger;
-            + .panel-collapse {
-                > .panel-body {
-                  border-top-color: $theme-primary-danger;
+            +.panel-collapse {
+                >.panel-body {
+                    border-top-color: $theme-primary-danger;
                 }
             }
             .badge-pill {
@@ -1929,35 +1949,34 @@ $box-bod-s: solid;
             @extend .panel-title
         }
         .panel-footer {
-            + .panel-collapse {
-                > .panel-body {
-                  border-bottom-color: $theme-primary-danger;
+            +.panel-collapse {
+                >.panel-body {
+                    border-bottom-color: $theme-primary-danger;
                 }
             }
         }
     }
-    .panel-line{
-    &.panel-danger {
-        .panel-heading {
-          color: $theme-primary-danger;
-          border-top-color: $theme-primary-danger;
-          background: transparent;
-        }
-        .panel-title {
-            color: $theme-primary-danger;            
+    .panel-line {
+        &.panel-danger {
+            .panel-heading {
+                color: $theme-primary-danger;
+                border-top-color: $theme-primary-danger;
+                background: transparent;
+            }
+            .panel-title {
+                color: $theme-primary-danger;
+            }
         }
     }
-    }    
-    
     .panel-warning {
         border-color: $theme-primary-warning;
-        > .panel-heading {
+        >.panel-heading {
             color: $white;
             background-color: $theme-primary-warning;
             border-color: $theme-primary-warning;
-            + .panel-collapse {
-                > .panel-body {
-                  border-top-color: $theme-primary-warning;
+            +.panel-collapse {
+                >.panel-body {
+                    border-top-color: $theme-primary-warning;
                 }
             }
             .badge-pill {
@@ -1972,106 +1991,109 @@ $box-bod-s: solid;
             @extend .panel-title
         }
         .panel-footer {
-            + .panel-collapse {
-                > .panel-body {
-                  border-bottom-color: $theme-primary-warning;
+            +.panel-collapse {
+                >.panel-body {
+                    border-bottom-color: $theme-primary-warning;
                 }
             }
         }
     }
-    .panel-line{
-    &.panel-warning {
-        .panel-heading {
-          color: $theme-primary-warning;
-          border-top-color: $theme-primary-warning;
-          background: transparent;
-        }
-        .panel-title {
-            color: $theme-primary-warning;            
+    .panel-line {
+        &.panel-warning {
+            .panel-heading {
+                color: $theme-primary-warning;
+                border-top-color: $theme-primary-warning;
+                background: transparent;
+            }
+            .panel-title {
+                color: $theme-primary-warning;
+            }
         }
     }
-    }
-    
 }
 
-    /*---switch---*/
+
+/*---switch---*/
+
 .theme-primary {
-    .switch{    
-    input {
-    &:checked {
-        ~ .switch-indicator{
-          &::after {
-            background-color: $theme-primary-primary;
-          }
-        }
-    }
-    }
-    &.switch-primary {
+    .switch {
         input {
-        &:checked {
-            ~ .switch-indicator{
-              &::after {
-                background-color: $theme-primary-primary;
-              }
+            &:checked {
+                ~.switch-indicator {
+                    &::after {
+                        background-color: $theme-primary-primary;
+                    }
+                }
             }
         }
-        }
-    }
-    &.switch-info {
-        input {
-        &:checked {
-            ~ .switch-indicator{
-              &::after {
-                background-color: $theme-primary-info;
-              }
+        &.switch-primary {
+            input {
+                &:checked {
+                    ~.switch-indicator {
+                        &::after {
+                            background-color: $theme-primary-primary;
+                        }
+                    }
+                }
             }
         }
-        }
-    }
-    &.switch-success {
-        input {
-        &:checked {
-            ~ .switch-indicator{
-              &::after {
-                background-color: $theme-primary-success;
-              }
+        &.switch-info {
+            input {
+                &:checked {
+                    ~.switch-indicator {
+                        &::after {
+                            background-color: $theme-primary-info;
+                        }
+                    }
+                }
             }
         }
-        }
-    }
-    &.switch-danger {
-        input {
-        &:checked {
-            ~ .switch-indicator{
-              &::after {
-                background-color: $theme-primary-danger;
-              }
+        &.switch-success {
+            input {
+                &:checked {
+                    ~.switch-indicator {
+                        &::after {
+                            background-color: $theme-primary-success;
+                        }
+                    }
+                }
             }
         }
-        }
-    }
-    &.switch-warning {
-        input {
-        &:checked {
-            ~ .switch-indicator{
-              &::after {
-                background-color: $theme-primary-warning;
-              }
+        &.switch-danger {
+            input {
+                &:checked {
+                    ~.switch-indicator {
+                        &::after {
+                            background-color: $theme-primary-danger;
+                        }
+                    }
+                }
             }
         }
+        &.switch-warning {
+            input {
+                &:checked {
+                    ~.switch-indicator {
+                        &::after {
+                            background-color: $theme-primary-warning;
+                        }
+                    }
+                }
+            }
         }
-    }
     }
 }
 
-    /*---badge---*/
+
+/*---badge---*/
+
 .theme-primary {
     .badge-primary {
         background-color: $theme-primary-primary;
         color: $white;
     }
-    .badge-primary[href]{
-        @include hover-focus-state{
+    .badge-primary[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-primary, 10%);
         }
     }
@@ -2079,8 +2101,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-secondary;
         color: $dark;
     }
-    .badge-secondary[href]{
-        @include hover-focus-state{
+    .badge-secondary[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-secondary, 10%);
         }
     }
@@ -2088,8 +2110,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-info;
         color: $white;
     }
-    .badge-info[href]{
-        @include hover-focus-state{
+    .badge-info[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-info, 10%);
         }
     }
@@ -2097,8 +2119,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-success;
         color: $white;
     }
-    .badge-success[href]{
-        @include hover-focus-state{
+    .badge-success[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-success, 10%);
         }
     }
@@ -2106,8 +2128,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-danger;
         color: $white;
     }
-    .badge-danger[href]{
-        @include hover-focus-state{
+    .badge-danger[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-danger, 10%);
         }
     }
@@ -2115,21 +2137,23 @@ $box-bod-s: solid;
         background-color: $theme-primary-warning;
         color: $white;
     }
-    .badge-warning[href]{
-        @include hover-focus-state{
+    .badge-warning[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-warning, 10%);
         }
     }
 }
 
-    /*---badge light---*/
+
+/*---badge light---*/
+
 .theme-primary {
     .badge-primary-light {
         background-color: $theme-primary-primary-lite;
         color: $theme-primary-primary;
     }
-    .badge-primary-light[href]{
-        @include hover-focus-state{
+    .badge-primary-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-primary-lite, 10%);
         }
     }
@@ -2137,8 +2161,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-secondary-lite;
         color: $dark;
     }
-    .badge-secondary-light[href]{
-        @include hover-focus-state{
+    .badge-secondary-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-secondary-lite, 10%);
         }
     }
@@ -2146,8 +2170,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-info-lite;
         color: $theme-primary-info;
     }
-    .badge-info-light[href]{
-        @include hover-focus-state{
+    .badge-info-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-info-lite, 10%);
         }
     }
@@ -2155,8 +2179,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-success-lite;
         color: $theme-primary-success;
     }
-    .badge-success-light[href]{
-        @include hover-focus-state{
+    .badge-success-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-success-lite, 10%);
         }
     }
@@ -2164,8 +2188,8 @@ $box-bod-s: solid;
         background-color: $theme-primary-danger-lite;
         color: $theme-primary-danger;
     }
-    .badge-danger-light[href]{
-        @include hover-focus-state{
+    .badge-danger-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-danger-lite, 10%);
         }
     }
@@ -2173,26 +2197,28 @@ $box-bod-s: solid;
         background-color: $theme-primary-warning-lite;
         color: $theme-primary-warning;
     }
-    .badge-warning-light[href]{
-        @include hover-focus-state{
+    .badge-warning-light[href] {
+        @include hover-focus-state {
             background-color: darken($theme-primary-warning-lite, 10%);
         }
     }
 }
 
-    /*---rating---*/
+
+/*---rating---*/
+
 .theme-primary {
     .rating-primary {
         .active {
             color: $theme-primary-primary;
         }
-        :checked ~ label {
+         :checked~label {
             color: $theme-primary-primary;
         }
-        label{
+        label {
             &:hover {
                 color: $theme-primary-primary;
-                ~ label {
+                ~label {
                     color: $theme-primary-primary;
                 }
             }
@@ -2202,13 +2228,13 @@ $box-bod-s: solid;
         .active {
             color: $theme-primary-info;
         }
-        :checked ~ label {
+         :checked~label {
             color: $theme-primary-info;
         }
-        label{
+        label {
             &:hover {
                 color: $theme-primary-info;
-                ~ label {
+                ~label {
                     color: $theme-primary-info;
                 }
             }
@@ -2218,13 +2244,13 @@ $box-bod-s: solid;
         .active {
             color: $theme-primary-success;
         }
-        :checked ~ label {
+         :checked~label {
             color: $theme-primary-success;
         }
-        label{
+        label {
             &:hover {
                 color: $theme-primary-success;
-                ~ label {
+                ~label {
                     color: $theme-primary-success;
                 }
             }
@@ -2234,13 +2260,13 @@ $box-bod-s: solid;
         .active {
             color: $theme-primary-danger;
         }
-        :checked ~ label {
+         :checked~label {
             color: $theme-primary-danger;
         }
-        label{
+        label {
             &:hover {
                 color: $theme-primary-danger;
-                ~ label {
+                ~label {
                     color: $theme-primary-danger;
                 }
             }
@@ -2250,13 +2276,13 @@ $box-bod-s: solid;
         .active {
             color: $theme-primary-warning;
         }
-        :checked ~ label {
+         :checked~label {
             color: $theme-primary-warning;
         }
-        label{
+        label {
             &:hover {
                 color: $theme-primary-warning;
-                ~ label {
+                ~label {
                     color: $theme-primary-warning;
                 }
             }
@@ -2264,180 +2290,186 @@ $box-bod-s: solid;
     }
 }
 
-    /*---toggler---*/
+
+/*---toggler---*/
+
 .theme-primary {
     .toggler-primary {
-        input{
-        &:checked + i {
-            color: $theme-primary-primary;
-        }
+        input {
+            &:checked+i {
+                color: $theme-primary-primary;
+            }
         }
     }
     .toggler-info {
-        input{
-        &:checked + i {
-            color: $theme-primary-info;
-        }
+        input {
+            &:checked+i {
+                color: $theme-primary-info;
+            }
         }
     }
     .toggler-success {
-        input{
-        &:checked + i {
-            color: $theme-primary-success;
-        }
+        input {
+            &:checked+i {
+                color: $theme-primary-success;
+            }
         }
     }
     .toggler-danger {
-        input{
-        &:checked + i {
-            color: $theme-primary-danger;
-        }
+        input {
+            &:checked+i {
+                color: $theme-primary-danger;
+            }
         }
     }
     .toggler-warning {
-        input{
-        &:checked + i {
-            color: $theme-primary-warning;
-        }
+        input {
+            &:checked+i {
+                color: $theme-primary-warning;
+            }
         }
     }
 }
 
-    /*---nav tabs---*/
+
+/*---nav tabs---*/
+
 .theme-primary {
-    .nav-tabs{
-    &.nav-tabs-primary {
-        .nav-link{
-            @include hover-full-state{
-                border-color: darken($theme-primary-primary, 10%);
-                background-color: transparent;
-                color: darken($theme-primary-primary, 10%);
-            }
-        }
-    }
-    &.nav-tabs-info {
-        .nav-link{
-            @include hover-full-state{
-                border-color: darken($theme-primary-info, 10%);
-                background-color: $theme-primary-info;
-                color: $white;
-            }
-        }
-    }
-    &.nav-tabs-success {
-        .nav-link{
-            @include hover-full-state{
-                border-color: darken($theme-primary-success, 10%);
-                background-color: transparent;
-                color: darken($theme-primary-success, 10%);
-            }
-        }
-    }
-    &.nav-tabs-danger {
-        .nav-link{
-            @include hover-full-state{
-                border-color: darken($theme-primary-danger, 10%);
-                background-color: transparent;
-                color: darken($theme-primary-danger, 10%);
-            }
-        }
-    }
-    &.nav-tabs-warning {
-        .nav-link{
-            @include hover-full-state{
-                border-color: darken($theme-primary-warning, 10%);
-                background-color: transparent;
-                color: darken($theme-primary-warning, 10%);
-            }
-        }
-    }
-    }
-    .nav-tabs-custom{
-    &.tab-primary{
-        >.nav-tabs{
-            >li {
-                a{
-                &.active {
-                    border-top-color: darken($theme-primary-primary, 10%);
+    .nav-tabs {
+        &.nav-tabs-primary {
+            .nav-link {
+                @include hover-full-state {
+                    border-color: darken($theme-primary-primary, 10%);
+                    background-color: transparent;
+                    color: darken($theme-primary-primary, 10%);
                 }
+            }
+        }
+        &.nav-tabs-info {
+            .nav-link {
+                @include hover-full-state {
+                    border-color: darken($theme-primary-info, 10%);
+                    background-color: $theme-primary-info;
+                    color: $white;
+                }
+            }
+        }
+        &.nav-tabs-success {
+            .nav-link {
+                @include hover-full-state {
+                    border-color: darken($theme-primary-success, 10%);
+                    background-color: transparent;
+                    color: darken($theme-primary-success, 10%);
+                }
+            }
+        }
+        &.nav-tabs-danger {
+            .nav-link {
+                @include hover-full-state {
+                    border-color: darken($theme-primary-danger, 10%);
+                    background-color: transparent;
+                    color: darken($theme-primary-danger, 10%);
+                }
+            }
+        }
+        &.nav-tabs-warning {
+            .nav-link {
+                @include hover-full-state {
+                    border-color: darken($theme-primary-warning, 10%);
+                    background-color: transparent;
+                    color: darken($theme-primary-warning, 10%);
                 }
             }
         }
     }
-    &.tab-info{
-        >.nav-tabs{
-            >li {
-                a{
-                &.active {
-                    border-top-color: darken($theme-primary-info, 10%);
-                }
-                }
-            }
-        }
-    }
-    &.tab-success{
-        >.nav-tabs{
-            >li {
-                a{
-                &.active {
-                    border-top-color: darken($theme-primary-success, 10%);
-                }
+    .nav-tabs-custom {
+        &.tab-primary {
+            >.nav-tabs {
+                >li {
+                    a {
+                        &.active {
+                            border-top-color: darken($theme-primary-primary, 10%);
+                        }
+                    }
                 }
             }
         }
-    }
-    &.tab-danger{
-        >.nav-tabs{
-            >li {
-                a{
-                &.active {
-                    border-top-color: darken($theme-primary-danger, 10%);
-                }
-                }
-            }
-        }
-    }
-    &.tab-warning{
-        >.nav-tabs{
-            >li {
-                a{
-                &.active {
-                    border-top-color: darken($theme-primary-warning, 10%);
-                }
+        &.tab-info {
+            >.nav-tabs {
+                >li {
+                    a {
+                        &.active {
+                            border-top-color: darken($theme-primary-info, 10%);
+                        }
+                    }
                 }
             }
         }
-    }
+        &.tab-success {
+            >.nav-tabs {
+                >li {
+                    a {
+                        &.active {
+                            border-top-color: darken($theme-primary-success, 10%);
+                        }
+                    }
+                }
+            }
+        }
+        &.tab-danger {
+            >.nav-tabs {
+                >li {
+                    a {
+                        &.active {
+                            border-top-color: darken($theme-primary-danger, 10%);
+                        }
+                    }
+                }
+            }
+        }
+        &.tab-warning {
+            >.nav-tabs {
+                >li {
+                    a {
+                        &.active {
+                            border-top-color: darken($theme-primary-warning, 10%);
+                        }
+                    }
+                }
+            }
+        }
     }
     .nav-tabs {
-        .nav-link{
-        &.active{
-            border-bottom-color: $theme-primary-primary;
-            background-color: $theme-primary-primary;
-            color: $white;
-            @include hover-focus-state{
+        .nav-link {
+            &.active {
                 border-bottom-color: $theme-primary-primary;
                 background-color: $theme-primary-primary;
                 color: $white;
-            }
-        }
-        } 
-        .nav-item{
-        &.open{
-            .nav-link{
-                border-bottom-color: $theme-primary-primary;
-                background-color: $theme-primary-primary;
-                @include hover-focus-state{
+                @include hover-focus-state {
                     border-bottom-color: $theme-primary-primary;
-                    background-color: $theme-primary-primary;    
+                    background-color: $theme-primary-primary;
+                    color: $white;
                 }
             }
         }
+        .nav-item {
+            &.open {
+                .nav-link {
+                    border-bottom-color: $theme-primary-primary;
+                    background-color: $theme-primary-primary;
+                    @include hover-focus-state {
+                        border-bottom-color: $theme-primary-primary;
+                        background-color: $theme-primary-primary;
+                    }
+                }
+            }
         }
     }
 }
 
-    /*---todo---*/
+
+/*---todo---*/
+
 .theme-primary {
     .todo-list {
         .primary {
@@ -2458,92 +2490,94 @@ $box-bod-s: solid;
     }
 }
 
-    /*---timeline---*/
+
+/*---timeline---*/
+
 .theme-primary {
     .timeline {
         .timeline-item {
-            > .timeline-event{
+            >.timeline-event {
                 &.timeline-event-primary {
-                  background-color: $theme-primary-primary;
-                  border: 1px solid  $theme-primary-primary;
-                  color: $white;
-                @include before-after-state {
-                  border-left-color: $theme-primary-primary;
-                  border-right-color: $theme-primary-primary;
-                }
-                * {
-                  color: inherit;
-                }
+                    background-color: $theme-primary-primary;
+                    border: 1px solid $theme-primary-primary;
+                    color: $white;
+                    @include before-after-state {
+                        border-left-color: $theme-primary-primary;
+                        border-right-color: $theme-primary-primary;
+                    }
+                    * {
+                        color: inherit;
+                    }
                 }
                 &.timeline-event-info {
-                  background-color: $theme-primary-info;
-                  border: 1px solid  $theme-primary-info;
-                  color: $white;
-                @include before-after-state {
-                  border-left-color: $theme-primary-info;
-                  border-right-color: $theme-primary-info;
-                }
-                * {
-                  color: inherit;
-                }
+                    background-color: $theme-primary-info;
+                    border: 1px solid $theme-primary-info;
+                    color: $white;
+                    @include before-after-state {
+                        border-left-color: $theme-primary-info;
+                        border-right-color: $theme-primary-info;
+                    }
+                    * {
+                        color: inherit;
+                    }
                 }
                 &.timeline-event-success {
-                  background-color: $theme-primary-success;
-                  border: 1px solid  $theme-primary-success;
-                  color: $white;
-                @include before-after-state {
-                  border-left-color: $theme-primary-success;
-                  border-right-color: $theme-primary-success;
-                }
-                * {
-                  color: inherit;
-                }
+                    background-color: $theme-primary-success;
+                    border: 1px solid $theme-primary-success;
+                    color: $white;
+                    @include before-after-state {
+                        border-left-color: $theme-primary-success;
+                        border-right-color: $theme-primary-success;
+                    }
+                    * {
+                        color: inherit;
+                    }
                 }
                 &.timeline-event-danger {
-                  background-color: $theme-primary-danger;
-                  border: 1px solid  $theme-primary-danger;
-                  color: $white;
-                @include before-after-state {
-                  border-left-color: $theme-primary-danger;
-                  border-right-color: $theme-primary-danger;
-                }
-                * {
-                  color: inherit;
-                }
+                    background-color: $theme-primary-danger;
+                    border: 1px solid $theme-primary-danger;
+                    color: $white;
+                    @include before-after-state {
+                        border-left-color: $theme-primary-danger;
+                        border-right-color: $theme-primary-danger;
+                    }
+                    * {
+                        color: inherit;
+                    }
                 }
                 &.timeline-event-warning {
-                  background-color: $theme-primary-warning;
-                  border: 1px solid  $theme-primary-warning;
-                  color: $white;
-                @include before-after-state {
-                  border-left-color: $theme-primary-warning;
-                  border-right-color: $theme-primary-warning;
-                }
-                * {
-                  color: inherit;
-                }
+                    background-color: $theme-primary-warning;
+                    border: 1px solid $theme-primary-warning;
+                    color: $white;
+                    @include before-after-state {
+                        border-left-color: $theme-primary-warning;
+                        border-right-color: $theme-primary-warning;
+                    }
+                    * {
+                        color: inherit;
+                    }
                 }
             }
-            > .timeline-point{
+            >.timeline-point {
                 &.timeline-point-primary {
-                  color: $theme-primary-primary;
-                  background-color: $white;
+                    color: $theme-primary-primary;
+                    background-color: $white;
                 }
                 &.timeline-point-info {
-                  color: $theme-primary-info;
-                  background-color: $white;
+                    color: $theme-primary-info;
+                    background-color: $white;
                 }
                 &.timeline-point-success {
-                  color: $theme-primary-success;
-                  background-color: $white;
+                    color: $theme-primary-success;
+                    background-color: $white;
                 }
                 &.timeline-point-danger {
-                  color: $theme-primary-danger;
-                  background-color: $white;
+                    color: $theme-primary-danger;
+                    background-color: $white;
                 }
                 &.timeline-point-warning {
-                  color: $theme-primary-warning;
-                  background-color: $white;
+                    color: $theme-primary-warning;
+                    background-color: $white;
                 }
             }
         }
@@ -2565,32 +2599,33 @@ $box-bod-s: solid;
             }
         }
     }
-    
-    .timeline__year{
+    .timeline__year {
         background-color: $theme-primary-primary;
     }
-    .timeline5:before{
+    .timeline5:before {
         @extend .timeline__year
     }
-    .timeline__box:before{
+    .timeline__box:before {
         @extend .timeline__year
     }
-    .timeline__date{
+    .timeline__date {
         @extend .timeline__year
     }
-    .timeline__post{
+    .timeline__post {
         border-left: 3px solid $theme-primary-primary;
     }
 }
 
-    /*---daterangepicker---*/
-.theme-primary{
-    .daterangepicker{
-        td{
-            &.active{
-                background-color: $theme-primary-primary; 
-                &:hover{
-                   background-color: $theme-primary-primary; 
+
+/*---daterangepicker---*/
+
+.theme-primary {
+    .daterangepicker {
+        td {
+            &.active {
+                background-color: $theme-primary-primary;
+                &:hover {
+                    background-color: $theme-primary-primary;
                 }
             }
         }
@@ -2599,29 +2634,31 @@ $box-bod-s: solid;
         }
     }
     .ranges {
-        li{
-            @include hover-active-state{
+        li {
+            @include hover-active-state {
                 border: 1px solid $theme-primary-primary;
-                background-color: $theme-primary-primary; 
+                background-color: $theme-primary-primary;
             }
         }
     }
 }
 
-    /*---control-sidebar---*/
-.theme-primary{
-    .control-sidebar{
-        .nav-tabs.control-sidebar-tabs{
-            >li{
-                >a{
-                    @include hover-state{
+
+/*---control-sidebar---*/
+
+.theme-primary {
+    .control-sidebar {
+        .nav-tabs.control-sidebar-tabs {
+            >li {
+                >a {
+                    @include hover-state {
                         border-color: $theme-primary-primary;
                         color: $theme-primary-primary;
                     }
-                    &.active{                        
+                    &.active {
                         border-color: $theme-primary-primary;
                         color: $theme-primary-primary;
-                        @include hover-state{
+                        @include hover-state {
                             border-color: $theme-primary-primary;
                             color: $theme-primary-primary;
                         }
@@ -2637,78 +2674,80 @@ $box-bod-s: solid;
     }
 }
 
-    /*---nav---*/
-.theme-primary{
-    .nav{
-        >li{
-            >a{
-                @include hover-state{
-                   color: $theme-primary-primary; 
-                } 
-            }
-        }
-    }
-    .nav-pills{
-        >li{
-            >a{ 
-                &.active{
-                       border-top-color: $theme-primary-primary;
-	                   background-color: $theme-primary-primary !important;
-                       color: $white;
-                    @include hover-focus-state{
-                       border-top-color: $theme-primary-primary;
-	                   background-color: $theme-primary-primary !important;
-                       color: $white;
-                    }     
+
+/*---nav---*/
+
+.theme-primary {
+    .nav {
+        >li {
+            >a {
+                @include hover-state {
+                    color: $theme-primary-primary;
                 }
             }
         }
     }
-    .mailbox-nav{
-        .nav-pills{
-            >li{
-                >a{ 
-                    @include hover-focus-state{
-                       border-color: $theme-primary-primary;
-                    }     
-                    &.active{
-                           border-color: $theme-primary-primary;
-                        @include hover-focus-state{
-                           border-color: $theme-primary-primary;
-                        }     
-                    }
-                }
-            }
-        }
-    }  
-    .nav-tabs-custom{
-        >.nav-tabs{
-            >li{
-                a{      
-                    &.active{
-                        border-top-color: $theme-primary-primary;    
+    .nav-pills {
+        >li {
+            >a {
+                &.active {
+                    border-top-color: $theme-primary-primary;
+                    background-color: $theme-primary-primary !important;
+                    color: $white;
+                    @include hover-focus-state {
+                        border-top-color: $theme-primary-primary;
+                        background-color: $theme-primary-primary !important;
+                        color: $white;
                     }
                 }
             }
         }
     }
-    .profile-tab{
-        li{
-            a{
-                &.nav-link{      
-                    &.active{
-                        border-bottom: 2px solid $theme-primary-primary;    
+    .mailbox-nav {
+        .nav-pills {
+            >li {
+                >a {
+                    @include hover-focus-state {
+                        border-color: $theme-primary-primary;
+                    }
+                    &.active {
+                        border-color: $theme-primary-primary;
+                        @include hover-focus-state {
+                            border-color: $theme-primary-primary;
+                        }
                     }
                 }
             }
         }
     }
-    .customtab{
-        li{
-            a{
-                &.nav-link{      
-                    &.active{
-                        border-bottom: 2px solid $theme-primary-primary;    
+    .nav-tabs-custom {
+        >.nav-tabs {
+            >li {
+                a {
+                    &.active {
+                        border-top-color: $theme-primary-primary;
+                    }
+                }
+            }
+        }
+    }
+    .profile-tab {
+        li {
+            a {
+                &.nav-link {
+                    &.active {
+                        border-bottom: 2px solid $theme-primary-primary;
+                    }
+                }
+            }
+        }
+    }
+    .customtab {
+        li {
+            a {
+                &.nav-link {
+                    &.active {
+                        border-bottom: 2px solid $theme-primary-primary;
                     }
                 }
             }
@@ -2716,25 +2755,28 @@ $box-bod-s: solid;
     }
 }
 
-    /*---form-element---*/
+
+/*---form-element---*/
+
 .theme-primary {
     .form-element {
         .input-group {
-            .input-group-addon{
-                background-image: $theme-primary-grd, linear-gradient(lighten($dark, 30%), lighten($dark, 30%),) 
+            .input-group-addon {
+                background-image: $theme-primary-grd, linear-gradient(lighten($dark, 30%), lighten($dark, 30%), )
             }
         }
-        .form-control {            
+        .form-control {
             &:focus {
-                background-image: $theme-primary-grd, linear-gradient(lighten($dark, 30%), lighten($dark, 30%),) 
-            }            
-            background-image: $theme-primary-grd, linear-gradient(lighten($dark, 30%), lighten($dark, 30%),) 
+                background-image: $theme-primary-grd, linear-gradient(lighten($dark, 30%), lighten($dark, 30%), )
+            }
+            background-image: $theme-primary-grd,
+            linear-gradient(lighten($dark, 30%), lighten($dark, 30%), )
         }
     }
-    .form-control {            
+    .form-control {
         &:focus {
             border-color: $theme-primary-primary;
-        }            
+        }
     }
     [type=checkbox]:checked {
         &.chk-col-primary {
@@ -2995,8 +3037,7 @@ $box-bod-s: solid;
             }
         }
     }
-    
-    [type=checkbox]{
+    [type=checkbox] {
         &:checked {
             &+label {
                 &:before {
@@ -3006,7 +3047,7 @@ $box-bod-s: solid;
             }
         }
     }
-    [type=checkbox].filled-in{
+    [type=checkbox].filled-in {
         &:checked {
             &+label {
                 &:after {
@@ -3016,20 +3057,20 @@ $box-bod-s: solid;
             }
         }
     }
-    [type=radio]{
-        &.with-gap{
-        &:checked {
-            &+label {
-                @include before-after-state{
-                    border: 2px solid $theme-primary-primary;
-                }
-                &:after {
-                    background-color: $theme-primary-primary;
-                    z-index: 0;
+    [type=radio] {
+        &.with-gap {
+            &:checked {
+                &+label {
+                    @include before-after-state {
+                        border: 2px solid $theme-primary-primary;
+                    }
+                    &:after {
+                        background-color: $theme-primary-primary;
+                        z-index: 0;
+                    }
                 }
             }
         }
-        }        
         &:checked {
             &+label {
                 &:after {
@@ -3040,7 +3081,7 @@ $box-bod-s: solid;
             }
         }
     }
-    [type=checkbox].filled-in.tabbed{
+    [type=checkbox].filled-in.tabbed {
         &:checked:focus {
             &+label {
                 &:after {
@@ -3052,14 +3093,16 @@ $box-bod-s: solid;
     }
 }
 
-    /*---Calender---*/
-.theme-primary{
-    .fx-element-overlay{
+
+/*---Calender---*/
+
+.theme-primary {
+    .fx-element-overlay {
         .fx-card-item {
             .fx-card-content a:hover {
                 color: $theme-primary-primary;
             }
-            .fx-overlay-1 .fx-info > li a:hover {
+            .fx-overlay-1 .fx-info>li a:hover {
                 background: $theme-primary-primary;
                 border-color: $theme-primary-primary;
             }
@@ -3068,42 +3111,43 @@ $box-bod-s: solid;
     .fc-event {
         background: $theme-primary-primary;
     }
-    .calendar-event{
+    .calendar-event {
         @extend .fc-event
     }
 }
 
-    /*---Tabs---*/
+
+/*---Tabs---*/
 
 .theme-primary {
-    .tabs-vertical{
-        li{
-            .nav-link{
-                @include hover-full-state{
+    .tabs-vertical {
+        li {
+            .nav-link {
+                @include hover-full-state {
                     background-color: $theme-primary-primary;
-                    color: $white;    
+                    color: $white;
                 }
             }
         }
     }
-    .customvtab{
-        .tabs-vertical{
-            li{
-                .nav-link{
-                    @include hover-full-state{
+    .customvtab {
+        .tabs-vertical {
+            li {
+                .nav-link {
+                    @include hover-full-state {
                         border-right: 2px solid $theme-primary-primary;
-                        color: $theme-primary-primary;    
+                        color: $theme-primary-primary;
                     }
                 }
             }
         }
     }
-    .customtab2{
-        li{
-            a{
-                &.nav-link{
-                    @include hover-active-state{
-                        background-color: $theme-primary-primary;    
+    .customtab2 {
+        li {
+            a {
+                &.nav-link {
+                    @include hover-active-state {
+                        background-color: $theme-primary-primary;
                     }
                 }
             }
@@ -3111,43 +3155,47 @@ $box-bod-s: solid;
     }
 }
 
-    /*---Notification---*/
+
+/*---Notification---*/
+
 .theme-primary {
-    .jq-icon-primary { 
-        background-color: $theme-primary-primary; 
-        color: $white; 
-        border-color: $theme-primary-primary; 
+    .jq-icon-primary {
+        background-color: $theme-primary-primary;
+        color: $white;
+        border-color: $theme-primary-primary;
     }
-    .jq-icon-info { 
-        background-color: $theme-primary-info; 
-        color: $white; 
-        border-color: $theme-primary-info; 
+    .jq-icon-info {
+        background-color: $theme-primary-info;
+        color: $white;
+        border-color: $theme-primary-info;
     }
-    .jq-icon-success { 
-        background-color: $theme-primary-success; 
-        color: $white; 
-        border-color: $theme-primary-primary; 
+    .jq-icon-success {
+        background-color: $theme-primary-success;
+        color: $white;
+        border-color: $theme-primary-primary;
     }
-    .jq-icon-error { 
-        background-color: $theme-primary-danger; 
-        color: $white; 
-        border-color: $theme-primary-danger; 
+    .jq-icon-error {
+        background-color: $theme-primary-danger;
+        color: $white;
+        border-color: $theme-primary-danger;
     }
-    .jq-icon-danger { 
-        background-color: $theme-primary-danger; 
-        color: $white; 
-        border-color: $theme-primary-danger; 
+    .jq-icon-danger {
+        background-color: $theme-primary-danger;
+        color: $white;
+        border-color: $theme-primary-danger;
     }
-    .jq-icon-warning { 
-        background-color: $theme-primary-warning; 
-        color: $white; 
-        border-color: $theme-primary-warning; 
+    .jq-icon-warning {
+        background-color: $theme-primary-warning;
+        color: $white;
+        border-color: $theme-primary-warning;
     }
 }
 
-    /*---avatar---*/
+
+/*---avatar---*/
+
 .theme-primary {
-    .avatar{
+    .avatar {
         &.status-primary::after {
             background-color: $theme-primary-primary;
         }
@@ -3173,13 +3221,15 @@ $box-bod-s: solid;
     }
 }
 
-    /*---media---*/
+
+/*---media---*/
+
 .theme-primary {
-    .media-chat{
+    .media-chat {
         &.media-chat-reverse {
             .media-body {
                 p {
-                  background-color: $theme-primary-primary; 
+                    background-color: $theme-primary-primary;
                 }
             }
         }
@@ -3191,34 +3241,38 @@ $box-bod-s: solid;
     }
 }
 
-    /*---control---*/
-.theme-primary{
-    .control{
-        input{
-        &:checked{
-            &:focus~.control_indicator{
-               background-color: $theme-primary-primary;  
-            }  
-            ~.control_indicator{
-               background-color: $theme-primary-primary; 
+
+/*---control---*/
+
+.theme-primary {
+    .control {
+        input {
+            &:checked {
+                &:focus~.control_indicator {
+                    // background-color: $theme-primary-primary;
+                }
+                ~.control_indicator {
+                    // background-color: $theme-primary-primary;
+                }
             }
         }
-        }  
-        &:hover input:not([disabled]):checked~.control_indicator{
-            background-color: $theme-primary-primary; 
+        &:hover input:not([disabled]):checked~.control_indicator {
+            // background-color: $theme-primary-primary;
         }
     }
 }
 
-    /*---flex---*/
-.theme-primary{
-    .flex-column{
-        >li{
-            >a{
-                &.nav-link{
-                    &.active{
+
+/*---flex---*/
+
+.theme-primary {
+    .flex-column {
+        >li {
+            >a {
+                &.nav-link {
+                    &.active {
                         border-left-color: $theme-primary-primary;
-                        &:hover{
+                        &:hover {
                             border-left-color: $theme-primary-primary;
                         }
                     }
@@ -3228,63 +3282,68 @@ $box-bod-s: solid;
     }
 }
 
-    /*---pagination---*/
-.theme-primary{
-    .pagination{
-        li{
-            a{
-                &.current{
+
+/*---pagination---*/
+
+.theme-primary {
+    .pagination {
+        li {
+            a {
+                &.current {
                     border: 1px solid $theme-primary-primary;
                     background-color: $theme-primary-primary;
-                    &:hover{
-                        border: 1px solid $theme-primary-primary;
-                        background-color: $theme-primary-primary;
+                    &:hover {
+                        // border: 1px solid $theme-primary-primary;
+                        // background-color: $theme-primary-primary;
                     }
                 }
-                &:hover{
-                    border: 1px solid darken($theme-primary-primary, 10%);
-                    background-color: darken($theme-primary-primary, 10%)!important;
+                &:hover {
+                    // border: 1px solid darken($theme-primary-primary, 10%);
+                    // background-color: darken($theme-primary-primary, 10%)!important;
                 }
             }
         }
     }
-    .dataTables_wrapper{
-        .dataTables_paginate{
-            .paginate_button.current{
+    .dataTables_wrapper {
+        .dataTables_paginate {
+            .paginate_button.current {
                 border: 1px solid $theme-primary-primary;
                 background-color: $theme-primary-primary;
-                    &:hover{
-                        border: 1px solid $theme-primary-primary;
-                        background-color: $theme-primary-primary;
-                    }                
-            } 
-        }
-    }
-    .paging_simple_numbers{
-        .pagination{
-            .paginate_button{
-                &.active a{
-                    background-color: $theme-primary-primary;
-                }
-                &:hover a{
-                    background-color: $theme-primary-primary;
+                &:hover {
+                    // border: 1px solid $theme-primary-primary;
+                    // background-color: $theme-primary-primary;
                 }
             }
         }
     }
-    .footable{
-        .pagination{
-            li{
-                a{
-                    @include hover-active-state{
-                        background-color: $theme-primary-primary;    
+    .paging_simple_numbers {
+        .pagination {
+            .paginate_button {
+                &.active a {
+                    background-color: $theme-primary-primary;
+                }
+                &:hover a {
+                    // background-color: $theme-primary-primary;
+                }
+            }
+        }
+    }
+    .footable {
+        .pagination {
+            li {
+                a {
+                    @include hover-active-state {
+                        background-color: $theme-primary-primary;
                     }
                 }
             }
         }
     }
 }
+
+
 /*---dataTables---*/
+
 .theme-primary {
     .dt-buttons {
         .dt-button {
@@ -3293,30 +3352,32 @@ $box-bod-s: solid;
     }
 }
 
+
 /*---select2---*/
+
 .theme-primary {
-    .select2-container--default{
-    &.select2-container--open {
-        border-color: $theme-primary-primary;
-    }
+    .select2-container--default {
+        &.select2-container--open {
+            border-color: $theme-primary-primary;
+        }
         .select2-results__option--highlighted[aria-selected] {
             background-color: $theme-primary-primary;
         }
         .select2-search--dropdown {
-            .select2-search__field{
-                border-color: $theme-primary-primary !important;
-            }        
-        }
-        &.select2-container--focus{
-            .select2-selection--multiple{
+            .select2-search__field {
                 border-color: $theme-primary-primary !important;
             }
         }
-        .select2-selection--multiple:focus{
+        &.select2-container--focus {
+            .select2-selection--multiple {
+                border-color: $theme-primary-primary !important;
+            }
+        }
+        .select2-selection--multiple:focus {
             border-color: $theme-primary-primary !important;
-        } 
+        }
         .select2-selection--multiple {
-            .select2-selection__choice{
+            .select2-selection__choice {
                 background-color: $theme-primary-primary;
                 border-color: $theme-primary-primary;
             }
@@ -3324,29 +3385,30 @@ $box-bod-s: solid;
     }
 }
 
+
 /*---Other---*/
 
-.theme-primary{
-    .myadmin-dd{
-        .dd-list{
-            .dd-list{
-                .dd-handle:hover{
+.theme-primary {
+    .myadmin-dd {
+        .dd-list {
+            .dd-list {
+                .dd-handle:hover {
                     color: darken($theme-primary-primary, 10%);
                 }
             }
         }
     }
-    .myadmin-dd-empty{
-        .dd-list{
-            .dd3-handle:hover{
+    .myadmin-dd-empty {
+        .dd-list {
+            .dd3-handle:hover {
                 color: darken($theme-primary-primary, 10%);
             }
-            .dd3-content:hover{
+            .dd3-content:hover {
                 color: darken($theme-primary-primary, 10%);
             }
-        }        
+        }
     }
-    [data-overlay-primary]::before{
+    [data-overlay-primary]::before {
         background: darken($theme-primary-primary, 10%);
     }
 }
@@ -3354,89 +3416,90 @@ $box-bod-s: solid;
 
 /*---wizard---*/
 
-.theme-primary{
-    .wizard-content{
-        .wizard{
-            >.steps{
-                >ul{
-                    >li{
-                    &.current{
-                        border: 2px solid $theme-primary-primary;
-                        background-color: $theme-primary-primary;
-                    } 
-                     &.done{
-                        border-color: darken($theme-primary-primary, 10%);
-                        background-color: darken($theme-primary-primary, 10%);
-                    } 
-                    }
-                }
-            }
-            >.actions{
-                >ul{
-                    >li{
-                        >a{
+.theme-primary {
+    .wizard-content {
+        .wizard {
+            >.steps {
+                >ul {
+                    >li {
+                        &.current {
+                            border: 2px solid $theme-primary-primary;
                             background-color: $theme-primary-primary;
+                        }
+                        &.done {
+                            border-color: darken($theme-primary-primary, 10%);
+                            background-color: darken($theme-primary-primary, 10%);
                         }
                     }
                 }
             }
-        &.wizard-circle{
-            >.steps{
-                >ul{
-                    >li{
-                       &:after{
-                            background-color: $theme-primary-primary;
-                        }
-                       &:before{
+            >.actions {
+                >ul {
+                    >li {
+                        >a {
                             background-color: $theme-primary-primary;
                         }
                     }
                 }
             }
-        } 
-        &.wizard-notification{
-            >.steps{
-                >ul{
-                    >li{
-                       &:after{
-                            background-color: $theme-primary-primary;
-                        }
-                       &:before{
-                            background-color: $theme-primary-primary;
-                        }
-                        &.current{
-                            .step{
-                                border: 2px solid $theme-primary-primary;
-                                color: $theme-primary-primary;
-                                &:after{
-                                    border-top-color: $theme-primary-primary;
-                                }
+            &.wizard-circle {
+                >.steps {
+                    >ul {
+                        >li {
+                            &:after {
+                                background-color: $theme-primary-primary;
                             }
-                        }
-                        &.done{
-                            .step{
-                                &:after{
-                                    border-top-color: $theme-primary-primary;
-                                }
+                            &:before {
+                                background-color: $theme-primary-primary;
                             }
                         }
                     }
                 }
             }
-        } 
+            &.wizard-notification {
+                >.steps {
+                    >ul {
+                        >li {
+                            &:after {
+                                background-color: $theme-primary-primary;
+                            }
+                            &:before {
+                                background-color: $theme-primary-primary;
+                            }
+                            &.current {
+                                .step {
+                                    border: 2px solid $theme-primary-primary;
+                                    color: $theme-primary-primary;
+                                    &:after {
+                                        border-top-color: $theme-primary-primary;
+                                    }
+                                }
+                            }
+                            &.done {
+                                .step {
+                                    &:after {
+                                        border-top-color: $theme-primary-primary;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 // Small devices
 @include screen-sm-max {
-    .theme-primary{
-        .wizard-content{
-            .wizard{
-                >.steps{
-                    >ul{
-                        >li{
-                            &:last-child{
-                                &:after{
+    .theme-primary {
+        .wizard-content {
+            .wizard {
+                >.steps {
+                    >ul {
+                        >li {
+                            &:last-child {
+                                &:after {
                                     background-color: $theme-primary-primary;
                                 }
                             }
@@ -3447,18 +3510,19 @@ $box-bod-s: solid;
         }
     }
 }
+
 // Small devices
 @include screen-xs {
-    .theme-primary{
-        .wizard-content{
-            .wizard{
-                >.steps{
-                    >ul{
-                        >li{
-                            &.current{
-                                &:after{
-                                    background-color: $theme-primary-primary; 
-                                } 
+    .theme-primary {
+        .wizard-content {
+            .wizard {
+                >.steps {
+                    >ul {
+                        >li {
+                            &.current {
+                                &:after {
+                                    background-color: $theme-primary-primary;
+                                }
                             }
                         }
                     }
@@ -3469,66 +3533,68 @@ $box-bod-s: solid;
 }
 
 
- /*---slider---*/
-.theme-primary{
+/*---slider---*/
+
+.theme-primary {
     #primary {
-        .slider-selection{
+        .slider-selection {
             background-color: $theme-primary-primary;
         }
     }
     #info {
-        .slider-selection{
+        .slider-selection {
             background-color: $theme-primary-info;
         }
     }
     #success {
-        .slider-selection{
+        .slider-selection {
             background-color: $theme-primary-success;
         }
     }
     #danger {
-        .slider-selection{
+        .slider-selection {
             background-color: $theme-primary-danger;
         }
     }
     #warning {
-        .slider-selection{
+        .slider-selection {
             background-color: $theme-primary-warning;
         }
     }
 }
 
+
 /*---horizontal-timeline---*/
 
-.theme-primary{
-    .cd-horizontal-timeline{
-        .events{
-            a{
-                &.selected{
-                    &::after{
+.theme-primary {
+    .cd-horizontal-timeline {
+        .events {
+            a {
+                &.selected {
+                    &::after {
                         background: $theme-primary-primary;
-	                    border-color: $theme-primary-primary;
+                        border-color: $theme-primary-primary;
                     }
                 }
-                &.older-event::after{
+                &.older-event::after {
                     border-color: $theme-primary-primary;
                 }
             }
         }
-        .filling-line{
+        .filling-line {
             background: $theme-primary-primary;
         }
-        a{
-            color: $theme-primary-primary; 
-            @include hover-focus-state{
-                color: $theme-primary-primary;    
+        a {
+            color: $theme-primary-primary;
+            @include hover-focus-state {
+                color: $theme-primary-primary;
             }
         }
     }
-    .cd-timeline-navigation{
-        a{
-            @include hover-focus-state{
-                border-color: $theme-primary-primary;    
+    .cd-timeline-navigation {
+        a {
+            @include hover-focus-state {
+                border-color: $theme-primary-primary;
             }
         }
     }
