@@ -262,6 +262,11 @@ a.logo img {
   display: block;
 }
 
+.table.table-hover thead tr th {
+  color: #959595;
+  font-weight: normal;
+}
+
 .main-footer {
   padding: 0 0 10px 0;
   text-align: center;
