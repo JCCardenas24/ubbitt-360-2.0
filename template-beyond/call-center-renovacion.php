@@ -6,22 +6,27 @@
     </li>
 
     <li class="nav-item" role="presentation">
-        <a class="nav-link" id="call-base de datos-info-renovacion-tab" data-toggle="pill"
-            href="#call-base de datos-info-renovacion" role="tab" aria-controls="call-base de datos-info-renovacion"
+        <a class="nav-link" id="call-base-de-datos-info-renovacion-tab" data-toggle="pill"
+            href="#call-base-de-datos-info-renovacion" role="tab" aria-controls="call-base-de-datos-info-renovacion"
             aria-selected="false">Base de datos (Llamadas)</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="call-base-de-datos-ventas-renovacion-tab" data-toggle="pill"
+            href="#call-base-de-datos-ventas-renovacion" role="tab" aria-controls="call-base-de-datos-ventas-renovacion"
+            aria-selected="false">Base de datos (Ventas)</a>
     </li>
 </ul>
 <div class="tab-content" id="beyond-renovacion-callcenterContent">
     <div class="tab-pane fade show active" id="kpis-info-beyond-renovacion" role="tabpanel"
         aria-labelledby="kpis-info-beyond-renovacion-tab">
-
+        <?php include_once('./template-beyond/kpis-info-renovacion.php') ?>
     </div>
-    <div class="tab-pane fade" id="call-base de datos-info-renovacion" role="tabpanel"
-        aria-labelledby="call-base de datos-info-renovacion-tab">
+    <div class="tab-pane fade" id="call-base-de-datos-info-renovacion" role="tabpanel"
+        aria-labelledby="call-base-de-datos-info-renovacion-tab">
         <?php include_once('./template-beyond/call-base-de-datos-renovacion.php') ?>
     </div>
-    <div class="tab-pane fade show active" id="kpis-info-beyond-renovacion" role="tabpanel"
-        aria-labelledby="kpis-info-beyond-renovacion-tab">
-        <?php include_once('./template-beyond/kpis-info-renovacion.php') ?>
+    <div class="tab-pane fade" id="call-base-de-datos-ventas-renovacion" role="tabpanel"
+        aria-labelledby="call-base-de-datos-ventas-renovacion-tab">
+        <?php include_once('./template-beyond/call-base-de-datos-ventas-renovacion.php') ?>
     </div>
 </div>

@@ -9,6 +9,11 @@
             href="#beyond-cobranza-callcenter-bd" role="tab" aria-controls="beyond-cobranza-callcenter-bd"
             aria-selected="false">Base de datos (Llamadas)</a>
     </li>
+    <li class="nav-item table_llamadas" role="presentation">
+        <a class="nav-link" id="beyond-cobranza-ventas-bd-tab" data-toggle="pill"
+            href="#beyond-cobranza-ventas-bd" role="tab" aria-controls="beyond-cobranza-ventas-bd"
+            aria-selected="false">Base de datos (Ventas)</a>
+    </li>
 </ul>
 <div class="tab-content" id="beyond-cobranza-callcenter-base-datosContent">
     <div class="tab-pane fade show active" id="kpis-info-beyond-cobranza" role="tabpanel"
@@ -18,5 +23,9 @@
     <div class="tab-pane fade" id="beyond-cobranza-callcenter-bd" role="tabpanel"
         aria-labelledby="beyond-cobranza-callcenter-bd-tab">
         <?php include_once('./template-beyond/call-base-de-datos.php') ?>
+    </div>
+    <div class="tab-pane fade" id="beyond-cobranza-ventas-bd" role="tabpanel"
+        aria-labelledby="beyond-cobranza-ventas-bd-tab">
+        <?php include_once('./template-beyond/call-base-de-datos-ventas-cobranza.php') ?>
     </div>
 </div>
