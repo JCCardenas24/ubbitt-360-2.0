@@ -11,7 +11,8 @@
         </div>
       </div>
     </div>
-    <a href="#" class="pdf_button mr-5"><i class="icon-download_xls"></i></a>
+    <a href="#" class="pdf_button mr-5" download><i class="icon-download_xls"></i></a>
+    <a href="#" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
   </div>
 </div>
 
@@ -34,18 +35,27 @@
       <td>Mapre</td>
       <td>12/02/21</td>
       <td>
-        <audio controls>
-          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        <audio controls>
-          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-        <audio controls>
-          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <div class="audio_download_row">
+          <audio controls>
+            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+        <div class="audio_download_row">
+          <audio controls>
+            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+        <div class="audio_download_row">
+          <audio controls>
+            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
       </td>
     </tr>
     <tr>
@@ -55,10 +65,13 @@
       <td>Mapre</td>
       <td>12/02/21</td>
       <td>
-        <audio controls>
-          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <div class="audio_download_row">
+          <audio controls>
+            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
       </td>
     </tr>
     <tr>
@@ -68,10 +81,13 @@
       <td>Mapre</td>
       <td>12/02/21</td>
       <td>
-        <audio controls>
-          <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <div class="audio_download_row">
+          <audio controls>
+            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
       </td>
     </tr>
   </tbody>

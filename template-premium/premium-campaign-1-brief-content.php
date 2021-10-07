@@ -25,24 +25,22 @@
     <div class="row details_campaigns">
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Nombre de la campaña</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="SEGURO DE AUTO">
+                <label for="">Nombre de la campaña</label>
+                <input type="text" class="form-control " id="" placeholder="SEGURO DE AUTO">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput">Insights del producto</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre campaña">
+                <label for="">Insights del producto</label>
+                <input type="text" class="form-control" id="" placeholder="Nombre campaña">
             </div>
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Descripción del producto</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Describe brevemente tu producto o servicio">
+                <label for="">Descripción del producto</label>
+                <input type="text" class="form-control" id="" placeholder="Describe brevemente tu producto o servicio">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput">¿Cuál es el valor agregado del producto?</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="Describe brevemente tu producto o servicio">
+                <label for="">¿Cuál es el valor agregado del producto?</label>
+                <input type="text" class="form-control" id="" placeholder="Describe brevemente tu producto o servicio">
             </div>
         </div>
     </div>
@@ -51,15 +49,15 @@
     <div class="row details_campaigns">
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Precio promedio del producto/servicio</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$0.00">
+                <label for="">Precio promedio del producto/servicio</label>
+                <input type="text" class="form-control currency" id="" placeholder="$0.00">
             </div>
 
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Precio promedio del primer pago del producto/ servicio </label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$0.00">
+                <label for="">Precio promedio del primer pago del producto/ servicio </label>
+                <input type="text" class="form-control currency" id="" placeholder="$0.00">
             </div>
 
         </div>
@@ -93,7 +91,7 @@
         </div>
     </div>
     <br>
-    <h5>Tipos de pago utilizados para la venta del  producto / servicio </h5>
+    <h5>Tipos de pago utilizados para la venta del producto / servicio </h5>
 
     <div class="row ml-0 mr-0">
         <div class="col">
@@ -114,10 +112,10 @@
                 <label class="form-check-label" for="inlineCheckbox333">Tarjeta Una sola exhibición</label>
             </div>
         </div>
-        <div class="col"></div>      
+        <div class="col"></div>
     </div>
     <br>
-    <h5>Métodos de pago utilizados para la venta del  producto / servicio  </h5>
+    <h5>Métodos de pago utilizados para la venta del producto / servicio </h5>
     <div class="row ml-0 mr-0">
         <div class="col">
             <div class="form-check form-check-inline">
@@ -137,7 +135,7 @@
                 <label class="form-check-label" for="inlineCheckbox3333">Transferencia</label>
             </div>
         </div>
-        <div class="col"></div>      
+        <div class="col"></div>
     </div>
     <br>
     <h1><span><img src="./assets/images/inversion.svg" alt=""></span> Inversión y periodicidad de campaña Ubbitt</h1>
@@ -145,40 +143,54 @@
     <div class="row details_campaigns">
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Inversión</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$350,000">
+                <label for="">Inversión</label>
+                <div class="wrapper_input_number_custom">
+                    <button class="btn mr-2" onclick="dec('input_number_custom')">-</button>
+                    <input type="text" class="form-control currency input_number_custom" name="input_number_custom"
+                        id="" placeholder="$350,000" >
+                    <button class="btn ml-2 inc_amount" onclick="inc('input_number_custom')">+</button>
+                </div>
                 <small>Nota: Inversión mínima de $350,000</small>
             </div>
-           
+
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Fecha de inicio</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="">
+                <label for="">Fecha de inicio</label>
+                <div class="range_alignmt">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" name="singlerange" class="single_range" value="01/01/2021">
+                </div>
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput">Finalización</label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="">
+                <label for="">Finalización</label>
+                <div class="range_alignmt">
+                    <i class="fa fa-calendar"></i>
+                    <input type="text" name="singlerange" class="single_range" value="01/01/2021">
+                </div>
             </div>
         </div>
     </div>
     <div class="row details_campaigns mt-0">
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Bidding por lead esperado </label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="$80.00">
+                <label for="">Bidding por lead esperado </label>
+                <!-- <input type="text" class="form-control currency" id="" placeholder="$80.00"> -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text sing_dollar">$</div>
+                    </div>
+                    <input type="number" class="form-control currency br-0" id="" placeholder="80.00" min="1" max="80" >
+                </div>
             </div>
-           
+
         </div>
         <div class="col-6">
             <div class="form-group">
-                <label for="formGroupExampleInput">Ventas totales esperadas </label>
-                <input type="text" class="form-control" id="formGroupExampleInput"
-                    placeholder="2000">
+                <label for="">Ventas totales esperadas </label>
+                <input type="number" class="form-control" id="" placeholder="2000"  step=".01">
             </div>
-            
+
         </div>
     </div>
 </div>

@@ -44,9 +44,10 @@
     <script src="./assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
     <!-- scripts to load resumen charts -->
     <script src="./assets/js/premium-charts-resumen-campaign.js"></script>
+    <script src="./assets/js/maskmoney.js"></script>
     <script src="./assets/js/micro-interactions.js"></script>
     <script src="./assets/js/preloader.js"></script>
-
+    
 </body>
 
 </html>

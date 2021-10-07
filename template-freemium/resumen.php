@@ -12,7 +12,9 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="pdf_button mr-5"><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+                    <!-- icon-download_xls -->
                 </div>
             </div>
         </div>

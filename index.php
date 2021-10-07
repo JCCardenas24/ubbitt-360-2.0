@@ -33,6 +33,12 @@
 											<input id="user" type="text"
 												class="form-control pl-10 bg-transparent border-left-0 brd-gray"
 												name="usuario" placeholder="Nombre de usuario">
+											<div class="invalid-feedback">
+												
+												<div class="wrapper_error_mesg">
+													<i class="ri-error-warning-line"></i> Usuario incorrecto.
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="form-group">
@@ -45,17 +51,28 @@
 											<input id="pass" type="password"
 												class="form-control brd-gray pl-15 bg-transparent border-left-0"
 												name="password" placeholder="Password">
+											<div class="invalid-feedback">
+												<div class="wrapper_error_mesg">
+													<i class="ri-error-warning-line"></i> Password incorrecto.
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-12 text-center pos-check">
 											<div class="form-check p-0 prt-10 pt-10">
 												<input class="form-check-input" type="checkbox" value=""
-													id="defaultCheck1">
+													id="defaultCheck1" required>
 												<label class="form-check-label" for="defaultCheck1">
-													<span class="font-size-14 c-gray">Acepto <a href="aviso-privacidad-ubbit-360.php"
+													<span class="font-size-14 c-gray">Acepto <a
+															href="aviso-privacidad-ubbit-360.php"
 															class="c-terminos">Términos y Condiciones</a></span>
 												</label>
+												<div class="invalid-feedback">
+													<div class="wrapper_error_mesg">
+													<i class="ri-error-warning-line"></i> Acepta términos y condiciones.
+												</div>
+												</div>
 											</div>
 										</div>
 										<a href="dashboard-freemium.php"
@@ -74,7 +91,8 @@
 								</p>
 								<div class="form-group">
 									<label for="email_recovery_input">Email</label>
-									<input type="email" class="form-control email_input" id="email_recovery_input" placeholder="test@gmail.com">
+									<input type="email" class="form-control email_input" id="email_recovery_input"
+										placeholder="test@gmail.com">
 								</div>
 								<a class="send_request_email">Enviar</a>
 								<a class="cancel_request_email">Cancelar</a>
@@ -97,6 +115,26 @@
 			$("#recovery_psw_container").toggle();
 			$("#login_container").toggle();
 		});
+	</script>
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
 	</script>
 </body>
 
