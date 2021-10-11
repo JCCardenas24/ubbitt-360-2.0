@@ -7,7 +7,9 @@
             </div>
         </div>
     </div>
-    <a class="pdf_button"><i class="icon-download_pdf c-gray"></i></a>
+    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+                    
 </div>
 <br>
 <div class="container_kpis_cards">
