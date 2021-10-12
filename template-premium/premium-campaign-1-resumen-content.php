@@ -9,9 +9,11 @@
             </div>
         </div>
         <!-- <a href="#" class="pdf_button mr-5"><i class="icon-download_xls"></i></a> -->
-        <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
-        <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
-                    
+        <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray"
+                aria-hidden="true"></i></a>
+        <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray"
+                aria-hidden="true"></i></a>
+
     </div>
 </div>
 
@@ -30,34 +32,45 @@
     </div>
     <div class="col">
         <div class="card gray">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="<b>Retorno de inversión</b> <br> Monto inversiones totales <br> Inversión/inversión">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>ROI</p>
             <h5>$5,000</h5>
         </div>
     </div>
     <div class="col">
         <div class="card gray">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="<b>Retorno de inversión</b> <br> Monto de ventas totales <br> Inversión/inversión * 100">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>ROI</p>
             <h5>92%</h5>
         </div>
     </div>
     <div class="col">
         <div class="card orange">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Costo por lead">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>CPL</p>
             <h5>$50</h5>
         </div>
     </div>
     <div class="col">
         <div class="card yellow">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Inversión / Monto de ventas">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>CPA</p>
             <h5>$500</h5>
         </div>
     </div>
-    <div class="col">
-        <div class="card yellow">
-            <p>CPA</p>
-            <h5>92%</h5>
-        </div>
-    </div>
+
 </div>
 
 <div class="row ml-0 mr-0 card_actual_forecast">
@@ -159,7 +172,10 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Total de cobros / Total de leads">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>CONVERSIÓN</small>
@@ -181,13 +197,51 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Total de cobros / Total de ventas">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>% DE COBRANZA</small>
                 <h5>12%</h5>
             </div>
 
+        </div>
+    </div>
+</div>
+
+<div class="row ml-0 mr-0">
+    <div class="col-3">
+        <div class="card card_montos_premium_resumen bgColor_melon">
+            <div>
+                <p>Monto total vendido</p>
+                <h5>$300,000</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card card_montos_premium_resumen bgColor_skyblue">
+            <div>
+                <p>Monto del valor <br> prima total</p>
+                <h5>$1,200,00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card card_montos_premium_resumen bgColor_yellow">
+            <div>
+                <p>Monto total emitido</p>
+                <h5>$200,000</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="card card_montos_premium_resumen bgColor_darkgray">
+            <div>
+                <p>Monto total cobrado</p>
+                <h5>$50,000</h5>
+            </div>
         </div>
     </div>
 </div>

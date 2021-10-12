@@ -95,6 +95,12 @@
         .card.bg-c-orange {
             background-color: #ff6f61;
         }
+        .card.bg-c-yellow {
+            background-color: #FFBE2C;
+        }
+        .card.bg-c-skyblue {
+            background-color: #A3DAF7;
+        }
     }
     .container_cards_ventas_info {
         h4 {
@@ -124,6 +130,25 @@
                 color: #fff;
             }
         }
+    }
+    .four_cards_ventas_info {
+        .card {
+            height: 127px;
+            p {
+                font-weight: normal;
+                font-size: 18px;
+            }
+            small {
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+    }
+    .select_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .container_concentrado_polizas {
         .card {
@@ -428,4 +453,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.tooltip_btn {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    i {
+        color: #211A19;
+        font-size: 1.5em;
+    }
 }

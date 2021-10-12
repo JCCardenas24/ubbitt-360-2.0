@@ -105,6 +105,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            div {
+                p,
+                h1 {
+                    color: white !important;
+                }
+            }
         }
         .mini_triangle_yellow {
             display: block;
@@ -197,6 +203,7 @@
             align-items: center;
             margin: 0 auto 17px auto;
             text-align: center;
+            position: relative;
             p {
                 font-size: 16px;
                 line-height: 15px;

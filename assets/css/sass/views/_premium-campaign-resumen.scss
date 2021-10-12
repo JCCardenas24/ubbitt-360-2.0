@@ -152,6 +152,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .tooltip_btn {
+        position: absolute;
+        z-index: 1;
+        right: 10px;
+        top: 10px;
+        width: 1em;
+        height: 1em;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        i {
+            color: #211A19;
+            font-size: 1.5em;
+            margin: 0;
+        }
+    }
     i {
         font-size: 1.5em;
         color: white;
@@ -266,4 +284,41 @@
             margin: 0;
         }
     }
+}
+
+.card_montos_premium_resumen {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    p {
+        font-size: 18px;
+        text-align: center;
+        display: block;
+        margin: 0;
+    }
+    h5 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.bgColor_melon {
+    background-color: #FD8377;
+}
+
+.bgColor_skyblue {
+    background-color: #A3DAF7;
+}
+
+.bgColor_yellow {
+    background-color: #FFBE2C;
+}
+
+.bgColor_darkgray {
+    background-color: #4d4d4d;
 }

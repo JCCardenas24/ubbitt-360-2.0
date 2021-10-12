@@ -11,8 +11,8 @@
         </div>
       </div>
     </div>
-    <a href="#" class="pdf_button mr-5" download><i class="icon-download_xls"></i></a>
-    <a href="#" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
+    <a href="./assets/reportes/prueba.xlsx" class="pdf_button mr-5" download><i class="icon-download_xls"></i></a>
+    <a href="./assets/reportes/info.zip" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
   </div>
 </div>
 

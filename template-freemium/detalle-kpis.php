@@ -8,7 +8,8 @@
                 </div>
             </div>
         </div>
-        <a class="pdf_button mr-5"><i class="icon-download_xls"></i></a>
+        <a href="./assets/reportes/prueba.xlsx" class="pdf_button mr-5" download><i class="icon-download_xls"></i></a>
+        <a href="./assets/reportes/info.zip" class="pdf_button  mr-5" download><i class="fa fa-download" aria-hidden="true"></i></a>
         <a class="upload_report_btn pdf_button"><i class="icon-agegarnuevo"></i></a>
     </div>
     <br>

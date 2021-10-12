@@ -53,6 +53,10 @@
     <div class="row ml-0 mr-0 row_conectores">
         <div class="wrapper_conector">
             <div class="card_conector">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    title="La tasa de clics <br> (clics ÷ impresiones= CTR)">
+                    <i class="ri-information-fill"></i>
+                </a>
                 <div>
                     <p>CTR<p>
                             <h1>30.2%</h1>
@@ -62,6 +66,10 @@
         </div>
         <div class="wrapper_conector">
             <div class="card_conector">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    title="El porcentaje de rebote mide las visitas en las que el usuario ha abandonado el micrositio = (el número de vistas / el número de clicks)">
+                    <i class="ri-information-fill"></i>
+                </a>
                 <div>
                     <p>Rebote<p>
                             <h1>30.2%</h1>
@@ -71,6 +79,10 @@
         </div>
         <div class="wrapper_conector">
             <div class="card_conector">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    title="Leads/Vistas">
+                    <i class="ri-information-fill"></i>
+                </a>
                 <div>
                     <p>Conversión<p>
                             <h1>30.2%</h1>
@@ -80,6 +92,10 @@
         </div>
         <div class="wrapper_conector">
             <div class="card_conector">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    title="Conectados/Leads">
+                    <i class="ri-information-fill"></i>
+                </a>
                 <div>
                     <p>Conversión<p>
                             <h1>30.2%</h1>
@@ -89,6 +105,10 @@
         </div>
         <div class="wrapper_conector mr-0">
             <div class="card_conector">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    title="Ventas/Contactados">
+                    <i class="ri-information-fill"></i>
+                </a>
                 <div>
                     <p>Conversión<p>
                             <h1>30.2%</h1>
@@ -172,12 +192,7 @@
             </div>
         </div>
         <div class="col p-0">
-            <div class="card_bottom bottom_card_gray">
-                <div>
-                    <p>CP Vista</p>
-                    <h1>$16</h1>
-                </div>
-            </div>
+
         </div>
         <div class="col p-0">
             <div class="card_bottom bottom_card_gray">
@@ -196,12 +211,7 @@
             </div>
         </div>
         <div class="col p-0">
-            <div class="card_bottom bottom_card_orange">
-                <div>
-                    <p>Costo por venta</p>
-                    <h1>$1,000</h1>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
@@ -290,18 +300,18 @@
             <div class="wrapper_bars">
                 <p>Ventas | <span>$600</span></p>
                 <div class="progress">
-                    <div class="progress-bar bg_green" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg_green" role="progressbar" style="width: 35%" aria-valuenow="35"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>Gasto | <span>$300</span></p>
                 <div class="progress">
-                    <div class="progress-bar bg_orange" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg_orange" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p>Inversión | <span>$300</span></p>
                 <div class="progress">
-                    <div class="progress-bar bg_yellow" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+                    <div class="progress-bar bg_yellow" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@
     <i class="fa fa-caret-down"></i>
   </div>
   <a href="./assets/reportes/prueba.xlsx" class="pdf_button mr-5" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
-  <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
+  <a href="./assets/reportes/info.zip" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
 </div>
 
 <div class="table-responsive wrapper_table_fixed_last_column">
@@ -49,7 +49,7 @@
         <td>José Salazar</td>
         <td>00/00/000 00:00 AM</td>
         <td>00/00/000 00:00 AM</td>
-        <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+        <td><a href="./assets/reportes/dummy_file.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
       </tr>
       <tr>
         <th scope="row">340</th>
@@ -64,7 +64,7 @@
         <td>José Salazar</td>
         <td>00/00/000 00:00 AM</td>
         <td>00/00/000 00:00 AM</td>
-        <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+        <td><a href="./assets/reportes/dummy_file.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
       </tr>
       <tr>
         <th scope="row">340</th>
@@ -79,7 +79,7 @@
         <td>José Salazar</td>
         <td>00/00/000 00:00 AM</td>
         <td>00/00/000 00:00 AM</td>
-        <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+        <td><a href="./assets/reportes/dummy_file.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
       </tr>
       <tr>
         <th scope="row">340</th>
@@ -94,7 +94,7 @@
         <td>José Salazar</td>
         <td>00/00/000 00:00 AM</td>
         <td>00/00/000 00:00 AM</td>
-        <td><a href="./assets/reportes/prueba.xlsx" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
+        <td><a href="./assets/reportes/dummy_file.pdf" download><i class="fa fa-download" aria-hidden="true"></i></a></td>
       </tr>
 
     </tbody>

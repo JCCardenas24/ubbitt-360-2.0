@@ -12,8 +12,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
-                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i
+                            class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i
+                            class="icon-download_xls c-gray" aria-hidden="true"></i></a>
                     <!-- icon-download_xls -->
                 </div>
             </div>
@@ -24,9 +26,6 @@
         <div class=" col-12">
             <div id="stacked-line" style="height:400px;"></div>
         </div>
-    </div>
-    <div class="container_chart-2">
-        <ct-visualization id="tree-container"></ct-visualization>
     </div>
     <div class="container_cards_resumen_info">
         <div class="row ml-0 mr-0">
@@ -71,48 +70,117 @@
             </div>
         </div>
     </div>
+    <div class="container_cards_ventas_info four_cards_ventas_info">
+        <div class="row ml-0 mr-0">
+            <div class="col-3">
+                <div class="card">
+                    <p class="m-0">Total
+                        de ventas</p>
+                    <small>708</small>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <p class="m-0">Monto total
+                        vendido</p>
+                    <small>$300,000</small>
+                </div>
+            </div>
+            <div class="col-3">
+                
+                <div class="card">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" title="Total de ventas / Total llamadas">
+                <i class="ri-information-fill"></i>
+                </a>
+                    <p class="m-0">% conversión <br> (Llamadas de ventas) </p>
+                    <small>10%</small>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <p class="m-0">Monto del valor <br> prima total </p>
+                    <small>$1,200,00</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="select_wrapper">
+        <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Canal de procedencia</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="container_chart-2">
+        <ct-visualization id="tree-container"></ct-visualization>
+    </div>
+
     <div class="container_cards_ventas_info">
         <div class="row ml-0 mr-0">
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">Total <br>
-                        de ventas</p>
-                    <!-- <small></small> -->
+                    <p class="m-0">Total de emisiones</p>
+                    <small>54</small>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">Monto total <br>
+                    <p class="m-0">Monto total
                         vendido</p>
-                    <small>$100,000</small>
+                    <small>$200,000</small>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">% conversión</p>
-                    <small>10%</small>
+                    <p class="m-0">Total de cobros</p>
+                    <small>54</small>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
-                    <p class="m-0">Total de <br>
-                        emisiones</p>
-                    <small>100</small>
-                </div>
-            </div>
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
                     <p class="m-0">% de cobranza</p>
-                    <small>10%</small>
+                    <small>20.09</small>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">Total de <br>
-                        cobros</p>
-                    <small>50</small>
+                    <p class="m-0">Monto total cobrado</p>
+                    <small>$50,000</small>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container_cards_resumen_info">
+        <div class="row ml-0 mr-0">
+            <div class="col-6">
+                <div class="card bg-c-yellow">
+                    <div class="d-flex he-100 justify-content-center align-items-center">
+                        <div class="col-6 p-0 text-center">
+                            <p class="m-0">Ticket cobranza <br> promedio </p> <br>
+                            <!-- <h5>Total de llamadas</h5> -->
+                        </div>
+                        <div class="col-6 p-0 text-center">
+                            <small class="m-0">$2,300</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card bg-c-skyblue">
+                    <div class="d-flex he-100 justify-content-center align-items-center">
+                        <div class="col-6 p-0 text-center">
+                            <p class="m-0">Comisión pagada <br> Übbitt 360</p> <br>
+                            <!-- <h5>Total de llamadas</h5> -->
+                        </div>
+                        <div class="col-6 p-0 text-center">
+                            <small class="m-0">$100,000</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="container_concentrado_polizas">

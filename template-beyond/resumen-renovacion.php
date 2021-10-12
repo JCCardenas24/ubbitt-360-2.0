@@ -13,9 +13,11 @@
                         </div>
                     </div>
                     <!-- <a href="#" class="pdf_button mr-5"><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a> -->
-                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
-                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
-                    
+                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i
+                            class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i
+                            class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+
                 </div>
             </div>
         </div>
@@ -26,7 +28,7 @@
             <div id="stacked-line" style="height:400px;"></div>
         </div>
     </div>
-   
+
     <div class="container_chart-2">
         <div class="row m-0 wid-100">
             <div class="col-3">
@@ -37,11 +39,11 @@
                     </div>
                     <div class="info_gestion">
                         <p>Aceptados</p>
-                        <h5>1000 / <span>33%</span></h5>
+                        <h5>1000</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Rechazados</p>
-                        <h5>2000 / <span>66%</span></h5>
+                        <h5>2000</h5>
                     </div>
                 </div>
             </div>
@@ -49,19 +51,19 @@
                 <div class="card card-gestion">
                     <div class="header">
                         <p>Primera gestión</p>
-                        <h5>1000 / <span>33%</span> </h5>
+                        <h5>1000</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>1000 / <span>33%</span> <span class="mini_price">($200)</span></h5>
+                        <h5>1000 <span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
-                        <h5>800 / <span>22%</span></h5>
+                        <h5>800</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros fuera de gestión</p>
-                        <h5>200 / <span>5%</span></h5>
+                        <h5>200</h5>
                     </div>
                 </div>
             </div>
@@ -69,19 +71,19 @@
                 <div class="card card-gestion">
                     <div class="header">
                         <p>Segunda gestión</p>
-                        <h5>800 / <span>25%</span></h5>
+                        <h5>80</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>800 / <span>33%</span> <span class="mini_price">($200)</span></h5>
+                        <h5>800<span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
-                        <h5>700 / <span>22%</span></h5>
+                        <h5>700</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros fuera de gestión</p>
-                        <h5>100 / <span>5%</span></h5>
+                        <h5>100</h5>
                     </div>
                 </div>
             </div>
@@ -89,25 +91,25 @@
                 <div class="card card-gestion">
                     <div class="header">
                         <p>Tercera gestión</p>
-                        <h5>700 / <span>33%</span></h5>
+                        <h5>700</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros efectivos</p>
-                        <h5>700 / <span>33%</span> <span class="mini_price">($200)</span></h5>
+                        <h5>700<span class="mini_price">($200)</span></h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros en seguimiento</p>
-                        <h5>500 / <span>22%</span></h5>
+                        <h5>500</h5>
                     </div>
                     <div class="info_gestion">
                         <p>Registros fuera de gestión</p>
-                        <h5>200 / <span>5%</span></h5>
+                        <h5>200</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="container_cards_ventas_info">
         <div class="d-flex justify-content-between align-items-center mb-30">
             <h4 class="mb-0">Por gestión</h4>
@@ -119,38 +121,63 @@
             </select>
         </div>
         <div class="row ml-0 mr-0">
-            <div class="col-2 pl-0">
-                <div class="card">
-                    <p class="m-0">Total <br>cobrados</p><small>300</small>
+            <div class="col-4 pl-0">
+                <div class="card beyond_card bg_skyBlue h-120">
+                    <span>Registos marcados</span>
+                    <h5>280</h5>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
-                    <p class="m-0">%<br>conversión</p><small>20%</small>
+            <div class="col-4">
+                <div class="card beyond_card bg_yellowMoz h-120">
+                    <span>Renovación aceptada</span>
+                    <h5>150</h5>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
-                    <p class="m-0">Monto <br>cobrado</p><small>$100,
-                        000</small>
+            <div class="col-4 pr-0">
+                <div class="card beyond_card bg_darkGray h-120">
+                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Llamadas conectadas / Renovación aceptada">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <span>Conversión</span>
+                    <h5>36%</h5>
                 </div>
             </div>
-            <div class="col-2">
+        </div>
+        <div class="row ml-0 mr-0">
+            <div class="col pl-0">
                 <div class="card">
                     <p class="m-0">Registros en <br>seguimiento</p><small>100</small>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">Monto <br>pendiente</p><small>$30,
-                        000</small>
+                    <p class="m-0">Monto <br> pendiente</p><small>$30,00</small>
                 </div>
             </div>
-            <div class="col-2 pr-0">
+            <div class="col">
                 <div class="card">
-                    <p class="m-0">Total de <br>cobros</p><small>50</small>
+                    <p class="m-0">Total <br> cobrados</p>
+                    <small>300</small>
                 </div>
             </div>
+            <div class="col">
+                <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Llamadas conectadas / Renovación aceptada">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <p class="m-0">% <br> conversión</p>
+                    <small>20%</small>
+                </div>
+            </div>
+            <div class="col pr-0">
+                <div class="card">
+                    <p class="m-0">Monto <br> cobrado</p>
+                    <small>$100,00</small>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="container_graficas_llamadas">
@@ -192,7 +219,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Acepta Pago con 5% por domiciliación </h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -202,7 +230,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Se envía ficha de deposito </h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -212,7 +241,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Acepta envío de ficha de deposito</h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -294,7 +324,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">No gestionable en portal (ZA)</h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_renova">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -325,12 +356,12 @@
                 </div>
             </div>
             <div class="col-6 pr-0">
-                <div class="card wid-100 "><small>Venta pendiente total</small>
+                <div class="card wid-100 "><small>Monto de registros en seguimiento</small>
                     <p>$3,
                         821,
                         133.25</p>
                 </div>
-                <div class="card wid-100"><small>Venta renovada cobrada total</small>
+                <div class="card wid-100"><small>Monto de registros pagados</small>
                     <p>$3,
                         821,
                         133.25</p>

@@ -5,11 +5,15 @@
       aria-controls="premium-call-center-kpis-campaign-1-content" aria-selected="true">KPI'S de telefonía</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="premium-call-center-bd-llamadas-campaign-1-content-tab" data-toggle="pill" href="#premium-call-center-bd-llamadas-campaign-1-content" role="tab" aria-controls="premium-call-center-bd-llamadas-campaign-1-content" aria-selected="false">Base de datos
+    <a class="nav-link" id="premium-call-center-bd-llamadas-campaign-1-content-tab" data-toggle="pill"
+      href="#premium-call-center-bd-llamadas-campaign-1-content" role="tab"
+      aria-controls="premium-call-center-bd-llamadas-campaign-1-content" aria-selected="false">Base de datos
       (llamadas)</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="premium-call-center-bd-ventas-campaign-1-content-tab" data-toggle="pill" href="#premium-call-center-bd-ventas-campaign-1-content" role="tab" aria-controls="premium-call-center-bd-ventas-campaign-1-content" aria-selected="false">Base de datos (Ventas)</a>
+    <a class="nav-link" id="premium-call-center-bd-ventas-campaign-1-content-tab" data-toggle="pill"
+      href="#premium-call-center-bd-ventas-campaign-1-content" role="tab"
+      aria-controls="premium-call-center-bd-ventas-campaign-1-content" aria-selected="false">Base de datos (Ventas)</a>
   </li>
 
 </ul>
@@ -22,8 +26,8 @@
     aria-labelledby="premium-call-center-bd-llamadas-campaign-1-content-tab">
     <?php include_once('./template-premium/premium-campaign-1-call-center-bd-llamadas.php') ?>
   </div>
-  <div class="tab-pane fade" id="premium-call-center-bd-ventas-campaign-1-content" role="tabpanel"
+  <!-- <div class="tab-pane fade" id="premium-call-center-bd-ventas-campaign-1-content" role="tabpanel"
     aria-labelledby="premium-call-center-bd-ventas-campaign-1-content-tab">
-    <?php include_once('./template-premium/premium-campaign-1-call-center-bd-ventas.php') ?>
-  </div>
+    c
+  </div> -->
 </div>
