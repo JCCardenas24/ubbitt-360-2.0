@@ -20,12 +20,20 @@
 <div class="row ml-0 mr-0 row_balance_resumen">
     <div class="col">
         <div class="card dark-gray">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Es el monto de dinero invertido durante el periodo acordado.">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>Inversión Ubbitt</p>
             <h5>$100,000</h5>
         </div>
     </div>
     <div class="col">
         <div class="card dark-gray">
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Es el monto de dinero gastado en publicidad.">
+                <i class="ri-information-fill"></i>
+            </a>
             <p>Presupuesto gastado</p>
             <h5>$5,000</h5>
         </div>
@@ -139,7 +147,10 @@
 <div class="row ml-0 mr-0 mt-30 mb-30">
     <div class="col">
         <div class="gray_gradient_card">
-
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Clientes potenciales generados en el período de tiempo seleccionado.">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>LEADS</small>
@@ -150,7 +161,10 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Número de llamadas realizadas y recibidas al DID asignado  a la campaña.">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>TOTAL LLAMADAS</small>
@@ -161,7 +175,10 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Es el número total de pólizas emitidas.">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>TOTAL VENTAS</small>
@@ -186,7 +203,10 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                title="Número de pólizas cobradas en el período seleccionado.">
+                <i class="ri-information-fill"></i>
+            </a>
             <i class="ri-arrow-up-line"></i>
             <div>
                 <small>TOTAL COBROS</small>
@@ -212,32 +232,48 @@
 </div>
 
 <div class="row ml-0 mr-0">
-    <div class="col-3">
+    <!-- <div class="col-3">
         <div class="card card_montos_premium_resumen bgColor_melon">
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Total de cobros / Total de ventas">
+                <i class="ri-information-fill"></i>
+            </a>
             <div>
                 <p>Monto total vendido</p>
                 <h5>$300,000</h5>
             </div>
         </div>
-    </div>
-    <div class="col-3">
+    </div> -->
+    <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_skyblue">
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Monto total de la prima total emitida">
+                <i class="ri-information-fill"></i>
+            </a>
             <div>
                 <p>Monto del valor <br> prima total</p>
                 <h5>$1,200,00</h5>
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_yellow">
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Monto total de la prima neta emitida.">
+                <i class="ri-information-fill"></i>
+            </a>
             <div>
                 <p>Monto total emitido</p>
                 <h5>$200,000</h5>
             </div>
         </div>
     </div>
-    <div class="col-3">
+    <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_darkgray">
+        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+                title="Costo por adquisición  Promedio: : Inversión / monto de ventas.">
+                <i class="ri-information-fill"></i>
+            </a>
             <div>
                 <p>Monto total cobrado</p>
                 <h5>$50,000</h5>

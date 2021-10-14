@@ -13,9 +13,11 @@
                         </div>
                     </div>
                     <!-- <a href="#" class="pdf_button mr-5"><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a> -->
-                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
-                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
-                    
+                    <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i
+                            class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
+                    <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i
+                            class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+
                 </div>
             </div>
         </div>
@@ -106,7 +108,7 @@
             </div>
         </div>
     </div>
-  
+
     <div class="container_cards_ventas_info">
         <div class="d-flex justify-content-between align-items-center mb-30">
             <h4 class="mb-0">Por gestión</h4>
@@ -120,19 +122,27 @@
         <div class="row ml-0 mr-0">
             <div class="col-4 pl-0">
                 <div class="card beyond_card bg_skyBlue h-120">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de registros marcados de la base recibida.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <span>Registos marcados</span>
                     <h5>280</h5>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card beyond_card bg_yellowMoz h-120">
-                    <span>Renovación aceptada</span>
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros marcados con tipificación exitosa ">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <span>Cobranza aceptada</span>
                     <h5>150</h5>
                 </div>
             </div>
             <div class="col-4 pr-0">
                 <div class="card beyond_card bg_darkGray h-120">
-                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                         title="Llamadas conectadas / Cobranza aceptada">
                         <i class="ri-information-fill"></i>
                     </a>
@@ -144,22 +154,38 @@
         <div class="row ml-0 mr-0">
             <div class="col pl-0">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros con tipificación en seguimiento ">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Registros en <br>seguimiento</p><small>100</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Es el monto del recibo de pago neto por cobrar.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto <br> pendiente</p><small>$30,00</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros cobrados de manera exitosa.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Total <br> cobrados</p>
                     <small>300</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="<b>% cobranza:</b> <br> ( total de cobros / total de ventas ).">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                         title="Llamadas conectadas / Registros pagados">
                         <i class="ri-information-fill"></i>
@@ -170,6 +196,10 @@
             </div>
             <div class="col pr-0">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto neto cobrado total de los registros exitosos.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto <br> cobrado</p>
                     <small>$100,00</small>
                 </div>
@@ -216,7 +246,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Acepta Pago con 5% por domiciliación </h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -226,7 +257,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Se envía ficha de deposito </h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -236,7 +268,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">Acepta envío de ficha de deposito</h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">
@@ -318,7 +351,8 @@
                     <div class="d-flex mb-5">
                         <div class="d-flex justify-content-center align-items-center">
                             <h4 class="mb-0">No gestionable en portal (ZA)</h4><span
-                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver detalle</span>
+                                class="ml-5 mr-5"><b>|</b></span><span class="ttl_detalle href_bd_cobra">Ver
+                                detalle</span>
                         </div><span class="ttl_number">10</span>
                     </div>
                     <div class="progress">

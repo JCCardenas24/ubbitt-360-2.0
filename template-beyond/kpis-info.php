@@ -35,7 +35,7 @@
         <div class="col">
             <div class="card beyond_card bg_darkRed">
                 <div>
-                <p class="m-0">Llamadas <br> enlazadas</p>
+                <p class="m-0">Llamadas <br> no enlazadas</p>
                 <h1 class="m-0">1017</h1>
                 </div>
             </div>

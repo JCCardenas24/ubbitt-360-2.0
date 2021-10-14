@@ -31,7 +31,12 @@
         <div class="row ml-0 mr-0">
             <div class="col-4">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="<b>Número de llamadas ofrecidas/Number of calls offered.</b> <br> Es el número de llamadas entrantes al DID asignado para campaña ">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <div class="d-flex he-100 justify-content-center align-items-center">
+
                         <div class="col-6 p-0 text-center">
                             <p class="m-0">NCO</p> <br>
                             <h5>Total de llamadas</h5>
@@ -44,26 +49,34 @@
             </div>
             <div class="col-4">
                 <div class="card bg-c-orange">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de llamadas contestadas con motivo de compra.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <div class="d-flex he-100 justify-content-center align-items-center">
                         <div class="col-6 p-0 text-center">
-                            <p class="m-0">NCO</p> <br>
-                            <h5>Total de llamadas</h5>
+                            <!-- <p class="m-0"></p> <br> -->
+                            <h5>Total Venta</h5>
                         </div>
                         <div class="col-6 p-0 text-center">
-                            <small class="m-0">1000</small>
+                            <small class="m-0">500</small>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-4">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de llamadas contestadas con motivo de atención a clientes">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <div class="d-flex he-100 justify-content-center align-items-center">
                         <div class="col-6 p-0 text-center">
-                            <p class="m-0">NCO</p> <br>
-                            <h5>Total de llamadas</h5>
+
+                            <h5>Llamadas atención <br> a cliente</h5>
                         </div>
                         <div class="col-6 p-0 text-center">
-                            <small class="m-0">1000</small>
+                            <small class="m-0">500</small>
                         </div>
                     </div>
                 </div>
@@ -74,6 +87,10 @@
         <div class="row ml-0 mr-0">
             <div class="col-3">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de pólizas emitidas totales.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Total
                         de ventas</p>
                     <small>708</small>
@@ -81,23 +98,31 @@
             </div>
             <div class="col-3">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto total de la prima neta emitida">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto total
                         vendido</p>
                     <small>$300,000</small>
                 </div>
             </div>
             <div class="col-3">
-                
                 <div class="card">
-                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" title="Total de ventas / Total llamadas">
-                <i class="ri-information-fill"></i>
-                </a>
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="% Conversión = (Total de ventas / total de llamadas).">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">% conversión <br> (Llamadas de ventas) </p>
                     <small>10%</small>
                 </div>
             </div>
             <div class="col-3">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto total de la prima total emitida.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto del valor <br> prima total </p>
                     <small>$1,200,00</small>
                 </div>
@@ -121,12 +146,20 @@
         <div class="row ml-0 mr-0">
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de pólizas emitidas en el período seleccionado.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Total de emisiones</p>
                     <small>54</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto total emitido en prima neta.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto total
                         vendido</p>
                     <small>$200,000</small>
@@ -134,18 +167,30 @@
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de pólizas cobradas en el período seleccionado.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Total de cobros</p>
                     <small>54</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Conversión de cobro: Total de pólizas cobradas / total de pólizas emitidas.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">% de cobranza</p>
                     <small>20.09</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto total de prima neta cobrado en el período seleccionado.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto total cobrado</p>
                     <small>$50,000</small>
                 </div>
@@ -156,6 +201,10 @@
         <div class="row ml-0 mr-0">
             <div class="col-6">
                 <div class="card bg-c-yellow">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Es el monto promedio del primer cobro.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <div class="d-flex he-100 justify-content-center align-items-center">
                         <div class="col-6 p-0 text-center">
                             <p class="m-0">Ticket cobranza <br> promedio </p> <br>
@@ -169,6 +218,10 @@
             </div>
             <div class="col-6">
                 <div class="card bg-c-skyblue">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto pagado a Übbitt esperado de acuerdo a la comisión pactada.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <div class="d-flex he-100 justify-content-center align-items-center">
                         <div class="col-6 p-0 text-center">
                             <p class="m-0">Comisión pagada <br> Übbitt 360</p> <br>
