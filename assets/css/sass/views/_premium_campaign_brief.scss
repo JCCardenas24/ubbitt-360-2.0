@@ -149,3 +149,24 @@ input.single_range {
 .table_fixed_last_column td:last-child {
     background-color: white;
 }
+
+.ttl_forescast {
+    p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 20px;
+        color: #a2a2a2;
+        margin-right: 13px;
+    }
+    h5 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 25px;
+        color: #4d4d4d;
+    }
+    margin-right: 23px;
+    align-items: baseline;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}

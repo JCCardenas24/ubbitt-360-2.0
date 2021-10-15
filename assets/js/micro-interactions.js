@@ -50,12 +50,12 @@ $(".btn_close_file_uploaded").click(function() {
 
 
 // Check radio button to display selected chart
-$("input[name='selected_chart']").on("click", function() {
-    $(".chart_actual").toggle(this.value === "false" && this.checked);
-    $(".chart_forecast").toggle(this.value === "true" && this.checked);
-    stackedChartForecast.resize();
+// $("input[name='selected_chart']").on("click", function() {
+//     $(".chart_actual").toggle(this.value === "false" && this.checked);
+//     $(".chart_forecast").toggle(this.value === "true" && this.checked);
+//     stackedChartForecast.resize();
 
-});
+// });
 
 // from tab menu to side menu
 $('.level-three .nav-link').on('shown.bs.tab', function(event) {

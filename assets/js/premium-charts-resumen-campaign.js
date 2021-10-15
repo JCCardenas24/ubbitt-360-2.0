@@ -66,71 +66,71 @@ let option = {
 stackedChart.setOption(option);
 
 // Stacked line Forecast chart (cobrado / inversión /ventas)
-let stackedChartForecast = echarts.init(document.getElementById('stacked-line-forecast'));
-let option_stacked_forecast = {
+// let stackedChartForecast = echarts.init(document.getElementById('stacked-line-forecast'));
+// let option_stacked_forecast = {
 
-    grid: {
-        left: '1%',
-        right: '2%',
-        bottom: '3%',
-        containLabel: true
-    },
-    tooltip: {
-        trigger: 'axis'
-    },
-    // Add legend
-    legend: {
-        data: ['Cobrado', 'Inversión', 'Ventas']
-    },
+//     grid: {
+//         left: '1%',
+//         right: '2%',
+//         bottom: '3%',
+//         containLabel: true
+//     },
+//     tooltip: {
+//         trigger: 'axis'
+//     },
+//     // Add legend
+//     legend: {
+//         data: ['Cobrado', 'Inversión', 'Ventas']
+//     },
 
-    // Add custom colors
-    color: ['#49e83c', '#ffd800', '#4d4d4d'],
+//     // Add custom colors
+//     color: ['#49e83c', '#ffd800', '#4d4d4d'],
 
-    // Enable drag recalculate
-    calculable: true,
+//     // Enable drag recalculate
+//     calculable: true,
 
-    // Hirozontal axis
-    xAxis: [{
-        type: 'category',
-        boundaryGap: false,
-        data: [
-            'Día 1', 'Día 2', 'Día 3', 'Día 4'
-        ]
-    }],
+//     // Hirozontal axis
+//     xAxis: [{
+//         type: 'category',
+//         boundaryGap: false,
+//         data: [
+//             'Día 1', 'Día 2', 'Día 3', 'Día 4'
+//         ]
+//     }],
 
-    // Vertical axis
-    yAxis: [{
-        type: 'value'
-    }],
+//     // Vertical axis
+//     yAxis: [{
+//         type: 'value'
+//     }],
 
-    // Add series
-    series: [{
-            name: 'Cobrado',
-            type: 'line',
-            stack: 'Total',
-            data: [100, 254, 125, 105, 90, 235, 215]
-        },
-        {
-            name: 'Inversión',
-            type: 'line',
-            stack: 'Total',
-            data: [255, 465, 190, 245, 215, 345, 350]
-        },
-        {
-            name: 'Ventas',
-            type: 'line',
-            stack: 'Total',
-            data: [100, 545, 300, 358, 199, 325, 400]
-        }
-    ],
-    lineStyle: {
-        width: 10
-    }
-    // Add series
+//     // Add series
+//     series: [{
+//             name: 'Cobrado',
+//             type: 'line',
+//             stack: 'Total',
+//             data: [100, 254, 125, 105, 90, 235, 215]
+//         },
+//         {
+//             name: 'Inversión',
+//             type: 'line',
+//             stack: 'Total',
+//             data: [255, 465, 190, 245, 215, 345, 350]
+//         },
+//         {
+//             name: 'Ventas',
+//             type: 'line',
+//             stack: 'Total',
+//             data: [100, 545, 300, 358, 199, 325, 400]
+//         }
+//     ],
+//     lineStyle: {
+//         width: 10
+//     }
+//     // Add series
 
-};
+// };
 
-stackedChartForecast.setOption(option_stacked_forecast);
+// stackedChartForecast.setOption(option_stacked_forecast);
 
 //Stacked line chart (Venta emitida)
 let stackedChart2 = echarts.init(document.getElementById('behavior-campaign-stacked-line'));
@@ -337,6 +337,7 @@ $('#resumen-campaign-1-tab').on('shown.bs.tab', function(event) {
     stackedChart2.resize();
     basicdoughnut_concentrado_ventas.resize();
     funnel_ventas_inversiones_chart.resize();
+    // stackedChart.resize();
 })
 
 
@@ -721,5 +722,6 @@ window.addEventListener('resize', function() {
     horarios_double_bar.resize();
     rendimiento_mixed_chart.resize();
     funnel_ventas_inversiones_chart.resize();
-    stackedChartForecast.resize();
+    // stackedChartForecast.resize();
+
 })

@@ -1960,6 +1960,30 @@ input.single_range:focus-visible {
   background-color: white;
 }
 
+.ttl_forescast {
+  margin-right: 23px;
+  align-items: baseline;
+}
+
+.ttl_forescast p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #a2a2a2;
+  margin-right: 13px;
+}
+
+.ttl_forescast h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+  color: #4d4d4d;
+}
+
+.ttl_forescast:last-of-type {
+  margin-right: 0;
+}
+
 .row_balance_resumen .card {
   height: 88px;
   display: flex;
@@ -1998,6 +2022,7 @@ input.single_range:focus-visible {
   font-size: 19px;
   text-align: center;
   color: #fff;
+  margin: 0;
 }
 
 .card_actual_forecast {
@@ -2170,6 +2195,7 @@ input.single_range:focus-visible {
   font-size: 19px;
   text-align: left;
   color: #fff;
+  margin: 0;
 }
 
 .row_behavior_campaigns .funnel_chart {

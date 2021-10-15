@@ -120,7 +120,7 @@
             </select>
         </div>
         <div class="row ml-0 mr-0">
-            <div class="col-4 pl-0">
+            <div class="col-3 pl-0">
                 <div class="card beyond_card bg_skyBlue h-120">
                     <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                         title="Número de registros marcados de la base recibida.">
@@ -130,7 +130,7 @@
                     <h5>280</h5>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="card beyond_card bg_yellowMoz h-120">
                     <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                         title="Registros marcados con tipificación exitosa ">
@@ -140,13 +140,23 @@
                     <h5>150</h5>
                 </div>
             </div>
-            <div class="col-4 pr-0">
+            <div class="col-3">
                 <div class="card beyond_card bg_darkGray h-120">
                     <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
-                        title="Llamadas conectadas / Cobranza aceptada">
+                        title="<b>Conversión:</b> <br> Llamadas conectadas / Cobranza aceptada">
                         <i class="ri-information-fill"></i>
                     </a>
                     <span>Conversión</span>
+                    <h5>36%</h5>
+                </div>
+            </div>
+            <div class="col-3 pr-0">
+                <div class="card beyond_card bg_darkGray h-120">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="<b>Contratación:</b> <br>">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <span>Contratación</span>
                     <h5>36%</h5>
                 </div>
             </div>
@@ -204,7 +214,6 @@
                     <small>$100,00</small>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="container_graficas_llamadas">

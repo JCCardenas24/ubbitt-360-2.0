@@ -121,25 +121,43 @@
             </select>
         </div>
         <div class="row ml-0 mr-0">
-            <div class="col-4 pl-0">
+            <div class="col-3 pl-0">
                 <div class="card beyond_card bg_skyBlue h-120">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Número de registros marcados de la base recibida.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <span>Registos marcados</span>
                     <h5>280</h5>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <div class="card beyond_card bg_yellowMoz h-120">
-                    <span>Renovación aceptada</span>
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros marcados con tipificación exitosa ">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <span>Cobranza aceptada</span>
                     <h5>150</h5>
                 </div>
             </div>
-            <div class="col-4 pr-0">
+            <div class="col-3">
                 <div class="card beyond_card bg_darkGray h-120">
-                <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
-                        title="Llamadas conectadas / Renovación aceptada">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="<b>Conversión:</b> <br> Llamadas conectadas / Cobranza aceptada">
                         <i class="ri-information-fill"></i>
                     </a>
                     <span>Conversión</span>
+                    <h5>36%</h5>
+                </div>
+            </div>
+            <div class="col-3 pr-0">
+                <div class="card beyond_card bg_darkGray h-120">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="<b>Contratación:</b> <br>">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <span>Contratación</span>
                     <h5>36%</h5>
                 </div>
             </div>
@@ -147,16 +165,28 @@
         <div class="row ml-0 mr-0">
             <div class="col pl-0">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros con tipificación en seguimiento ">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Registros en <br>seguimiento</p><small>100</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Es el monto del recibo de pago neto por cobrar.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto <br> pendiente</p><small>$30,00</small>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Registros cobrados de manera exitosa.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Total <br> cobrados</p>
                     <small>300</small>
                 </div>
@@ -164,7 +194,11 @@
             <div class="col">
                 <div class="card">
                     <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
-                        title="Llamadas conectadas / Renovación aceptada">
+                        title="<b>% cobranza:</b> <br> ( total de cobros / total de ventas ).">
+                        <i class="ri-information-fill"></i>
+                    </a>
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Llamadas conectadas / Registros pagados">
                         <i class="ri-information-fill"></i>
                     </a>
                     <p class="m-0">% <br> conversión</p>
@@ -173,11 +207,14 @@
             </div>
             <div class="col pr-0">
                 <div class="card">
+                    <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+                        title="Monto neto cobrado total de los registros exitosos.">
+                        <i class="ri-information-fill"></i>
+                    </a>
                     <p class="m-0">Monto <br> cobrado</p>
                     <small>$100,00</small>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="container_graficas_llamadas">

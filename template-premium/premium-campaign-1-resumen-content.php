@@ -82,64 +82,25 @@
 </div>
 
 <div class="row ml-0 mr-0 card_actual_forecast">
-    <div class="col-4">
-        <div class="balance_inversion_ventas_cobrado">
-            <div class="card_ttls row ml-0 mr-0">
-                <div class="col-6 p-0 lr">
-                    <h2>Actual</h2>
-                </div>
-                <div class="col-6 p-0 lf">
-                    <h3>Forecast</h3>
-                </div>
-            </div>
-            <div class="row balance_info_forecast_actual ml-0 mr-0">
-                <div class="col-6 lr">
-                    <h2>$200,000</h2>
-                </div>
-                <div class="col-6 lf">
-                    <h3>$500,000</h3>
-                </div>
-                <div class="ttl_wrapper_forecast_actual">
-                    <p>Inversión</p>
-                </div>
-            </div>
-            <div class="row balance_info_forecast_actual ml-0 mr-0">
-                <div class="col-6 lr">
-                    <h2>$120,000</h2>
-                </div>
-                <div class="col-6 lf">
-                    <h3>$200,000</h3>
-                </div>
-                <div class="ttl_wrapper_forecast_actual">
-                    <p>Ventas</p>
-                </div>
-            </div>
-            <div class="row balance_info_forecast_actual ml-0 mr-0 border_radius_bottom">
-                <div class="col-6 lr">
-                    <h2>$20,000</h2>
-                </div>
-                <div class="col-6 lf">
-                    <h3>$100,000</h3>
-                </div>
-                <div class="ttl_wrapper_forecast_actual">
-                    <p>Cobrado</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-8">
+    <div class="col-12">
         <div class="radio_button_forecast_actual">
-            <input type="radio" value="false" name="selected_chart" id="pemp_yes" checked>
-            <label for="pemp_yes">Actual</label>
-            <input type="radio" value="true" name="selected_chart" id="pemp_no">
-            <label for="pemp_no">Forecast</label>
+            <div class="d-flex mx-auto">
+                <div class="d-flex ttl_forescast">
+                    <p>Inversión</p>
+                    <h5>$200,000</h5>
+                </div>
+                <div class="d-flex ttl_forescast">
+                    <p>Ventas</p>
+                    <h5>$120,000</h5>
+                </div>
+                <div class="d-flex ttl_forescast">
+                    <p>Cobrado</p>
+                    <h5>$20,000</h5>
+                </div>
+            </div>
         </div>
         <div class="chart_actual">
             <div id="stacked-line" style="height:400px;"></div>
-        </div>
-        <div class="chart_forecast" style="display: none;">
-            <!-- <p>otra gráfica</p> -->
-            <div id="stacked-line-forecast" style="height:400px;"></div>
         </div>
     </div>
 </div>
@@ -161,7 +122,7 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                 title="Número de llamadas realizadas y recibidas al DID asignado  a la campaña.">
                 <i class="ri-information-fill"></i>
             </a>
@@ -175,7 +136,7 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                 title="Es el número total de pólizas emitidas.">
                 <i class="ri-information-fill"></i>
             </a>
@@ -203,7 +164,7 @@
     </div>
     <div class="col">
         <div class="gray_gradient_card">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left" data-html="true"
                 title="Número de pólizas cobradas en el período seleccionado.">
                 <i class="ri-information-fill"></i>
             </a>
@@ -246,7 +207,7 @@
     </div> -->
     <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_skyblue">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
                 title="Monto total de la prima total emitida">
                 <i class="ri-information-fill"></i>
             </a>
@@ -258,7 +219,7 @@
     </div>
     <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_yellow">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
                 title="Monto total de la prima neta emitida.">
                 <i class="ri-information-fill"></i>
             </a>
@@ -270,7 +231,7 @@
     </div>
     <div class="col-4">
         <div class="card card_montos_premium_resumen bgColor_darkgray">
-        <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
+            <a type="button" class="tooltip_btn" data-toggle="tooltip" data-placement="left"
                 title="Costo por adquisición  Promedio: : Inversión / monto de ventas.">
                 <i class="ri-information-fill"></i>
             </a>
