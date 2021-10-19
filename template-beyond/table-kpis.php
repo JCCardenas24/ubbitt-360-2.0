@@ -1,19 +1,3 @@
-<div class="d-flex mb-20">
-    <div class="d-flex wid-100 justify-content-end">
-        <div class="col-4 d-flex justify-content-between">
-            <div class="form-group wid-100 d-flex m-0">
-                <div id="reportrange_clientes" class="range-pick">
-                    <i class="fa fa-calendar"></i>&nbsp;
-                    <span></span>&nbsp;&nbsp;<i class="fa fa-caret-down"></i>
-                </div>
-            </div>
-        </div>
-        <a href="./assets/reportes/dummy_file.pdf" class="pdf_button mr-5" download><i class="icon-download_pdf c-gray" aria-hidden="true"></i></a>
-        <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
-                    
-    </div>
-</div>
-
 <table class="table table-hover">
   <thead>
     <tr>
@@ -32,6 +16,18 @@
       <td>18:35px</td>
       <td>
         <i class="fa fa-download" aria-hidden="true"></i>
+        <a type="button" class="" data-toggle="modal" data-target="#modal-delete-report">
+          <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">121212</th>
+      <td>documento.xml</td>
+      <td>02/06/2021</td>
+      <td>18:35px</td>
+      <td>
+        <i class="fa fa-download" aria-hidden="true"></i>
         <i class="fa fa-trash-o" aria-hidden="true"></i>
       </td>
     </tr>
@@ -41,17 +37,7 @@
       <td>02/06/2021</td>
       <td>18:35px</td>
       <td>
-      <i class="fa fa-download" aria-hidden="true"></i>
-        <i class="fa fa-trash-o" aria-hidden="true"></i>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">121212</th>
-      <td>documento.xml</td>
-      <td>02/06/2021</td>
-      <td>18:35px</td>
-      <td>
-      <i class="fa fa-download" aria-hidden="true"></i>
+        <i class="fa fa-download" aria-hidden="true"></i>
         <i class="fa fa-trash-o" aria-hidden="true"></i>
       </td>
     </tr>
@@ -69,3 +55,7 @@
     </li>
   </ul>
 </nav>
+
+<!-- Modal delete report -->
+<?php include_once('modal-delete-report.php') ?>
+

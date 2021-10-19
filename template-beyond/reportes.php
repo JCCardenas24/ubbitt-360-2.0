@@ -14,10 +14,10 @@
 <div class="tab-content" id="beyond-cobranza-reportes-optionsContent">
     <div class="tab-pane fade show active" id="beyond-cobranza-reportes-detalle-kpis" role="tabpanel"
         aria-labelledby="beyond-cobranza-reportes-detalle-kpis-tab">
-        <?php include_once('./template-beyond/detalle-kpis.php') ?>
+        <?php include_once('detalle-kpis.php') ?>
     </div>
     <div class="tab-pane fade" id="beyond-cobranza-reportes-detalle-tipificaciones" role="tabpanel"
         aria-labelledby="beyond-cobranza-reportes-detalle-tipificaciones-tab">
-        <?php include_once('./template-beyond/detalle-de-tipificaciones.php') ?>
+        <?php include_once('detalle-de-tipificaciones.php') ?>
     </div>
 </div>
