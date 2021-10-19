@@ -39,6 +39,11 @@ $(".btn_send_file").click(function() {
     $('.carga_exito_modal').modal('show')
 });
 
+$(".btn_send_file-bd").click(function() {
+    event.preventDefault();
+    $('.carga_exito_modal-bd').modal('show')
+});
+
 //Close msg and redirect
 $(".btn_close_file_uploaded").click(function() {
     event.preventDefault();
@@ -46,8 +51,20 @@ $(".btn_close_file_uploaded").click(function() {
     $('.btn_send_file').attr('aria-disabled', 'true');
     $('.btn_send_file').addClass("disabled");
     $('.upload-wrapper').removeClass("success");
-    $('#file-upload-name').html("");
+    $('#file-upload-name-bd').html("");
     $(".view_upload_report_form").toggle();
+    $(".reports_info_contents").toggle();
+
+});
+
+$(".btn_close_file_uploaded-bd").click(function() {
+    event.preventDefault();
+    $(".form_upload_file")[0].reset();
+    $('.btn_send_file').attr('aria-disabled', 'true');
+    $('.btn_send_file').addClass("disabled");
+    $('.upload-wrapper').removeClass("success");
+    $('#file-upload-name-bd').html("");
+
     $(".reports_info_contents").toggle();
 
 });
@@ -103,6 +120,23 @@ $('#upload-file').change(function() {
             $('.upload-wrapper').addClass("success");
             $('.btn_send_file').attr('aria-disabled', 'false');
             $('.btn_send_file').removeClass("disabled");
+        }, 1600);
+    }
+});
+
+$('#upload-file-bd').change(function() {
+    var filename_bd = $(this).val().split('\\').pop();
+    $('#file-upload-name-bd').html(filename_bd);
+    console.log(filename_bd);
+    if (filename_bd != "") {
+        setTimeout(function() {
+            $('.upload-wrapper').addClass("uploaded");
+        }, 600);
+        setTimeout(function() {
+            $('.upload-wrapper').removeClass("uploaded");
+            $('.upload-wrapper').addClass("success");
+            $('.btn_send_file-bd').attr('aria-disabled', 'false');
+            $('.btn_send_file-bd').removeClass("disabled");
         }, 1600);
     }
 });

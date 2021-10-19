@@ -194,7 +194,8 @@ svg:not(:root) {
     }
 }
 
-.btn_send_file {
+.btn_send_file,
+.btn_send_file-bd {
     width: 100%;
     background: #4d4d4d;
     font-weight: bold;
@@ -214,7 +215,9 @@ svg:not(:root) {
 }
 
 .btn_send_file.btn.disabled,
-.btn_send_file.btn:disabled {
+.btn_send_file-bd.btn.disabled,
+.btn_send_file.btn:disabled,
+.btn_send_file-bd.btn:disabled {
     opacity: 0.2;
 }
 
@@ -369,6 +372,7 @@ svg:not(:root) {
 }
 
 .carga_exito_modal,
+.carga_exito_modal-bd,
 .carga_error_modal {
     img {
         width: 90px;
