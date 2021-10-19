@@ -24,10 +24,13 @@ $(".upload_report_btn").click(function() {
 // Cancel upload report form
 $(".cancel_upload_report").click(function() {
     $(".form_upload_file")[0].reset();
+    $('.btn_send_file').attr('aria-disabled', 'true');
+    $('.btn_send_file').addClass("disabled");
     $('.upload-wrapper').removeClass("success");
     $('#file-upload-name').html("");
     $(".view_upload_report_form").toggle();
     $(".reports_info_contents").toggle();
+
 });
 
 //Open modal msg exito
@@ -40,10 +43,13 @@ $(".btn_send_file").click(function() {
 $(".btn_close_file_uploaded").click(function() {
     event.preventDefault();
     $(".form_upload_file")[0].reset();
+    $('.btn_send_file').attr('aria-disabled', 'true');
+    $('.btn_send_file').addClass("disabled");
     $('.upload-wrapper').removeClass("success");
     $('#file-upload-name').html("");
     $(".view_upload_report_form").toggle();
     $(".reports_info_contents").toggle();
+
 });
 
 

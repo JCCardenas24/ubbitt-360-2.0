@@ -107,4 +107,3 @@
 
   <!--modal preloader -->
   <?php include_once('./modal-preload.php') ?>
-</div>

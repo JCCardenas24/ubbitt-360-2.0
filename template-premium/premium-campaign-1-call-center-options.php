@@ -26,8 +26,8 @@
     aria-labelledby="premium-call-center-bd-llamadas-campaign-1-content-tab">
     <?php include_once('./template-premium/premium-campaign-1-call-center-bd-llamadas.php') ?>
   </div>
-  <!-- <div class="tab-pane fade" id="premium-call-center-bd-ventas-campaign-1-content" role="tabpanel"
+  <div class="tab-pane fade" id="premium-call-center-bd-ventas-campaign-1-content" role="tabpanel"
     aria-labelledby="premium-call-center-bd-ventas-campaign-1-content-tab">
-    c
-  </div> -->
+    <?php include_once('./template-premium/premium-campaign-1-call-center-bd-ventas.php') ?>
+  </div>
 </div>
