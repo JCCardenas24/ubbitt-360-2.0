@@ -2446,7 +2446,6 @@ Margin property
 }
 
 .rtl .main-header .navbar {
-  -webkit-transition: margin-right .3s ease-in-out;
   transition: margin-right .3s ease-in-out;
   margin-right: 280px;
   margin-left: 0;
@@ -2544,12 +2543,10 @@ Margin property
 }
 
 .rtl .sidebar-menu li > a > .pull-right-container > .fa-angle-right {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .rtl .sidebar-menu li > a > .fa-angle-right {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -2559,12 +2556,10 @@ Margin property
 }
 
 .rtl .sidebar-menu .menu-open > a > .fa-angle-right {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .rtl .sidebar-menu .menu-open > a > .pull-right-container > .fa-angle-right {
-  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -2642,7 +2637,6 @@ Margin property
 
 @media (max-width: 767px) {
   .rtl .main-sidebar {
-    -webkit-transform: translate(280px, 0);
     transform: translate(280px, 0);
   }
 }
@@ -2664,7 +2658,6 @@ Margin property
     margin-right: 0;
   }
   .rtl.sidebar-open .content-wrapper, .rtl.sidebar-open .main-footer {
-    -webkit-transform: translate(-280px, 0);
     transform: translate(-280px, 0);
   }
 }
@@ -2695,7 +2688,6 @@ Margin property
   top: 0;
   right: auto;
   left: -360px;
-  -webkit-transition: left .3s ease-in-out;
   transition: left .3s ease-in-out;
 }
 
@@ -2844,11 +2836,7 @@ Margin property
   .rtl .left-block {
     left: inherit;
     right: -280px;
-    -webkit-transition: -webkit-transform .3s ease-in-out, right .3s ease-in-out;
-    -webkit-transition: right .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    transition: right .3s ease-in-out, -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out, right .3s ease-in-out;
-    transition: transform .3s ease-in-out, right .3s ease-in-out, -webkit-transform .3s ease-in-out;
   }
   .rtl .left-block.open-panel {
     left: inherit;
@@ -2861,11 +2849,7 @@ Margin property
   .rtl .reverse-mode .left-block {
     right: auto;
     left: -280px;
-    -webkit-transition: -webkit-transform .3s ease-in-out, left .3s ease-in-out;
-    -webkit-transition: left .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    transition: left .3s ease-in-out, -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out, left .3s ease-in-out;
-    transition: transform .3s ease-in-out, left .3s ease-in-out, -webkit-transform .3s ease-in-out;
   }
   .rtl .reverse-mode .left-block.open-panel {
     right: inherit;
@@ -3191,8 +3175,7 @@ Margin property
 }
 
 .rtl .timeline.timeline-single-column.timeline .timeline-item > .timeline-point {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
   right: 42px !important;
   left: inherit !important;
   margin-right: 0;
@@ -3237,8 +3220,7 @@ Margin property
 }
 
 .rtl .timeline.timeline-single-column.timeline .timeline-label {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
   margin: 0 42px 20px 0;
 }
 
@@ -3248,8 +3230,7 @@ Margin property
     left: inherit;
   }
   .rtl .timeline.timeline .timeline-label {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
     margin: 0 42px 20px 0;
   }
   .rtl .timeline.timeline .timeline-item {
@@ -3257,8 +3238,7 @@ Margin property
     padding-left: 0;
   }
   .rtl .timeline.timeline .timeline-item > .timeline-point {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
     right: 42px !important;
     margin-right: 0;
   }
@@ -3598,7 +3578,6 @@ Margin property
 
 @media (min-width: 768px) {
   .rtl.sidebar-collapse .main-sidebar {
-    -webkit-transform: translate(280px, 0);
     transform: translate(280px, 0);
   }
   .rtl.sidebar-collapse .content-wrapper, .rtl.sidebar-collapse .main-footer {

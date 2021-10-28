@@ -10,7 +10,7 @@
                         <div class="main-wrapper">
                             <div class="upload-main-wrapper">
                                 <div class="upload-wrapper">
-                                    <input type="file" id="upload-file">
+                                    <input type="file" id="upload-file-bd">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18.001" height="18.006"
                                         viewBox="0 0 18.001 18.006">
                                         <g id="upload-sign-svgrepo-com" transform="translate(-0.058 0)">
@@ -37,8 +37,8 @@
                                         <span>Archivo cargado</span>
                                     </div>
                                 </div>
-                                <p class="name_file_uploaded" id="file-upload-name"></p>
-                                <a href="#" class="btn btn_send_file  disabled" role="button"
+                                <p class="name_file_uploaded" id="file-upload-name-bd"></p>
+                                <a href="#" class="btn btn_send_file-bd mt-4 disabled" role="button"
                                     aria-disabled="true">Enviar</a>
                             </div>
                         </div>
@@ -49,14 +49,14 @@
 
 
         <!-- Modal éxito -->
-        <div class="modal fade carga_exito_modal" id="carga_exito_msg" tabindex="-1" role="dialog"
+        <div class="modal fade carga_exito_modal-bd" id="carga_exito_msg" tabindex="-1" role="dialog"
             aria-labelledby="carga_exito_msgTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
                         <img src="./assets/images/exito-icon.svg" alt="">
                         <p>La información se ha enviado correctamente.</p>
-                        <button class="btn btn_close_file_uploaded" data-dismiss="modal">Aceptar</button>
+                        <button class="btn btn_close_file_uploaded-bd" data-dismiss="modal">Aceptar</button>
                     </div>
                 </div>
             </div>
