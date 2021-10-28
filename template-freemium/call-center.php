@@ -6,7 +6,7 @@
     </li>
     <li class="nav-item table_llamadas" role="presentation">
         <a class="nav-link" id="freemium-call-center-bd-tab" data-toggle="pill" href="#freemium-call-center-bd"
-            role="tab" aria-controls="freemium-call-center-bd" aria-selected="false">Base de datos (Llamadas)</a>
+            role="tab" aria-controls="freemium-call-center-bd" aria-selected="false">Socios activos</a>
     </li>
     <li class="nav-item table_llamadas" role="presentation">
         <a class="nav-link" id="freemium-call-center-ventas-tab" data-toggle="pill" href="#freemium-call-center-ventas"
