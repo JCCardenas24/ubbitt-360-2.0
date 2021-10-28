@@ -62,46 +62,25 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Asignación</th>
-      <th scope="col">Teléfono</th>
-      <th scope="col">Cuenta asignada</th>
-      <th scope="col">Fecha</th>
-      <th scope="col">Acciones</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Speaking time</th>
+      <th scope="col">Tiempo promedio llamada</th>
+      <th scope="col">Turno/Horario</th>
+      <th scope="col">Permisos</th>
+      <th scope="col">Teamleader</th>
+      <th scope="col">Calificación Ubbitt</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">121212</th>
-      <td>Mark</td>
-      <td>55125486</td>
-      <td>Mapre</td>
-      <td>12/02/21</td>
-      <td>
-        <div class="audio_download_row">
-          <audio controls>
-            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
-        </div>
-        <div class="audio_download_row">
-          <audio controls>
-            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
-        </div>
-        <div class="audio_download_row">
-          <audio controls>
-            <source src="./assets/audio/record_example.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <a href="./assets/audio/record_example.mp3" class="ml-15" download><i class="fa fa-download" aria-hidden="true"></i></a>
-        </div>
-      </td>
+      <th scope="row">Juan Pérez</th>
+      <td>08:00:00 min</td>
+      <td>00:25:00 min</td>
+      <td>Matutino/8:15 hrs</td>
+      <td>Asesor</td>
+      <td>Nombre teamleader</td>
+      <td>8.5</td>
     </tr>
-   
   </tbody>
 </table>
 

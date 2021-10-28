@@ -626,27 +626,33 @@ Theme Primary Color
 }
 
 .theme-primary .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-primary .main-sidebar .svg-icon:hover, .theme-primary .main-sidebar .svg-icon:active, .theme-primary .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary .main-sidebar a:hover .svg-icon, .theme-primary .main-sidebar a:active .svg-icon, .theme-primary .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-primary .svg-icon:hover, .theme-primary .svg-icon:active, .theme-primary .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary a:hover .svg-icon, .theme-primary a:active .svg-icon, .theme-primary a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary.light-skin .sidebar-menu > li.active.treeview > a {
@@ -728,7 +734,8 @@ Theme Primary Color
 }
 
 .theme-primary.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -807,7 +814,8 @@ Theme Primary Color
 }
 
 .theme-primary.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-primary.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -2898,85 +2906,100 @@ Theme Primary Color
 .theme-primary [type=radio].radio-col-primary:checked + label:after {
   background-color: #6384ea;
   border-color: #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #6384ea;
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-primary [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
@@ -3335,27 +3358,33 @@ Theme Secondary Color
 }
 
 .theme-secondary .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-secondary .main-sidebar .svg-icon:hover, .theme-secondary .main-sidebar .svg-icon:active, .theme-secondary .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary .main-sidebar a:hover .svg-icon, .theme-secondary .main-sidebar a:active .svg-icon, .theme-secondary .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-secondary .svg-icon:hover, .theme-secondary .svg-icon:active, .theme-secondary .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary a:hover .svg-icon, .theme-secondary a:active .svg-icon, .theme-secondary a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary.light-skin .sidebar-menu > li.active.treeview > a {
@@ -3437,7 +3466,8 @@ Theme Secondary Color
 }
 
 .theme-secondary.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -3516,7 +3546,8 @@ Theme Secondary Color
 }
 
 .theme-secondary.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-secondary.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -5603,85 +5634,100 @@ Theme Secondary Color
 .theme-secondary [type=radio].radio-col-primary:checked + label:after {
   background-color: #e5eaee;
   border-color: #e5eaee;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #e5eaee;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #e5eaee;
   border: 2px solid #e5eaee;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-secondary [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
@@ -6071,27 +6117,33 @@ Theme Info Color
 }
 
 .theme-info .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-info .main-sidebar .svg-icon:hover, .theme-info .main-sidebar .svg-icon:active, .theme-info .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info .main-sidebar a:hover .svg-icon, .theme-info .main-sidebar a:active .svg-icon, .theme-info .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-info .svg-icon:hover, .theme-info .svg-icon:active, .theme-info .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info a:hover .svg-icon, .theme-info a:active .svg-icon, .theme-info a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info.light-skin .sidebar-menu > li.active.treeview > a {
@@ -6173,7 +6225,8 @@ Theme Info Color
 }
 
 .theme-info.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -6252,7 +6305,8 @@ Theme Info Color
 }
 
 .theme-info.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-info.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -8339,85 +8393,100 @@ Theme Info Color
 .theme-info [type=radio].radio-col-primary:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].radio-col-info:checked + label:after {
   background-color: #6384ea;
   border-color: #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #6384ea;
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-info [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
@@ -8807,27 +8876,33 @@ Theme Success Color
 }
 
 .theme-success .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-success .main-sidebar .svg-icon:hover, .theme-success .main-sidebar .svg-icon:active, .theme-success .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success .main-sidebar a:hover .svg-icon, .theme-success .main-sidebar a:active .svg-icon, .theme-success .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-success .svg-icon:hover, .theme-success .svg-icon:active, .theme-success .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success a:hover .svg-icon, .theme-success a:active .svg-icon, .theme-success a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success.light-skin .sidebar-menu > li.active.treeview > a {
@@ -8909,7 +8984,8 @@ Theme Success Color
 }
 
 .theme-success.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -8988,7 +9064,8 @@ Theme Success Color
 }
 
 .theme-success.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-success.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -11075,85 +11152,100 @@ Theme Success Color
 .theme-success [type=radio].radio-col-primary:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].radio-col-success:checked + label:after {
   background-color: #6384ea;
   border-color: #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #6384ea;
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-success [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
@@ -11543,27 +11635,33 @@ Theme Danger Color
 }
 
 .theme-danger .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-danger .main-sidebar .svg-icon:hover, .theme-danger .main-sidebar .svg-icon:active, .theme-danger .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger .main-sidebar a:hover .svg-icon, .theme-danger .main-sidebar a:active .svg-icon, .theme-danger .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-danger .svg-icon:hover, .theme-danger .svg-icon:active, .theme-danger .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger a:hover .svg-icon, .theme-danger a:active .svg-icon, .theme-danger a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger.light-skin .sidebar-menu > li.active.treeview > a {
@@ -11645,7 +11743,8 @@ Theme Danger Color
 }
 
 .theme-danger.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -11724,7 +11823,8 @@ Theme Danger Color
 }
 
 .theme-danger.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-danger.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -13811,85 +13911,100 @@ Theme Danger Color
 .theme-danger [type=radio].radio-col-primary:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].radio-col-danger:checked + label:after {
   background-color: #6384ea;
   border-color: #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #6384ea;
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-danger [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
@@ -14279,27 +14394,33 @@ Theme Warning Color
 }
 
 .theme-warning .main-sidebar .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-warning .main-sidebar .svg-icon:hover, .theme-warning .main-sidebar .svg-icon:active, .theme-warning .main-sidebar .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning .main-sidebar a:hover .svg-icon, .theme-warning .main-sidebar a:active .svg-icon, .theme-warning .main-sidebar a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning .svg-icon {
-  filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+  -webkit-filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
+          filter: invert(0.6) sepia(1) saturate(1) hue-rotate(185deg);
 }
 
 .theme-warning .svg-icon:hover, .theme-warning .svg-icon:active, .theme-warning .svg-icon:focus {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning a:hover .svg-icon, .theme-warning a:active .svg-icon, .theme-warning a:focus .svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning.light-skin .sidebar-menu > li.active.treeview > a {
@@ -14381,7 +14502,8 @@ Theme Warning Color
 }
 
 .theme-warning.light-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning.light-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -14460,7 +14582,8 @@ Theme Warning Color
 }
 
 .theme-warning.dark-skin .sidebar-menu > li.active a img.svg-icon {
-  filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+  -webkit-filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
+          filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 
 .theme-warning.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
@@ -16547,85 +16670,100 @@ Theme Warning Color
 .theme-warning [type=radio].radio-col-primary:checked + label:after {
   background-color: #f9c20f;
   border-color: #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-primary:checked + label:before {
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-primary:checked + label:after {
   background-color: #f9c20f;
   border: 2px solid #f9c20f;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border-color: #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-info:checked + label:before {
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-info:checked + label:after {
   background-color: #38c1f1;
   border: 2px solid #38c1f1;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border-color: #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-success:checked + label:before {
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-success:checked + label:after {
   background-color: #39DA8A;
   border: 2px solid #39DA8A;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border-color: #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-danger:checked + label:before {
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-danger:checked + label:after {
   background-color: #f1376e;
   border: 2px solid #f1376e;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].radio-col-warning:checked + label:after {
   background-color: #6384ea;
   border-color: #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-warning:checked + label:before {
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 
 .theme-warning [type=radio].with-gap.radio-col-warning:checked + label:after {
   background-color: #6384ea;
   border: 2px solid #6384ea;
+  -webkit-animation: ripple .2s linear forwards;
   animation: ripple .2s linear forwards;
 }
 

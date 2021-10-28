@@ -1,37 +1,45 @@
-.socios_data_card{
+.socios_data_card {
     width: 100%;
     height: 127px;
     border-color: transparent;
     color: white;
     flex-direction: row;
     padding: 0 27px;
-    p, h1{
+
+    p,
+    h1 {
         margin: 0;
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 30px;
         font-weight: bold;
         text-align: center;
     }
-    p{
-        font-size: 18px;
+
+    p {
+        font-size: 18.5px;
         text-align: left;
     }
-    .col-6{
+
+    .col-6 {
         padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    &.orange_bg{
+
+    &.orange_bg {
         background-color: #FD8377;
     }
-    &.dark_yellowbg{
-background-color: #FFBE2C;
+
+    &.dark_yellowbg {
+        background-color: #FFBE2C;
     }
-    &.sky_blue_bg{
+
+    &.sky_blue_bg {
         background-color: #A3DAF7;
     }
 }
