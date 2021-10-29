@@ -710,6 +710,86 @@ let options_funnel_data = {
 
 funnel_ventas_inversiones_chart.setOption(options_funnel_data);
 
+let chart_productividad_cobros = echarts.init(document.getElementById('chart_productividad'));
+let options_chart_productividad = {
+    // Add title
+    title: {
+        text: 'Productividad de Emisiones diarias por hora'
+    },
+
+    // Add legend
+    legend: {
+        orient: 'vertical',
+        x: 'right',
+        top: '0',
+        data: ['Emisiones'],
+        right: 0
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    color: ['#FBBB44'],
+    xAxis: {
+        type: 'category',
+        data: ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        type: 'bar',
+        name: 'Emisiones',
+        data: [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 115, 117]
+
+    }]
+};
+
+chart_productividad_cobros.setOption(options_chart_productividad);
+
+let chart_productividad_llamadas = echarts.init(document.getElementById('chart_productividad_llamadas'));
+let options_chart_productividad_llamadas = {
+    title: {
+        text: 'Productividad de llamadas salientes / Llamadas contestadas'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['Llamadas salientes', 'Llamadas contestadas'],
+        orient: 'horizontal',
+        x: 'right',
+        top: '0',
+        right: 0
+    },
+
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5', 'Día 6', 'Día 7', 'Día 8', 'Día 9']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+            name: 'Llamadas salientes',
+            type: 'line',
+            stack: 'Total',
+            data: [120, 132, 101, 134, 90, 230, 210, 120, 132]
+        },
+        {
+            name: 'Llamadas contestadas',
+            type: 'line',
+            stack: 'Total',
+            data: [220, 182, 191, 234, 290, 330, 310, 220, 182, ]
+        }
+    ]
+};
+
+chart_productividad_llamadas.setOption(options_chart_productividad_llamadas);
+
 // ****Resize fuction***
 window.addEventListener('resize', function() {
     stackedChart.resize();
@@ -722,6 +802,15 @@ window.addEventListener('resize', function() {
     horarios_double_bar.resize();
     rendimiento_mixed_chart.resize();
     funnel_ventas_inversiones_chart.resize();
+    chart_productividad_cobros.resize();
+    chart_productividad_llamadas.resize();
     // stackedChartForecast.resize();
 
+})
+
+$('#premium-call-center-bd-llamadas-campaign-1-content-tab').on('shown.bs.tab', function(event) {
+    event.target // newly activated tab
+    event.relatedTarget // previous active tab
+    chart_productividad_cobros.resize();
+    chart_productividad_llamadas.resize();
 })

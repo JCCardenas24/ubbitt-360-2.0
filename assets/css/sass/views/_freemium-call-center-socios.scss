@@ -4,25 +4,21 @@
     border-color: transparent;
     color: white;
     flex-direction: row;
-    padding: 0 27px;
-
+    padding: 0 27px 0;
     p,
     h1 {
         margin: 0;
-
     }
-
     h1 {
         font-size: 30px;
         font-weight: bold;
         text-align: center;
     }
-
     p {
         font-size: 18.5px;
-        text-align: left;
+        position: absolute;
+        left: 0;
     }
-
     .col-6 {
         padding: 0;
         height: 100%;
@@ -30,16 +26,39 @@
         justify-content: center;
         align-items: center;
     }
-
     &.orange_bg {
         background-color: #FD8377;
     }
-
     &.dark_yellowbg {
         background-color: #FFBE2C;
     }
-
     &.sky_blue_bg {
         background-color: #A3DAF7;
+    }
+}
+
+.chart_productividad {
+    height: 415px;
+    padding: 26px 23px;
+    border-color: transparent;
+    margin-top: 78px;
+    margin-bottom: 30px;
+    h5 {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: left;
+        color: #4d4d4d;
+    }
+}
+
+.chart_productividad_llamadas {
+    height: 415px;
+    padding: 26px 23px;
+    border-color: transparent;
+    h5 {
+        font-weight: bold;
+        font-size: 15px;
+        text-align: left;
+        color: #4d4d4d;
     }
 }

@@ -164,6 +164,19 @@ function dec(element) {
     }
 }
 
+// Show form_review_call
+$(".btn_calificar").click(function() {
+    $("#table_calls_score").toggle();
+    $("#form_review_call").toggle();
+});
+
+// Show table_calls_score
+$(".cancel_review_call").click(function() {
+    // $(".form_upload_file")[0].reset();
+    $("#table_calls_score").toggle();
+    $("#form_review_call").toggle();
+});
+
 // Mask money input
 $('.currency').maskMoney({
     suffix: '$',

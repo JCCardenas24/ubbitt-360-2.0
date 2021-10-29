@@ -79,8 +79,8 @@ header hr {
 
 th {
     font-size: 11px;
-    color: #ced4da;
-    font-weight: 900;
+    /* color: #ced4da;
+    font-weight: 900; */
 }
 
 td {

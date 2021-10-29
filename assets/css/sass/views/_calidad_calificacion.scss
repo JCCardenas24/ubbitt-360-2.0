@@ -1,0 +1,228 @@
+.calidad_wrapper {
+    .main_ttl_wrapper {
+        margin: 20px 0;
+        h1 {
+            font-weight: 600;
+            font-size: 22px;
+            text-align: left;
+            color: #4d4d4d;
+            margin: 0;
+        }
+    }
+}
+
+.llamadas_calificaciones {
+    .card_orange--score {
+        height: 127px;
+        border-radius: 15px;
+        background: #ff6f61;
+        border: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 18px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+        h5 {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+    }
+}
+
+.porcentajes_llamadas {
+    .card_info_porcentaje {
+        height: 127px;
+        border-radius: 15px;
+        border: transparent;
+        padding: 17px 10px;
+        h4 {
+            font-weight: bold;
+            font-size: 18px;
+            text-align: left;
+            color: #fff;
+        }
+        h5 {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: right;
+            color: #fff;
+        }
+        &.dark_gray {
+            background-color: #666;
+            ;
+        }
+        &.sky_blue {
+            background-color: #a3daf7;
+        }
+        &.yellow {
+            background-color: #ffbe2c;
+        }
+        &.light_orange {
+            background-color: #fd8377;
+        }
+        &.light_gray {
+            background-color: #6f6f6f;
+        }
+    }
+}
+
+.btn_calificar {
+    width: 101px;
+    height: 30px;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 13px;
+    color: #c9c9c9;
+    display: block;
+    margin-left: 12px;
+    padding: 0;
+    &:hover {
+        background-color: #fd8377;
+        color: white;
+        border-color: transparent;
+    }
+}
+
+.cancel_review_call {
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: left;
+    color: #ff6f61 !important;
+    display: block;
+    i {
+        font-weight: bold;
+    }
+}
+
+.card_form {
+    height: 1933px;
+    border-radius: 15px;
+    background: #fff;
+    padding: 23px 23px 45px 23px;
+    h1 {
+        font-weight: 600;
+        font-size: 17px;
+        color: #000;
+    }
+    form {
+        label {
+            font-weight: 600;
+            font-size: 14px;
+            color: #4d4d4d;
+        }
+        label.form-check-label {
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+            color: #4d4d4d;
+        }
+        .form-row-checkbox {
+            margin: 0 0 32px;
+        }
+        textarea {
+            height: 150px;
+        }
+        select {
+            width: 100%;
+            height: 38px;
+            border-radius: 15px;
+            background: #fff;
+            border: 1px solid #e6e4e4;
+        }
+        button {
+            width: 426px;
+            height: 43px;
+            border-radius: 5px;
+            background: #fd8377;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #fff !important;
+        }
+    }
+}
+
+.download_record-review {
+    width: 126.68px;
+    height: 35px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid #4d4d4d;
+    display: flex;
+    font-size: 14px;
+    color: #4d4d4d;
+    justify-content: center;
+    align-items: center;
+    i {
+        width: 20px;
+        height: 20px;
+        border: solid 1px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+    }
+    &:hover {
+        background-color: #fd8377;
+        color: white !important;
+        border-color: transparent;
+    }
+}
+
+.dfjcac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: #4d4d4d;
+}
+
+.dfjsbac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.total_scores {
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    p {
+        font-weight: 600;
+        font-size: 17px;
+        color: #000;
+        margin: 0;
+    }
+    span {
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        width: 270px;
+        height: 38px;
+        border-radius: 15px;
+        background: #fff;
+        border: 1px solid #e6e4e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

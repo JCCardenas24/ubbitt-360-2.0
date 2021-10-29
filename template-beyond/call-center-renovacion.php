@@ -8,7 +8,7 @@
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="call-base-de-datos-info-renovacion-tab" data-toggle="pill"
             href="#call-base-de-datos-info-renovacion" role="tab" aria-controls="call-base-de-datos-info-renovacion"
-            aria-selected="false">Base de datos (Llamadas)</a>
+            aria-selected="false">Socios activos</a>
     </li>
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="call-base-de-datos-ventas-renovacion-tab" data-toggle="pill"

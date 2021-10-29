@@ -12,7 +12,7 @@
     <span>octubre 2, 2021 - octubre 6, 2021</span>
     <i class="fa fa-caret-down"></i>
   </div>
-  <a href="./assets/reportes/prueba.xlsx" class="pdf_button mr-5" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
+  <a href="./assets/reportes/prueba.xlsx" class="pdf_button" download><i class="icon-download_xls c-gray" aria-hidden="true"></i></a>
   <a href="./assets/reportes/info.zip" class="pdf_button" download><i class="fa fa-download" aria-hidden="true"></i></a>
 </div>
 

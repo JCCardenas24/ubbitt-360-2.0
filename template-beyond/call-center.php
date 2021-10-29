@@ -7,7 +7,7 @@
     <li class="nav-item table_llamadas" role="presentation">
         <a class="nav-link" id="beyond-cobranza-callcenter-bd-tab" data-toggle="pill"
             href="#beyond-cobranza-callcenter-bd" role="tab" aria-controls="beyond-cobranza-callcenter-bd"
-            aria-selected="false">Base de datos (Llamadas)</a>
+            aria-selected="false">Socios activos</a>
     </li>
     <li class="nav-item table_llamadas" role="presentation">
         <a class="nav-link" id="beyond-cobranza-ventas-bd-tab" data-toggle="pill"

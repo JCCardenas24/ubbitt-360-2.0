@@ -18,9 +18,14 @@
                     aria-selected="false">Call Center</a>
             </li>
             <li class="nav-item" role="presentation">
+                <a class="nav-link " id="inbound-calidad-tab" data-toggle="pill"
+                    href="#inbound-calidad" role="tab" aria-controls="inbound-calidad"
+                    aria-selected="false">Calidad</a>
+            </li>
+            <li class="nav-item" role="presentation">
                 <a class="nav-link " id="inbound-reportes-tab" data-toggle="pill"
                     href="#inbound-reportes" role="tab" aria-controls="inbound-reportes"
-                    aria-selected="false">Reportes</a>
+                    aria-selected="false">Reporte operativo</a>
             </li>
         </ul>
         <div class="tab-content" id="freemium-inbound-optionsContent">
@@ -31,6 +36,10 @@
             <div class="tab-pane fade" id="inbound-call-center" role="tabpanel"
                 aria-labelledby="inbound-call-center-tab">
                 <?php include_once('call-center.php')?>
+            </div>
+            <div class="tab-pane fade" id="inbound-calidad" role="tabpanel"
+                aria-labelledby="inbound-calidad-tab">
+                <?php include_once('calidad-calificacion.php')?>
             </div>
             <div class="tab-pane fade" id="inbound-reportes" role="tabpanel"
                 aria-labelledby="inbound-reportes-tab">
