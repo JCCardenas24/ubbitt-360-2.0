@@ -17,7 +17,7 @@
 						</a>
 					</li>
 					<li>
-						<span id="encabezado" class="encabezado_ttl"><b>Mapfre</b> | Área</span>
+						<span id="encabezado" class="encabezado_ttl"><b>Mapfre</span>
 					</li>
 				</ul>
 		  	</div>
