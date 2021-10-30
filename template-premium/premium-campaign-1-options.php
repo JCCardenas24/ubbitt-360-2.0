@@ -17,7 +17,11 @@
             href="#call-center-campaign-1" role="tab" aria-controls="call-center-campaign-1"
             aria-selected="false">Call Center</a>
     </li>
-
+    <li class="nav-item">
+        <a class="nav-link" id="calidad-campaign-1-tab" data-toggle="pill"
+            href="#calidad-campaign-1" role="tab" aria-controls="calidad-campaign-1"
+            aria-selected="false">Calidad</a>
+    </li>
     <li class="nav-item">
         <div class="d-flex balance_campaign_data">
             <div class="d-flex">
@@ -54,5 +58,9 @@
     <div class="tab-pane fade" id="call-center-campaign-1" role="tabpanel"
         aria-labelledby="call-center-campaign-1-tab">
         <?php include_once('./template-premium/premium-campaign-1-call-center-options.php') ?>
+    </div>
+    <div class="tab-pane fade" id="calidad-campaign-1" role="tabpanel"
+        aria-labelledby="calidad-campaign-1-tab">
+        <?php include_once('./template-premium/calidad-diario.php') ?>
     </div>
 </div>

@@ -1,44 +1,3 @@
-<?php /*
-<ul class="nav nav-pills level-four" id="freemium-inbound-reportes-options" role="tablist">
-    <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="freemium-inbound-reportes-detalle-kpis-tab" data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="true">Detalles de KPI's</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link " data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="false">Productividad de asesores</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link " data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="false">Detalle de tipificaciones</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link " data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="false">De calidad diario</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link " data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="false">General de calidad</a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link " data-toggle="pill"
-            href="#freemium-inbound-reportes-detalle-kpis" role="tab"
-            aria-controls="freemium-inbound-reportes-detalle-kpis" aria-selected="false">Resultado de calibraciones</a>
-    </li>
-</ul>
-<div class="tab-content" id="freemium-inbound-reportes-optionsContent">
-    <div class="tab-pane fade show active" id="freemium-inbound-reportes-detalle-kpis" role="tabpanel"
-        aria-labelledby="freemium-inbound-reportes-detalle-kpis-tab">
-        <?php include_once('detalle-kpis.php') ?>
-</div>
-</div>
-*/ ?>
-
 <div class="row main_row_reportes_ttl ml-0 mr-0">
     <h1>Mes actual</h1>
     <div class="d-flex">
@@ -52,51 +11,86 @@
         </a>
     </div>
 </div>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th colspan="30">Productividad diaria</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>KPIS</th>
-      <td>Monthy</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>11</td>
-      <td>12</td>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>
-      <td>16</td>
-      <td>17</td>
-      <td>18</td>
-      <td>19</td>
-      <td>20</td>
-      <td>21</td>
-      <td>22</td>
-      <td>23</td>
-      <td>24</td>
-      <td>25</td>
-      <td>26</td>
-      <td>27</td>
-      <td>28</td>
-      <td>29</td>
-      <td>30</td>
-     
-    </tr>
-    
-  </tbody>
-</table>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">KPIS</th>
+                <th scope="col">Monthy</th>
+                <th colspan="31">Productividad diaria</th>
+            </tr>
+            <tr>
+                <th scope="col">Base entregada</th>
+                <th scope="col">138</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th scope="col">13</th>
+                <th scope="col">14</th>
+                <th scope="col">15</th>
+                <th scope="col">16</th>
+                <th scope="col">17</th>
+                <th scope="col">18</th>
+                <th scope="col">19</th>
+                <th scope="col">20</th>
+                <th scope="col">21</th>
+                <th scope="col">22</th>
+                <th scope="col">23</th>
+                <th scope="col">24</th>
+                <th scope="col">25</th>
+                <th scope="col">26</th>
+                <th scope="col">27</th>
+                <th scope="col">28</th>
+                <th scope="col">29</th>
+                <th scope="col">30</th>
+                <th scope="col">31</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Llamadas realizadas</th>
+                <td>1409</td>
+                <td>200</td>
+                <td>600</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>25</td>
+                <td>80</td>
+                <td>14</td>
+                <td>300</td>
+                <td>265</td>
+                <td>752</td>
+                <td>750</td>
+                <td>555</td>
+                <td>22</td>
+                <td>1124</td>
+                <td>255</td>
+                <td>236</td>
+                <td>145</td>
+                <td>476</td>
+                <td>144</td>
+                <td>113</td>
+                <td>155</td>
+                <td>212</td>
+                <td>123</td>
+                <td>121</td>
+                <td>454</td>
+                <td>854</td>
+                <td>5365</td>
+                <td>55</td>
+                <td>22</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
