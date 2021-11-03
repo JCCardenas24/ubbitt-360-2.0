@@ -32,7 +32,7 @@
                     <li><a id="inbound-call-center_side_menu" href="dashboard-freemium.php#inbound-call-center" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
                     <li><a id="inbound-reportes_side_menu" href="dashboard-freemium.php#inbound-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Reportes</a></li>
+                                    class="path1"></span><span class="path2"></span></i>Reporte operativo</a></li>
                 </ul>
             </li>
             <!-- Ubiitt Premium -->

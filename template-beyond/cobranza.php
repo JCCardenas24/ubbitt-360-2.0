@@ -8,8 +8,8 @@
             role="tab" aria-controls="cobranza-callcenter" aria-selected="false">Call Center</a>
     </li>
     <li class="nav-item table_kpis" role="presentation">
-        <a class="nav-link" id="cobranza-reportes-tab" data-toggle="pill" href="#cobranza-reportes"
-            role="tab" aria-controls="cobranza-reportes" aria-selected="false">Calidad</a>
+        <a class="nav-link" id="cobranza-calidad-tab" data-toggle="pill" href="#cobranza-calidad"
+            role="tab" aria-controls="cobranza-calidad" aria-selected="false">Calidad</a>
     </li>
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="cobranza-carga-base-datos-tab" data-toggle="pill"
@@ -30,8 +30,8 @@
         aria-labelledby="cobranza-callcenter-tab">
         <?php include_once('./template-beyond/call-center.php') ?>
     </div>
-    <div class="tab-pane fade" id="cobranza-reportes" role="tabpanel"
-        aria-labelledby="cobranza-reportes-tab">
+    <div class="tab-pane fade" id="cobranza-calidad" role="tabpanel"
+        aria-labelledby="cobranza-calidad-tab">
         
         <?php include_once('./template-beyond/reportes.php') ?>
     </div>

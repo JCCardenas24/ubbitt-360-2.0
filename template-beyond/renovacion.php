@@ -21,8 +21,8 @@
             aria-selected="false">Carga de base de datos</a>
     </li>
     <li class="nav-item" role="presentation">
-        <a class="nav-link" id="renovacion-reportes-tab" data-toggle="pill" href="#renovacion-reportes"
-            role="tab" aria-controls="renovacion-reportes" aria-selected="false">Reporte operativo</a>
+        <a class="nav-link" id="renovacion-reporte-operativo-tab" data-toggle="pill" href="#renovacion-reporte-operativo"
+            role="tab" aria-controls="renovacion-reporte-operativo" aria-selected="false">Reporte operativo</a>
     </li>
     
 </ul>
@@ -39,8 +39,8 @@
         aria-labelledby="renovacion-calidad-tab">
         <?php include_once('./template-beyond/renovacion-calidad.php') ?>
     </div>
-    <div class="tab-pane fade" id="renovacion-reportes" role="tabpanel"
-        aria-labelledby="renovacion-reportes-tab">
+    <div class="tab-pane fade" id="renovacion-reporte-operativo" role="tabpanel"
+        aria-labelledby="renovacion-reporte-operativo-tab">
         <?php include_once('./template-beyond/reporte-operativo.php') ?>
     </div>
     <div class="tab-pane fade" id="renovacion-carga-base-datos" role="tabpanel"
