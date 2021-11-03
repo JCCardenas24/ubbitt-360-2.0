@@ -1674,6 +1674,11 @@ table.table tbody {
     text-align: center;
 }
 
+.table>tbody>tr td,
+.table>tbody>tr>th {
+    font-weight: normal;
+}
+
 .pagination li a {
     min-width: 1px;
     padding: 9px;
