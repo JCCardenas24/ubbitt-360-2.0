@@ -14,20 +14,17 @@
             href="#renovacion-calidad" role="tab" aria-controls="renovacion-calidad"
             aria-selected="false">Calidad</a>
     </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link" id="renovacion-reportes-tab" data-toggle="pill" href="#renovacion-reportes"
-            role="tab" aria-controls="renovacion-reportes" aria-selected="false">Reportes</a>
-    </li>
+    
     <li class="nav-item" role="presentation">
         <a class="nav-link" id="renovacion-carga-base-datos-tab" data-toggle="pill"
             href="#renovacion-carga-base-datos" role="tab" aria-controls="renovacion-carga-base-datos"
-            aria-selected="true">Carga de base de datos</a>
+            aria-selected="false">Carga de base de datos</a>
     </li>
     <li class="nav-item" role="presentation">
-        <a class="nav-link" id="renovacion-reporte-operativo" data-toggle="pill"
-            href="#renovacion-reporte-operativo" role="tab" aria-controls="renovacion-reporte-operativo"
-            aria-selected="true">Reporte operativo</a>
+        <a class="nav-link" id="renovacion-reportes-tab" data-toggle="pill" href="#renovacion-reportes"
+            role="tab" aria-controls="renovacion-reportes" aria-selected="false">Reporte operativo</a>
     </li>
+    
 </ul>
 <div class="tab-content" id="renovacion-optionsContent">
     <div class="tab-pane fade show active" id="renovacion-resumen" role="tabpanel"
@@ -44,7 +41,7 @@
     </div>
     <div class="tab-pane fade" id="renovacion-reportes" role="tabpanel"
         aria-labelledby="renovacion-reportes-tab">
-        <?php include_once('./template-beyond/reportes-renovacion.php') ?>
+        <?php include_once('./template-beyond/reporte-operativo.php') ?>
     </div>
     <div class="tab-pane fade" id="renovacion-carga-base-datos" role="tabpanel"
         aria-labelledby="renovacion-carga-base-datos-tab">

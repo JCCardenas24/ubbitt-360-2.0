@@ -41,6 +41,6 @@
     </div>
     <div class="tab-pane fade" id="cobranza-reporte-operativo" role="tabpanel"
         aria-labelledby="cobranza-reporte-operativo-tab">
-        Reporte
+        <?php include_once('./template-beyond/reporte-operativo.php') ?>
     </div>
 </div>
