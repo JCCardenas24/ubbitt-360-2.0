@@ -177,6 +177,14 @@ $(".cancel_review_call").click(function() {
     $("#form_review_call").toggle();
 });
 
+
+$(".btn_continue_reporte").click(function() {
+    $('#exito_continue').modal('hide')
+        // $(".form_upload_file")[0].reset();
+    $("#table_calls_score").toggle();
+    $("#form_review_call").toggle();
+});
+
 // Mask money input
 $('.currency').maskMoney({
     suffix: '$',

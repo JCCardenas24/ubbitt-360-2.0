@@ -50,3 +50,36 @@
         }
     }
 }
+
+.modal_exito {
+    .modal-body {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    p {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: #4d4d4d;
+        display: block;
+        margin-top: 26px;
+        margin-bottom: 53px;
+    }
+    button {
+        width: 130px;
+        height: 36px;
+        border-radius: 10px;
+        background: #ff6f61;
+        box-shadow: 0px 3px 6px rgba(255, 111, 97, 0.4);
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color: #fff !important;
+        }
+    }
+}

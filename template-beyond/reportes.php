@@ -619,9 +619,10 @@
                     <p>Total de evaluación:</p>
                     <span>00</span>
                 </div>
-                <button class="btn d-block mx-auto" type="button">Guardar</button>
+                <button class="btn d-block mx-auto" type="button" data-toggle="modal" data-target="#exito_continue">Guardar</button>
             </form>
 
         </div>
     </div>
+    <?php include_once('./modal_exito.php')?>
 </div>

@@ -1904,6 +1904,40 @@ svg:not(:root) {
   color: #211a19;
 }
 
+.modal_exito .modal-body {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.modal_exito p {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #4d4d4d;
+  display: block;
+  margin-top: 26px;
+  margin-bottom: 53px;
+}
+
+.modal_exito button {
+  width: 130px;
+  height: 36px;
+  border-radius: 10px;
+  background: #ff6f61;
+  box-shadow: 0px 3px 6px rgba(255, 111, 97, 0.4);
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_exito button:hover {
+  color: #fff !important;
+}
+
 .calidad_wrapper .main_ttl_wrapper {
   margin: 20px 0;
 }
