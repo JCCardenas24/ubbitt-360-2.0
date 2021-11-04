@@ -135,7 +135,7 @@
                     <li><a href="dashboard-beyond-cobranza.php#cobranza-carga-base-datos"
                             class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Carga de base de datos</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-reportes"
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-reporte-operativo"
                             class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Reporte operativo</a></li>
 

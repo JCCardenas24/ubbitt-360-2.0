@@ -24,16 +24,21 @@
                         <i class="fa fa-angle-right pull-right"></i>
                     </span>
                 </a>
-                <ul class="treeview-menu" >
-                    <li><a href="dashboard-freemium.php" class="li_first_level"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Inbound</a></li>
-                    <li><a id="inbound-resumen_side_menu" href="dashboard-freemium.php#inbound-resumen" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                <ul class="treeview-menu">
+                    <li><a href="dashboard-freemium.php" class="li_first_level"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Inbound</a></li>
+                    <li><a id="inbound-resumen_side_menu" href="dashboard-freemium.php#inbound-resumen"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a id="inbound-call-center_side_menu" href="dashboard-freemium.php#inbound-call-center" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="inbound-call-center_side_menu" href="dashboard-freemium.php#inbound-call-center"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
-                                    <li><a id="inbound-calidad_side_menu" href="dashboard-freemium.php#inbound-calidad" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="inbound-calidad_side_menu" href="dashboard-freemium.php#inbound-calidad"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Calidad</a></li>
-                    <li><a id="inbound-reportes_side_menu" href="dashboard-freemium.php#inbound-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="inbound-reportes_side_menu" href="dashboard-freemium.php#inbound-reportes"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Reporte operativo</a></li>
                 </ul>
             </li>
@@ -48,38 +53,61 @@
                     </span>
                 </a>
                 <ul class="treeview-menu" style="display: block;">
-                <li><a href="#" class="li_first_level current"><i class="icon-Commit c-transparent"><span
+                    <li><a href="#" class="li_first_level current"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Campaña 1</a></li>
-                    <li><a id="brief-campaign-1_side_menu" href="#brief-campaign-1" class="li_second_level side-menu-link-redirect font-weight-bold"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Brief</a></li>
-                    <li><a id="resumen-campaign-1_side_menu" href="#resumen-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="brief-campaign-1_side_menu" href="#brief-campaign-1"
+                            class="li_second_level side-menu-link-redirect font-weight-bold"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Brief</a></li>
+                    <li><a id="resumen-campaign-1_side_menu" href="#resumen-campaign-1"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a id="marketing-campaign-1_side_menu" href="#marketing-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="marketing-campaign-1_side_menu" href="#marketing-campaign-1"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Marketing</a></li>
-                                    <li><a id="call-center-campaign-1_side_menu" href="#call-center-campaign-1" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a id="call-center-campaign-1_side_menu" href="#call-center-campaign-1"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
+
+                    <li><a id="calidad-campaign-1_side_menu" href="#calidad-campaign-1"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    class="path1"></span><span class="path2"></span></i>Calidad</a></li>
                     <br>
                     <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Campaña 2</a></li>
-                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Brief</a></li>
-                                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Marketing</a></li>
-                                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Call Center</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Brief</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Resumen</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Marketing</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Call Center</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Calidad</a></li>
                     <br>
                     <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Campaña 3</a></li>
-                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Brief</a></li>
-                                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Marketing</a></li>
-                                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Call Center</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Brief</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Resumen</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Marketing</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Call Center</a></li>
+                    <li><a href="#" class="li_second_level side-menu-link-redirect"><i
+                                class="icon-Commit c-transparent"><span class="path1"></span><span
+                                    class="path2"></span></i>Calidad</a></li>
                 </ul>
 
             </li>
@@ -96,25 +124,41 @@
                 <ul class="treeview-menu">
                     <li><a href="" class="li_first_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Cobranza</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-resumen" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-resumen"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-callcenter" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-callcenter"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Reportes</a></li>
-                    <li><a href="dashboard-beyond-cobranza.php#cobranza-carga-base-datos" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-calidad"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    class="path1"></span><span class="path2"></span></i>Calidad</a></li>
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-carga-base-datos"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Carga de base de datos</a></li>
+                    <li><a href="dashboard-beyond-cobranza.php#cobranza-reporte-operativo"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    class="path1"></span><span class="path2"></span></i>Reporte operativo</a></li>
+
                     <br>
                     <li><a href="#" class="li_first_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Renovación</a></li>
-                    <li><a href="dashboard-beyond-renovacion.php#renovacion-resumen" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-renovacion.php#renovacion-resumen"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Resumen</a></li>
-                    <li><a href="dashboard-beyond-renovacion.php#renovacion-callcenter" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-renovacion.php#renovacion-callcenter"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Call Center</a></li>
-                    <li><a href="dashboard-beyond-renovacion.php#renovacion-reportes" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
-                                    class="path1"></span><span class="path2"></span></i>Reportes</a></li>
-                    <li><a href="dashboard-beyond-renovacion.php#renovacion-carga-base-datos" class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                    <li><a href="dashboard-beyond-renovacion.php#renovacion-calidad"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    class="path1"></span><span class="path2"></span></i>Calidad</a></li>
+                    <li><a href="dashboard-beyond-renovacion.php#renovacion-carga-base-datos"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Carga de base de datos</a></li>
+                    <li><a href="dashboard-beyond-renovacion.php#renovacion-reporte-operativo"
+                            class="li_second_level side-menu-link-redirect"><i class="icon-Commit c-transparent"><span
+                                    class="path1"></span><span class="path2"></span></i>Reporte operativo</a></li>
+
                 </ul>
 
             </li>
@@ -130,13 +174,13 @@
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                
+
                     <li><a href="perfil.php" class="li_second_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Mis datos</a></li>
                     <li><a href="index.php" class="li_second_level"><i class="icon-Commit c-transparent"><span
                                     class="path1"></span><span class="path2"></span></i>Cerrar sesión</a></li>
-                   
-                   
+
+
                 </ul>
             </li>
         </ul>
